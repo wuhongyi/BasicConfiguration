@@ -1,0 +1,285 @@
+# Configuration file for the 256color ls utility
+# This file goes in the /etc directory, and must be world readable.
+# Synchronized with coreutils 8.5 dircolors
+# You can copy this file to .dir_colors in your $HOME directory to override
+# the system defaults.
+# In the case that you are not satisfied with supplied colors, please
+# submit your color configuration or attach your file with colors readable
+# on ALL color background schemas (white,gray,black) to RedHat Bugzilla
+# ticket on https://bugzilla.redhat.com/show_bug.cgi?id=429121 . TIA.
+# Please just keep ls color conventions from 8 color scheme.
+
+# COLOR needs one of these arguments: 'tty' colorizes output to ttys, but not
+# pipes. 'all' adds color characters to all output. 'none' shuts colorization
+# off.
+COLOR tty
+
+# Extra command line options for ls go here.
+# Basically these ones are:
+#  -F = show '/' for dirs, '*' for executables, etc.
+#  -T 0 = don't trust tab spacing when formatting ls output.
+OPTIONS -F -T 0
+
+# Below, there should be one TERM entry for each termtype that is colorizable
+TERM putty-256color
+TERM rxvt-256color
+TERM rxvt-unicode-256color
+TERM rxvt-unicode256
+TERM screen-256color
+TERM xterm-256color
+TERM gnome-256color
+TERM st-256color
+
+# EIGHTBIT, followed by '1' for on, '0' for off. (8-bit output)
+EIGHTBIT 1
+
+# Below are the color init strings for the basic file types. A color init
+# string consists of one or more of the following numeric codes:
+# Attribute codes:
+# 00=none 01=bold 04=underscore 05=blink 07=reverse 08=concealed 00无 01粗体 04下划线 05闪烁 07反转 08隐藏
+# Text color(8 colors mode) codes:
+# 30=black 31=red 32=green 33=yellow 34=blue 35=magenta 36=cyan 37=white
+# Background color(8 colors mode) codes:
+# 40=black 41=red 42=green 43=yellow 44=blue 45=magenta 46=cyan 47=white
+# Text color(256 colors mode) codes:
+# Valid syntax for text 256color is 38;5;<color number> , where color number
+# is number between 0 and 255.
+# You may find following command useful to search the best one for you:
+# for ((x=0; x<=255; x++));do echo -e "${x}:\033[38;5;${x}mcolor\033[000m";done
+# Background color(256 colors mode) codes:
+# Valid syntax for background 256color is 48;5;<color number> , where
+# color number is number between 0 and 255.
+# You may find following command useful to search the best one for you:
+# for ((x=0; x<=255; x++));do echo -e "${x}:\033[48;5;${x}mcolor\033[000m";done
+
+NORMAL 00	# global default, no color code at all 普通文件 终端默认颜色
+FILE 00	# normal file, use no color at all 普通文件 终端默认颜色
+RESET 0 # reset to "normal" color
+DIR 38;5;27	# directory  目录 粗体-蓝字
+LINK 38;5;51	# symbolic link (If you set this to 'target' instead of a
+		# numerical value, the color is as for the file pointed to.) 符号链接 粗体-淡蓝字
+MULTIHARDLINK 44;38;5;15 # regular file with more than one link
+FIFO 40;38;5;11	# pipe 管道API 黑底-黄字
+SOCK 38;5;13	# socket 套接字API 粗体-粉红字
+DOOR 38;5;5	# door 门API 粗体-粉红字
+BLK 48;5;232;38;5;11	# block device driver 块设备驱动 粗体-黑底-黄字
+CHR 48;5;232;38;5;3	# character device driver 字符设备驱动 粗体-黑底-黄字
+ORPHAN 48;5;232;38;5;9  # symlink to nonexistent file, or non-stat'able file 指向文件不存在的符号链接 粗体-黑底-红字
+MISSING 05;48;5;232;38;5;15 # ... and the files they point to
+SETUID 48;5;196;38;5;15	# file that is setuid (u+s) 指定UID的文件 红底-白字
+SETGID 48;5;11;38;5;16	# file that is setgid (g+s) 指定GID的文件 黄底-黑字
+CAPABILITY 48;5;196;38;5;226	# file with capability
+STICKY_OTHER_WRITABLE 48;5;10;38;5;16 # dir that is sticky and other-writable (+t,o+w)     +t,o+w权限的文件 绿底-黑字(不常用)
+OTHER_WRITABLE 48;5;10;38;5;21 # dir that is other-writable (o+w) and not sticky      -t,o+w权限的文件 绿底-蓝字(不常用)
+STICKY 48;5;21;38;5;15	# dir with the sticky bit set (+t) and not other-writable     +t,o-w权限的文件 蓝底-白字(不常用)
+
+# This is for files with execute permission:
+EXEC 01;91 # 可执行文件
+
+# 以下配色方案适合于终端 黑底绿字 
+
+#数据
+.root 01;90
+
+#代码
+.h 01;93
+.hpp 01;93
+.hh 01;93
+.c 01;93
+.cc 01;93
+.cxx 01;93
+.cpp 01;93
+.C 01;93
+.f 01;93
+.f90 01;93
+.py 01;93
+.m 01;93
+.nb 01;93
+
+#脚本
+.sh  00;33
+.csh 00;33
+.cmake 00;33
+*Makefile 00;33
+
+#文本
+.md 01;95
+.markdown 01;95
+.txt 01;95
+.tex 00;95
+
+#文档
+.pdf 00;35
+.ps 00;35
+.ps.gz 00;35
+.dvi 00;35
+
+#输入卡
+.log 00;36
+.in 00;36
+.out 00;36
+.mac 00;36
+
+#网页及数据库
+.htm 01;96
+.html 01;96
+.shtml 01;96
+.css 01;96
+.js 01;96
+.xml 01;96
+.json 01;96
+.csv 01;96
+
+#windows专用格式
+.ppt 00;36
+.pptx 00;36
+.xls 00;36
+.xlsx 00;36
+.doc 00;36
+.docx 00;36
+
+#照片
+.jpg 01;97
+.jpeg 01;97
+.gif 01;97
+.bmp 01;97
+.png 01;97
+
+#压缩文件
+.tar 04;92
+.tgz 04;92
+.arc 04;92
+.arj 04;92
+.taz 04;92
+.lha 04;92
+.lz4 04;92
+.lzh 04;92
+.lzma 04;92
+.tlz 04;92
+.txz 04;92
+.tzo 04;92
+.t7z 04;92
+.zip 04;92
+.z   04;92
+.Z   04;92
+.dz  04;92
+.gz  04;92
+.lrz 04;92
+.lz  04;92
+.lzo 04;92
+.xz  04;92
+.bz2 04;92
+.bz  04;92
+.tbz 04;92
+.tbz2 04;92
+.tz  04;92
+.deb 04;92
+.rpm 04;92
+.jar 04;92
+.war 04;92
+.ear 04;92
+.sar 04;92
+.rar 04;92
+.alz 04;92
+.ace 04;92
+.zoo 04;92
+.cpio 04;92
+.7z  04;92
+.rz  04;92
+.cab 04;92
+.iso 04;92
+
+################################################################################
+
+# List any file extensions like '.gz' or '.tar' that you would like ls
+# to colorize below. Put the extension, a space, and the color init string.
+# (and any comments you want to add after a '#')
+# executables (bright green)
+#.cmd 38;5;34
+#.exe 38;5;34
+#.com 38;5;34
+#.btm 38;5;34
+#.bat 38;5;34
+
+# archives or compressed (bright red)
+
+# image formats (magenta)
+# .tif 38;5;13
+# .tiff 38;5;13
+# .pbm 38;5;13
+# .pgm 38;5;13
+# .ppm 38;5;13
+# .tga 38;5;13
+# .xbm 38;5;13
+# .xpm 38;5;13
+# .svg 38;5;13
+# .svgz 38;5;13
+# .mng 38;5;13
+# .pcx 38;5;13
+# .mov 38;5;13
+# .mpg 38;5;13
+# .mpeg 38;5;13
+# .m2v 38;5;13
+# .mkv 38;5;13
+# .webm 38;5;13
+# .ogm 38;5;13
+# .mp4 38;5;13
+# .m4v 38;5;13
+# .mp4v 38;5;13
+# .vob 38;5;13
+# .qt  38;5;13
+# .nuv 38;5;13
+# .wmv 38;5;13
+# .asf 38;5;13
+# .rm  38;5;13
+# .rmvb 38;5;13
+# .flc 38;5;13
+# .avi 38;5;13
+# .fli 38;5;13
+# .flv 38;5;13
+# .gl 38;5;13
+# .dl 38;5;13
+# .xcf 38;5;13
+# .xwd 38;5;13
+# .yuv 38;5;13
+# .cgm 38;5;13
+# .emf 38;5;13
+
+# http://wiki.xiph.org/index.php/MIME_Types_and_File_Extensions
+# .axv 38;5;13
+# .anx 38;5;13
+# .ogv 38;5;13
+# .ogx 38;5;13
+
+# audio formats (cyan)
+# .aac 38;5;45
+# .au 38;5;45
+# .flac 38;5;45
+# .mid 38;5;45
+# .midi 38;5;45
+# .mka 38;5;45
+# .mp3 38;5;45
+# .mpc 38;5;45
+# .ogg 38;5;45
+# .ra 38;5;45
+# .wav 38;5;45
+
+# http://wiki.xiph.org/index.php/MIME_Types_and_File_Extensions
+# .axa 38;5;45
+# .oga 38;5;45
+# .spx 38;5;45
+# .xspf 38;5;45
+
+# colorize binary documents (brown)
+#.rtf 00;33
+#.odt 00;33
+#.ods 00;33
+#.odp 00;33
+#.epub 00;33
+#.abw 00;33
+#.wpd 00;33
+#
+# colorize text documents (brown)
+#.patch 00;33
+#.diff 00;33
+

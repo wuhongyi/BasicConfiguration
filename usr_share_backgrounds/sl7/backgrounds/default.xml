@@ -1,0 +1,82 @@
+<background>
+  <starttime>
+    <year>2012</year>
+    <month>06</month>
+    <day>4</day>
+    <hour>7</hour>
+    <minute>00</minute>
+    <second>00</second>
+  </starttime>
+<static>
+ <duration>4800</duration>
+ <file>/usr/share/backgrounds/Fixation-1.jpg</file>
+</static>
+<transition>
+ <duration>180.0</duration>
+ <from>/usr/share/backgrounds/Fixation-1.jpg</from>
+ <to>/usr/share/backgrounds/Fixation-2.jpg</to>
+</transition>
+<static>
+ <duration>4800.0</duration>
+ <file>/usr/share/backgrounds/Fixation-2.jpg</file>
+</static>
+<transition>
+ <duration>180.0</duration>
+ <from>/usr/share/backgrounds/Fixation-2.jpg</from>
+ <to>/usr/share/backgrounds/Fixation-3.jpg</to>
+</transition>
+<static>
+ <duration>4800.0</duration>
+ <file>/usr/share/backgrounds/Fixation-3.jpg</file>
+</static>
+<transition>
+ <duration>180.0</duration>
+ <from>/usr/share/backgrounds/Fixation-3.jpg</from>
+ <to>/usr/share/backgrounds/Fixation-4.jpg</to>
+</transition>
+<static>
+ <duration>4800.0</duration>
+ <file>/usr/share/backgrounds/Fixation-4.jpg</file>
+</static>
+<transition>
+ <duration>180.0</duration>
+ <from>/usr/share/backgrounds/Fixation-4.jpg</from>
+ <to>/usr/share/backgrounds/Fixation-5.jpg</to>
+</transition>
+<static>
+ <duration>4800.0</duration>
+ <file>/usr/share/backgrounds/Fixation-5.jpg</file>
+</static>
+<transition>
+ <duration>180.0</duration>
+ <from>/usr/share/backgrounds/Fixation-5.jpg</from>
+ <to>/usr/share/backgrounds/Fixation-6.jpg</to>
+</transition>
+<static>
+ <duration>4800.0</duration>
+ <file>/usr/share/backgrounds/Fixation-6.jpg</file>
+</static>
+<transition>
+ <duration>180.0</duration>
+ <from>/usr/share/backgrounds/Fixation-6.jpg</from>
+ <to>/usr/share/backgrounds/Fixation-7.jpg</to>
+</transition>
+<static>
+ <duration>4800.0</duration>
+ <file>/usr/share/backgrounds/Fixation-7.jpg</file>
+</static>
+<transition>
+ <duration>180.0</duration>
+ <from>/usr/share/backgrounds/Fixation-7.jpg</from>
+ <to>/usr/share/backgrounds/Fixation-8.jpg</to>
+</transition>
+<static>
+ <duration>4800.0</duration>
+ <file>/usr/share/backgrounds/Fixation-8.jpg</file>
+</static>
+<transition>
+ <duration>180.0</duration>
+ <from>/usr/share/backgrounds/Fixation-8.jpg</from>
+ <to>/usr/share/backgrounds/Fixation-1.jpg</to>
+</transition>
+</background>

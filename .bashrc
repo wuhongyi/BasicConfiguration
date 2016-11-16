@@ -1,0 +1,145 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# User specific aliases and functions
+
+# export LS_COLORS
+alias ls='ls --color=auto'
+
+export PATH=$PATH:/usr/local/bin
+export PATH=$PATH:/usr/lib64/mpich/bin
+#export LD_LIBRARY_PATH=/usr/lib64/mpich/lib:$LD_LIBRARY_PATH
+#export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/usr/include/mpich-x86_64
+
+#export PATH="$PATH:/opt/mpich2-gnu/bin"
+#export  PATH=/opt/mpich/bin:$PATH
+#export LD_LIBRARY_PATH=/opt/mpich/lib:/opt/mathlib/fftw215-gnu/lib:$LD_LIBRARY_PATH
+#export LD_LIBRARY_PATH=/opt/mpich-gnu/lib:/opt/mathlib/fftw215-gnu/lib:$LD_LIBRARY_PATH
+
+#source /opt/Geant4/geant41002p01/bin/geant4.sh
+source /opt/Geant4/geant41002p02/bin/geant4.sh
+#source /opt/Geant4/geant41003b01/bin/geant4.sh
+#source /opt/Geant4/geant41001debug/bin/geant4.sh
+#source /opt/root53436/bin/thisroot.sh
+#source /opt/root60602/bin/thisroot.sh
+#source /opt/root60604/bin/thisroot.sh
+source /opt/root60606debug/bin/thisroot.sh
+
+source /opt/intel/bin/compilervars.sh intel64
+#export INTEL_LICENSE_FILE=/opt/intel/licenses/*.lic
+
+export GARFIELD_HOME=/opt/Garfield
+export HEED_DATABASE=$GARFIELD_HOME/Heed/heed++/database/
+
+export PLX_SDK_DIR=/opt/PlxSdk
+
+
+
+
+alias wuelog='elogd -c ~/CodeProject/elog/elogd.cfg -p 8001'
+alias wuhexo='cd /home/wuhongyi/Hexo/ && hexo s -p 8002'
+
+#alias root='`source /opt/root60212/bin/thisroot.sh` root -l'
+alias root='root -l'
+
+#using C++11
+alias g++='g++ -std=c++11'
+
+alias wuvalgrind='valgrind --tool=memcheck --leak-check=yes --show-reachable=yes' 
+alias wuvalgrindunreachable='valgrind --tool=memcheck --leak-check=yes' 
+alias make='make VERBOSE=1'
+
+alias wugroot='g++ `root-config --cflags --glibs` -l Spectrum'
+
+alias wumd2html='pandoc -c ~/CodeProject/ShellAndTemplate/css/wuMarkdownStyle.css -s '
+
+alias wucipanshiyong='df -hl'
+
+alias wuls='ls -ash'
+alias wuemacs='emacs -nw'
+
+alias wugitpushmaster='git push -u origin master'
+alias wugitpushsource='git push -u origin source'
+
+alias wuultraedit30='rm -rf ~/.idm/*.spl | rm -rf ~/.idm/uex/* | rm -rf /tmp/*.spl | rm -rf ~/.local/share/* | /usr/local/bin/uex &'
+
+#解压缩
+alias wujieyatar='tar -xvf'
+alias wujieyatargz='tar -xzvf'
+alias wujieyatarbz2='tar -xzvf'
+alias wujieyatarZ='tar -xZvf'
+alias wujieyazip='unzip'
+
+
+source /home/wuhongyi/CodeProject/RadWare53/.radware.bashrc
+export PATH=$PATH:/home/wuhongyi/CodeProject/RadWare53/bin
+
+
+#fresco
+#export PATH=/usr/local/grace/bin/:$PATH
+
+#MIDAS
+# export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/MIDAS/lib_Linux64
+# export PATH=$PATH:/MIDAS/bin
+# alias wumidas='/MIDAS/bin_Linux64/MIDAS64-session'
+
+
+# TeX Live 2015
+export MANPATH=${MANPATH}:/usr/local/texlive/2015/texmf-dist/doc/man
+export INFOPATH=${INFOPATH}:/usr/local/texlive/2015/texmf-dist/doc/info
+export PATH=${PATH}:/usr/local/texlive/2015/bin/x86_64-linux
+
+
+# PATH=$PATH:/usr/local/MATLAB/R2015b/bin	
+# export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/MATLAB/R2015b/bin/glnxa64
+# export CPLUS_INCLUDE_PATH=CPLUS_INCLUDE_PATH:/usr/local/MATLAB/R2015b/extern/include
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/MATLAB/R2012a/bin/glnxa64:/usr/local/MATLAB/MATLAB_Compiler_Runtime/v717/runtime/glnxa64:/usr/local/MATLAB/MATLAB_Compiler_Runtime/v717/bin/glnxa64:/usr/local/MATLAB/MATLAB_Compiler_Runtime/v717/sys/os/glnxa64:/usr/local/MATLAB/MATLAB_Compiler_Runtime/v717/sys/java/jre/glnxa64/jre/lib/amd64/native_threads:/usr/local/MATLAB/MATLAB_Compiler_Runtime/v717/sys/java/jre/glnxa64/jre/lib/amd64/server:/usr/local/MATLAB/MATLAB_Compiler_Runtime/v717/sys/java/jre/glnxa64/jre/lib/amd64
+
+#这个 alias 保证了你用 mat 命令可以直接启动命令行模式的 matlab
+alias mat='matlab -nodesktop -nosplash'
+#这个 alias 保证了你用 mrun xxx 可以直接运行 .m 文件,调用时需要省略后缀名.m
+alias mrun='matlab -nodesktop -nosplash -nojvm -r'
+		
+# User specific aliases and functions
+
+export NVM_DIR="/home/wuhongyi/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+#/home/wuhongyi/workpku/DAQ
+#export MIDASSYS=$HOME/workpku/DAQ/midas
+#export MIDAS_EXPTAB=$HOME/workpku/DAQ/online/exptab
+#export MIDAS_DIR=$HOME/workpku/DAQ/online 
+#export PATH=$PATH:$MIDASSYS/linux/bin
+#export PATH=$PATH:$HOME/workpku/DAQ/roody/bin
+
+
+
+# GCC命令行的选项:
+# -shared 该选项指定生成动态连接库，不用该标志外部程序无法连接。相当于一个可执行文件
+# l -fPIC：表示编译为位置独立的代码，不用此选项的话编译后的代码是位置相关的所以动态载入时是通过代码拷贝的方式来满足不同进程的需要，而不能达到真正代码段共享的目的。
+# l -L.：表示要连接的库在当前目录中
+# l -ltest：编译器查找动态连接库时有隐含的命名规则，即在给出的名字前面加上lib，后面加上.so来确定库的名称
+# l LD_LIBRARY_PATH：这个环境变量指示动态连接器可以装载动态库的路径。
+# l 当然如果有root权限的话，可以修改/etc/ld.so.conf文件，然后调用 /sbin/ldconfig来达到同样的目的，不过如果没有root权限，那么只能采用输出LD_LIBRARY_PATH的方法了。
+
+# 调用动态库的时候有几个问题会经常碰到，有时，明明已经将库的头文件所在目录 通过 “-I” include进来了，库所在文件通过 “-L”参数引导，并指定了“-l”的库名，但通过ldd命令察看时，就是死活找不到你指定链接的so文件，这时你要作的就是通过修改 LD_LIBRARY_PATH或者/etc/ld.so.conf文件来指定动态库的目录。通常这样做就可以解决库无法链接的问题了。
+
+# 静态库链接时搜索路径顺序：
+# 1. ld会去找GCC命令中的参数-L
+# 2. 再找gcc的环境变量LIBRARY_PATH
+# 3. 再找内定目录 /lib /usr/lib /usr/local/lib 这是当初compile gcc时写在程序内的
+
+# 动态链接时、执行时搜索路径顺序:
+# 1.  编译目标代码时指定的动态库搜索路径；
+# 2.  环境变量LD_LIBRARY_PATH指定的动态库搜索路径；
+# 3.  配置文件/etc/ld.so.conf中指定的动态库搜索路径；
+# 4. 默认的动态库搜索路径/lib；
+# 5. 默认的动态库搜索路径/usr/lib。
+
+# 有关环境变量：
+# LIBRARY_PATH环境变量：指定程序静态链接库文件搜索路径
+# LD_LIBRARY_PATH环境变量：指定程序动态链接库文件搜索路径
