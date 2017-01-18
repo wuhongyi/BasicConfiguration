@@ -20,14 +20,47 @@ export PATH=$PATH:/usr/lib64/mpich/bin
 #export LD_LIBRARY_PATH=/opt/mpich/lib:/opt/mathlib/fftw215-gnu/lib:$LD_LIBRARY_PATH
 #export LD_LIBRARY_PATH=/opt/mpich-gnu/lib:/opt/mathlib/fftw215-gnu/lib:$LD_LIBRARY_PATH
 
-#source /opt/Geant4/geant41002p01/bin/geant4.sh
-source /opt/Geant4/geant41002p02/bin/geant4.sh
-#source /opt/Geant4/geant41003b01/bin/geant4.sh
-#source /opt/Geant4/geant41001debug/bin/geant4.sh
+
 #source /opt/root53436/bin/thisroot.sh
 #source /opt/root60602/bin/thisroot.sh
 #source /opt/root60604/bin/thisroot.sh
 source /opt/root60606debug/bin/thisroot.sh
+
+
+########## GEANT4 ##########
+#source /opt/Geant4/geant41003/bin/geant4.sh
+source /opt/Geant4/geant41003wuhongyi/bin/geant4.sh
+
+export NeutronHPNames=1
+export NeutronHPNamesLogging=1
+export G4ParticleHPDebug=1
+export yG4ParticleHPDebug_NamesLogging=1
+export NeutronHPCapture=1
+export CaptureDataIndexDebug=1
+export G4PHPTEST=1
+
+# export G4NEUTRONHP_USE_ONLY_PHOTONEVAPORATION=1
+# export G4NEUTRONHP_NEGLECT_DOPPLER=1
+##忽略多普勒效应
+# export G4PHP_NEGLECT_DOPPLER=1
+# export G4NEUTRONHP_PRODUCE_FISSION_FRAGMENTS=1
+# export G4NEUTRON_HP_USE_WENDT_FISSION_MODEL=1
+
+## It sets to zero the cross section of the isotopes which are not present in the neutron library. If GEANT4 doesn’t find an isotope, then it looks for the natural composition data of that element. Only if the element is not found then the cross section is set to zero. On the contrary, if this variable is not defined, GEANT4 looks then for the neutron data of another isotope close in Z and A, which will have completely different nuclear properties and lead to incorrect results (highly recommended).
+# export G4NEUTRONHP_SKIP_MISSING_ISOTOPES=1
+
+## Activates the physics for isotopes with Z>92 (recommended).
+export AllowForHeavyElements=1
+
+## If this variable is not defined, a GEANT4 model that attempts to satisfy the energy and momentum conservation in some nuclear reactions, by generating artificial gamma rays. By setting such a variable one avoids the correction and leads to the result obtained with the ENDF-6 libraries. Even though energy and momentum conservation are desirable, the ENDF-6 libraries do not provide the necessary correlations between secondary particles for satisfying them in all cases. On the contrary, ENDF-6 libraries intrinsically violate energy and momentum conservation for several processes and have been built for preserving the overall average quantities such as average energy releases, average number of secondaries... (highly recommended).
+# export G4NEUTRONHP_DO_NOT_ADJUST_FINAL_STATE=1
+
+
+# export DO_NOT_SET_PHP_AS_HP=1
+# export G4PHP_DO_NOT_ADJUST_FINAL_STATE=1
+########## GEANT4 ##########
+
+
 
 source /opt/intel/bin/compilervars.sh intel64
 #export INTEL_LICENSE_FILE=/opt/intel/licenses/*.lic
