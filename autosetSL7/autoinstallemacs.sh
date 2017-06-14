@@ -5,12 +5,12 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:13:19 2017 (+0800)
-# Last-Updated: 五 6月  2 14:43:50 2017 (+0800)
+# Last-Updated: 三 6月 14 15:56:37 2017 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 9
+#     Update #: 10
 # URL: http://wuhongyi.cn -->
 
-emacsfilename="emacs-24.5"
+emacsfilename="emacs-25.2"
 
 if [ `whoami` = "root" ];then 
     echo "当前为root用户，能够执行此脚本！" 
