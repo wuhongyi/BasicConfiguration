@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 16:11:54 2017 (+0800)
-# Last-Updated: 五 6月  2 16:23:31 2017 (+0800)
+# Last-Updated: 六 6月 17 17:07:06 2017 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 2
+#     Update #: 3
 # URL: http://wuhongyi.cn -->
 
 pathinstall="/opt/Geant4"
@@ -34,6 +34,8 @@ if [ ! -f "${filename}.tar.gz" ]; then
     echo "文件 ${filename}.tar.gz 未下载成功"
     exit 1
 fi
+
+yum -y remove qt5*
 
 name=`expr $filename | sed 's/\.//g'` #去除.
 buildname="build$name"

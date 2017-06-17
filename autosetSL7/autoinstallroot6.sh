@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 13:01:12 2017 (+0800)
-# Last-Updated: 五 6月  2 15:55:43 2017 (+0800)
+# Last-Updated: 六 6月 17 17:06:30 2017 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 10
+#     Update #: 11
 # URL: http://wuhongyi.cn -->
 
 filename="root_v6.08.06"
@@ -21,6 +21,8 @@ else
     echo "请在ROOT权限下执行此脚本！！！"
     exit 1
 fi
+
+yum -y remove qt5*
 
 name=`expr $filename | sed 's/_v//g' | sed 's/\.//g'` #去除_v .
 filename2=`expr $filename | sed 's/_v/-/g'`

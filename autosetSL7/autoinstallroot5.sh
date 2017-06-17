@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 13:00:02 2017 (+0800)
-# Last-Updated: 五 6月  2 15:27:47 2017 (+0800)
+# Last-Updated: 六 6月 17 17:06:21 2017 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 8
+#     Update #: 9
 # URL: http://wuhongyi.cn -->
 
 filename="root_v5.34.36"
@@ -21,6 +21,8 @@ else
     echo "请在ROOT权限下执行此脚本！！！"
     exit 1
 fi
+
+yum -y remove qt5*
 
 name=`expr $filename | sed 's/_v//g' | sed 's/\.//g'` #去除_v .
 buildname="build$name"
