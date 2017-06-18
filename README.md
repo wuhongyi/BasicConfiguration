@@ -4,9 +4,9 @@
 ;; Author: Hongyi Wu(吴鸿毅)
 ;; Email: wuhongyi@qq.com 
 ;; Created: 五 6月  2 11:10:09 2017 (+0800)
-;; Last-Updated: 五 6月  2 16:24:07 2017 (+0800)
+;; Last-Updated: 日 6月 18 15:30:39 2017 (+0800)
 ;;           By: Hongyi Wu(吴鸿毅)
-;;     Update #: 6
+;;     Update #: 7
 ;; URL: http://wuhongyi.cn -->
 
 # 系统配置以及环境设置
@@ -59,6 +59,10 @@ Scientific Linux7 安装方法见 http://wuhongyi.cn/CodeProject/ScientisicLinux
   #Geant4.10.01.p03
   sh autoinstallgeant41001p03.sh
   ```
+- 安装RadWare05.3
+  ```bash
+  sh autoinstallradware053.sh
+  ```
 
 
 如果执行脚本编译过程时候遇到以下问题
@@ -82,6 +86,8 @@ Usage: moc [options] <header-file>
 
 解决方法是：  
 If there is an accented character in the path name to the source files you may get this error. Move the source directory to a directory so that there is no accented characters in the path name. Then restart the compilation.
+
+**意思是文件夹不应该包含特殊字符，例如中文等。**
 
 
 ----

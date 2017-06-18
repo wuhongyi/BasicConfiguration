@@ -5,10 +5,10 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 16:11:54 2017 (+0800)
-# Last-Updated: 六 6月 17 17:07:06 2017 (+0800)
+# Last-Updated: 日 6月 18 13:47:51 2017 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 3
-# URL: http://wuhongyi.cn -->
+#     Update #: 4
+# URL: http://wuhongyi.cn 
 
 pathinstall="/opt/Geant4"
 filename="geant4.10.02.p03"
