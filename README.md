@@ -60,6 +60,30 @@ Scientific Linux7 安装方法见 http://wuhongyi.cn/CodeProject/ScientisicLinux
   sh autoinstallgeant41001p03.sh
   ```
 
+
+如果执行脚本编译过程时候遇到以下问题
+
+```bash
+moc: Cannot open options file specified with @
+Usage: moc [options] <header-file>
+  -o<file>           write output to file rather than stdout
+  -I<dir>            add dir to the include path for header files
+  -E                 preprocess only; do not generate meta object code
+  -D<macro>[=<def>]  define macro, with optional definition
+  -U<macro>          undefine macro
+  -i                 do not generate an #include statement
+  -p<path>           path prefix for included file
+  -f[<file>]         force #include, optional file name
+  -nn                do not display notes
+  -nw                do not display warnings
+  @<file>            read additional options from file
+  -v                 display version of moc
+```
+
+解决方法是：  
+If there is an accented character in the path name to the source files you may get this error. Move the source directory to a directory so that there is no accented characters in the path name. Then restart the compilation.
+
+
 ----
 
 ## 关于 .bashrc
