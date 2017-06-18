@@ -94,6 +94,7 @@ alias wuemacs='emacs -nw'
 
 alias wugitpushmaster='git push -u origin master'
 alias wugitpushsource='git push -u origin source'
+alias wugitpullmaster='git pull origin master'
 
 alias wuultraedit30='rm -rf ~/.idm/*.spl | rm -rf ~/.idm/uex/* | rm -rf /tmp/*.spl | rm -rf ~/.local/share/* | /usr/local/bin/uex &'
 
