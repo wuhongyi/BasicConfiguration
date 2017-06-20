@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:06:13 2017 (+0800)
-# Last-Updated: 日 6月 18 13:47:51 2017 (+0800)
+# Last-Updated: 二 6月 20 16:19:24 2017 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 4
+#     Update #: 6
 # URL: http://wuhongyi.cn 
 
 
@@ -41,7 +41,8 @@ yum -y install glibc-static libstdc++-static
 ## 常用必需
 
 #多机并行（有空再测试G4的多机并行）
-yum -y install mpich.x86_64 mpich-devel.x86_64
+#yum -y install mpich.x86_64 mpich-devel.x86_64
+yum -y install mpich*.x86_64
 
 #汉化包，缺少将导致有些软件为英文界面，例如kate
 yum -y install kde-l10n-Chinese.noarch  kde-l10n-Chinese-Traditional.noarch
@@ -70,6 +71,8 @@ yum -y install minicom.x86_64
 # nfs文件共享
 yum -y install -y nfs-utils rpcbind  #SL6 yum -y install -y nfs-utils portmap
 
+#hdf5
+yum -y install hdf5.x86_64  hdf5-devel.x86_64 hdf5-mpich.x86_64 hdf5-mpich-devel.x86_64  hdf5-openmpi.x86_64 hdf5-openmpi-devel.x86_64
 
 ## -----------------------------------------------------------------------------
 
@@ -92,9 +95,6 @@ yum -y install -y nfs-utils rpcbind  #SL6 yum -y install -y nfs-utils portmap
 
 #clang编译器
 # yum -y install clang.x86_64 clang-devel.x86_64
-
-#hdf5
-# yum -y install hdf5.x86_64  hdf5-devel.x86_64 hdf5-mpich.x86_64 hdf5-mpich-devel.x86_64  hdf5-openmpi.x86_64 hdf5-openmpi-devel.x86_64
 
 #shell脚本加密
 # yum -y install shc.x86_64
