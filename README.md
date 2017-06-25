@@ -4,9 +4,9 @@
 ;; Author: Hongyi Wu(吴鸿毅)
 ;; Email: wuhongyi@qq.com 
 ;; Created: 五 6月  2 11:10:09 2017 (+0800)
-;; Last-Updated: 日 6月 18 16:03:28 2017 (+0800)
+;; Last-Updated: 日 6月 25 14:18:53 2017 (+0800)
 ;;           By: Hongyi Wu(吴鸿毅)
-;;     Update #: 8
+;;     Update #: 9
 ;; URL: http://wuhongyi.cn -->
 
 # 系统配置以及环境设置
@@ -14,7 +14,6 @@
 本教程包含Scientific Linux 系统一些常用软件的配置脚本。
 
 Scientific Linux7 安装方法见 http://wuhongyi.cn/CodeProject/ScientisicLinux72.html  **如要使用本自动化脚本，务必按照安装教程安装系统！！！**
-
 
 ----
 
@@ -69,7 +68,6 @@ Scientific Linux7 安装方法见 http://wuhongyi.cn/CodeProject/ScientisicLinux
   # chrome
   chmod u+x install_chrome.sh
   ./install_chrome.sh -f
-
   ```
 
 
@@ -105,6 +103,12 @@ If there is an accented character in the path name to the source files you may g
 该文件包含专用于你的 bash shell 的 bash 信息，当登录时以及每次打开新的 shell 时，该文件被读取。
 
 
+
+----
+
+## PrivateSettings
+
+文件夹*PrivateSettings*内为吴鸿毅私人配置脚本，请勿随意执行文件夹内脚本以免造成冲突。
 
 
 <!-- README.md ends here -->

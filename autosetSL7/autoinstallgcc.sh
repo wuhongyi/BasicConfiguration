@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:50:17 2017 (+0800)
-# Last-Updated: 日 6月 18 13:47:51 2017 (+0800)
+# Last-Updated: 六 6月 24 23:27:49 2017 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 5
+#     Update #: 6
 # URL: http://wuhongyi.cn 
 
 gccfilename="gcc-4.9.2"
@@ -38,6 +38,8 @@ make -j$num
 make install
 cd ..
 rm -rf ${gccfilename}
+
+rm -f /lib64/libstdc++.so.6.0.20-gdb.py
 
 # 
 # autoinstallgcc.sh ends here

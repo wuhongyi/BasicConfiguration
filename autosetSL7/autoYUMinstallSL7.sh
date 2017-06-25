@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:06:13 2017 (+0800)
-# Last-Updated: 二 6月 20 16:19:24 2017 (+0800)
+# Last-Updated: 六 6月 24 23:45:59 2017 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 6
+#     Update #: 9
 # URL: http://wuhongyi.cn 
 
 
@@ -29,6 +29,9 @@ rm -rf ScientificLinuxYumSet/
 #EPEL提供的一个yum插件。使用该插件后用yum安装软件时可以并行下载，大大提高了软件的下载速度，减少了下载的等待时间。安装该插件的同时会安装另一个软件axel。axel是一个并行下载工具，在下载http、ftp等简单协议的文件时非常好用。
 yum -y install yum-axelget
 
+#dnf
+yum -y install dnf
+
 #emacs
 yum -y install giflib-devel.x86_64  giflib-utils.x86_64
 
@@ -41,8 +44,8 @@ yum -y install glibc-static libstdc++-static
 ## 常用必需
 
 #多机并行（有空再测试G4的多机并行）
-#yum -y install mpich.x86_64 mpich-devel.x86_64
-yum -y install mpich*.x86_64
+yum -y install mpich.x86_64 mpich-devel.x86_64
+yum -y install mpich-3.0.x86_64 mpich-3.0-devel.x86_64 mpich-3.2.x86_64 mpich-3.2-devel.x86_64
 
 #汉化包，缺少将导致有些软件为英文界面，例如kate
 yum -y install kde-l10n-Chinese.noarch  kde-l10n-Chinese-Traditional.noarch

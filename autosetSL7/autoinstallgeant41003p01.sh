@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 15:24:19 2017 (+0800)
-# Last-Updated: 日 6月 18 13:47:51 2017 (+0800)
+# Last-Updated: 日 6月 25 10:13:27 2017 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 10
+#     Update #: 12
 # URL: http://wuhongyi.cn 
 
 pathinstall="/opt/Geant4"
@@ -34,7 +34,7 @@ if [ ! -f "${filename}.tar.gz" ]; then
     exit 1
 fi
 
-yum -y remove qt5*
+#yum -y remove qt5*
 
 name=`expr $filename | sed 's/\.//g'` #去除.
 buildname="build$name"
@@ -47,7 +47,8 @@ tar -zxvf ${filename}.tar.gz
 mkdir $buildname
 cd $buildname
 
-cmake -DCMAKE_INSTALL_PREFIX=${pathinstall}/$name  -DGEANT4_USE_SYSTEM_EXPAT=OFF -DGEANT4_USE_OPENGL_X11=ON -DGEANT4_USE_RAYTRACER_X11=ON -DGEANT4_USE_QT=ON -DGEANT4_USE_RAYTRACER_X11=ON -DGEANT4_BUILD_MULTITHREADED=ON -DGEANT4_USE_GDML:BOOL=ON  -DGEANT4_BUILD_TLS_MODEL=global-dynamic   ../${filename}
+# Release/Debug
+cmake -DCMAKE_INSTALL_PREFIX=${pathinstall}/$name -DCMAKE_BUILD_TYPE=Release  -DGEANT4_FORCE_QT4=OFF -DGEANT4_USE_SYSTEM_CLHEP=OFF -DGEANT4_USE_SYSTEM_ZLIB=OFF -DGEANT4_USE_SYSTEM_EXPAT=OFF -DGEANT4_USE_OPENGL_X11=ON -DGEANT4_USE_RAYTRACER_X11=ON -DGEANT4_USE_QT=ON -DGEANT4_BUILD_MULTITHREADED=ON -DGEANT4_USE_GDML=ON  -DGEANT4_USE_XM=ON -DGEANT4_BUILD_TLS_MODEL=global-dynamic -DGEANT4_USE_FREETYPE=ON  ../${filename}
 make -j$num
 make install
 cd ../
