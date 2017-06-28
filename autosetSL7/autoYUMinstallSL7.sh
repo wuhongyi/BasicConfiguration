@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:06:13 2017 (+0800)
-# Last-Updated: 六 6月 24 23:45:59 2017 (+0800)
+# Last-Updated: 三 6月 28 19:37:42 2017 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 9
+#     Update #: 11
 # URL: http://wuhongyi.cn 
 
 
@@ -63,7 +63,9 @@ yum -y install rar.x86_64
 yum -y install findntfs.x86_64 ntfs-3g.x86_64 ntfs-3g-devel.x86_64
 
 #gnuplot
-yum -y install gnuplot.x86_64 gnuplot-common-4.6.2-3.el7.x86_64
+#rm -f /usr/bin/gnuplot
+yum -y install gnuplot.x86_64 gnuplot-common.x86_64 gnuplot-minimal.x86_64 gnuplot-latex.noarch
+
 
 #flash播放
 yum -y install flash-plugin.x86_64
