@@ -5,15 +5,22 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 16:11:54 2017 (+0800)
-# Last-Updated: 六 6月 24 23:29:35 2017 (+0800)
+# Last-Updated: 五 6月 30 16:15:27 2017 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 5
+#     Update #: 7
 # URL: http://wuhongyi.cn 
 
 pathinstall="/opt/Geant4"
 filename="geant4.10.02.p03"
 
 # ------------------------------------------------------------------------------
+
+if [ `whoami` = "root" ];then 
+    echo "当前为root用户，能够执行此脚本！" 
+else 
+    echo "请在ROOT权限下执行此脚本！！！"
+    exit 1
+fi
 
 wget http://cern.ch/geant4/support/source/${filename}.tar.gz
 
@@ -48,7 +55,7 @@ tar -zxvf ${filename}.tar.gz
 mkdir $buildname
 cd $buildname
 
-cmake -DCMAKE_INSTALL_PREFIX=${pathinstall}/$name  -DGEANT4_USE_SYSTEM_EXPAT=OFF -DGEANT4_USE_OPENGL_X11=ON -DGEANT4_USE_RAYTRACER_X11=ON -DGEANT4_USE_QT=ON -DGEANT4_USE_RAYTRACER_X11=ON -DGEANT4_BUILD_MULTITHREADED=ON -DGEANT4_USE_GDML:BOOL=ON  -DGEANT4_BUILD_TLS_MODEL=global-dynamic   ../${filename}
+cmake -DCMAKE_INSTALL_PREFIX=${pathinstall}/$name  -DGEANT4_FORCE_QT4=ON -DGEANT4_USE_SYSTEM_EXPAT=OFF -DGEANT4_USE_OPENGL_X11=ON -DGEANT4_USE_RAYTRACER_X11=ON -DGEANT4_USE_QT=ON -DGEANT4_USE_RAYTRACER_X11=ON -DGEANT4_BUILD_MULTITHREADED=ON -DGEANT4_USE_GDML:BOOL=ON  -DGEANT4_BUILD_TLS_MODEL=global-dynamic   ../${filename}
 make -j$num
 make install
 cd ../
