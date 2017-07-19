@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:06:13 2017 (+0800)
-# Last-Updated: 三 6月 28 19:37:42 2017 (+0800)
+# Last-Updated: 四 7月 13 23:20:13 2017 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 11
+#     Update #: 12
 # URL: http://wuhongyi.cn 
 
 
@@ -78,6 +78,9 @@ yum -y install -y nfs-utils rpcbind  #SL6 yum -y install -y nfs-utils portmap
 
 #hdf5
 yum -y install hdf5.x86_64  hdf5-devel.x86_64 hdf5-mpich.x86_64 hdf5-mpich-devel.x86_64  hdf5-openmpi.x86_64 hdf5-openmpi-devel.x86_64
+
+#数据恢复
+yum -y install extundelete.x86_64
 
 ## -----------------------------------------------------------------------------
 
