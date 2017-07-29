@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:06:13 2017 (+0800)
-# Last-Updated: 二 7月 25 12:19:14 2017 (+0800)
+# Last-Updated: 六 7月 29 18:11:47 2017 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 15
+#     Update #: 16
 # URL: http://wuhongyi.cn 
 
 
@@ -44,8 +44,8 @@ yum -y install glibc-static libstdc++-static
 ## 常用必需
 
 #64位系统中安装了32位程序解决办法
-yum -y install glibc.i686 glibc-devel.i686 glibc-static.i686
-yum -y install libstdc++.i686 libstdc++-devel.i686 libstdc++-static.i686
+# yum -y install glibc.i686 glibc-devel.i686 glibc-static.i686
+# yum -y install libstdc++.i686 libstdc++-devel.i686 libstdc++-static.i686
 
 #usb64/32
 yum -y install libusb-devel.x86_64 libusb-static.x86_64 libusb.i686 libusb-devel.i686 libusb-static.i686 libusbx.i686 libusbx-devel.i686
