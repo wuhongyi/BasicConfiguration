@@ -5,10 +5,12 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:06:13 2017 (+0800)
-# Last-Updated: 六 7月 29 18:11:47 2017 (+0800)
+# Last-Updated: 五 8月 25 15:00:45 2017 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 16
+#     Update #: 17
 # URL: http://wuhongyi.cn 
+
+# TODO 添加关闭自动升级！！！
 
 
 if [ `whoami` = "root" ];then 
@@ -116,7 +118,7 @@ yum -y install extundelete.x86_64
 # yum -y install shc.x86_64
 
 #htop
-# yum -y install htop.x86_64
+yum -y install htop.x86_64
 
 #npm  用于jekyll/hexo、gitbook
 # yum -y install npm.noarch  nodejs.x86_64

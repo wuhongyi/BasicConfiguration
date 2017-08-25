@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:06:13 2017 (+0800)
-# Last-Updated: 六 7月 29 18:28:05 2017 (+0800)
+# Last-Updated: 五 8月 25 14:59:43 2017 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 17
+#     Update #: 18
 # URL: http://wuhongyi.cn 
 
 
@@ -38,7 +38,7 @@ yum -y install glibc-static libstdc++-static
 ## 常用必需
 
 #汉化包，缺少将导致有些软件为英文界面，例如kate
-yum install kde-l10n-Chinese.noarch  kde-l10n-Chinese-Traditional.noarch
+yum -y install kde-l10n-Chinese.noarch  kde-l10n-Chinese-Traditional.noarch
 
 #多机并行（有空再测试G4的多机并行）
 yum -y install mpich.x86_64 mpich-devel.x86_64
@@ -69,7 +69,7 @@ yum -y install extundelete.x86_64
 # yum -y install shc.x86_64
 
 #htop
-# yum -y install htop.x86_64
+yum -y install htop.x86_64
 
 #加快显示网页的latex数学公式
 # yum -y install mathjax.noarch
