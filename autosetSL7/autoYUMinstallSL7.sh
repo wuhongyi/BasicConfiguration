@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:06:13 2017 (+0800)
-# Last-Updated: 五 8月 25 15:00:45 2017 (+0800)
+# Last-Updated: 四 8月 31 15:53:55 2017 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 17
+#     Update #: 18
 # URL: http://wuhongyi.cn 
 
 # TODO 添加关闭自动升级！！！
@@ -30,6 +30,9 @@ rm -rf ScientificLinuxYumSet/
 
 #EPEL提供的一个yum插件。使用该插件后用yum安装软件时可以并行下载，大大提高了软件的下载速度，减少了下载的等待时间。安装该插件的同时会安装另一个软件axel。axel是一个并行下载工具，在下载http、ftp等简单协议的文件时非常好用。
 yum -y install yum-axelget
+
+#安装iptables-services软件包
+yum -y install iptables-services
 
 #dnf
 yum -y install dnf
