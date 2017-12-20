@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:06:13 2017 (+0800)
-# Last-Updated: 四 8月 31 15:53:55 2017 (+0800)
+# Last-Updated: 三 12月 20 20:06:56 2017 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 18
+#     Update #: 19
 # URL: http://wuhongyi.cn 
 
 # TODO 添加关闭自动升级！！！
@@ -94,6 +94,9 @@ yum -y install hdf5.x86_64  hdf5-devel.x86_64 hdf5-mpich.x86_64 hdf5-mpich-devel
 
 #数据恢复
 yum -y install extundelete.x86_64
+
+#自动输入密码
+yum -y install sshpass.x86_64
 
 ## -----------------------------------------------------------------------------
 
