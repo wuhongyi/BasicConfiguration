@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:06:13 2017 (+0800)
-# Last-Updated: 日 6月 25 14:30:21 2017 (+0800)
+# Last-Updated: 五 1月 12 15:58:01 2018 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 20
+#     Update #: 22
 # URL: http://wuhongyi.cn 
 
 
@@ -76,13 +76,20 @@ yum -y install latex2html.noarch latex2rtf.x86_64  latexmk.noarch
 
 ## -----------------------------------------------------------------------------
 
-# python
-wget http://pypi.python.org/packages/2.7/s/setuptools/setuptools-0.6c11-py2.7.egg
-sh setuptools-0.6c11-py2.7.egg
-cp setuptools-0.6c11-py2.7.egg /usr/lib/python2.7/site-packages/
-rm -f setuptools-0.6c11-py2.7.egg
-easy_install pip==9.0.1     #后面的==9.0.1是指定版本   
+# python 这个现在弃用 20180112
+# wget http://pypi.python.org/packages/2.7/s/setuptools/setuptools-0.6c11-py2.7.egg
+# sh setuptools-0.6c11-py2.7.egg
+# cp setuptools-0.6c11-py2.7.egg /usr/lib/python2.7/site-packages/
+# rm -f setuptools-0.6c11-py2.7.egg
+# easy_install pip==9.0.1     #后面的==9.0.1是指定版本   
 #https://pypi.python.org/pypi/pip
+
+
+## jupyter-notebook 20180112 
+yum -y install python2-pip.noarch
+pip install --upgrade pip
+pip install jupyter metakernel zmq
+pip install Markdown
 
 
 #python 额外库

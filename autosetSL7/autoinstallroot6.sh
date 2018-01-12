@@ -5,12 +5,12 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 13:01:12 2017 (+0800)
-# Last-Updated: 日 6月 25 09:24:31 2017 (+0800)
+# Last-Updated: 五 1月 12 15:14:53 2018 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 13
+#     Update #: 14
 # URL: http://wuhongyi.cn 
 
-filename="root_v6.08.06"
+filename="root_v6.12.04"
 pathinstall="/opt"
 
 # ------------------------------------------------------------------------------

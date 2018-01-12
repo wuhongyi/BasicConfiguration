@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:06:13 2017 (+0800)
-# Last-Updated: 三 12月 20 20:06:56 2017 (+0800)
+# Last-Updated: 五 1月 12 15:54:56 2018 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 19
+#     Update #: 21
 # URL: http://wuhongyi.cn 
 
 # TODO 添加关闭自动升级！！！
@@ -147,6 +147,16 @@ yum -y install htop.x86_64
 
 #文件编码转换
 # yum -y install convmv.noarch
+
+#HP打印机驱动
+yum -y install hplip.x86_64
+
+
+## jupyter-notebook 20180112 
+# yum -y install python2-pip.noarch
+# pip install --upgrade pip
+# pip install jupyter metakernel zmq
+# pip install Markdown
 
 ## -----------------------------------------------------------------------------
 
