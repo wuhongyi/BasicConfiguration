@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:06:13 2017 (+0800)
-# Last-Updated: 五 1月 12 15:54:56 2018 (+0800)
+# Last-Updated: 一 2月  5 23:54:27 2018 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 21
+#     Update #: 23
 # URL: http://wuhongyi.cn 
 
 # TODO 添加关闭自动升级！！！
@@ -27,9 +27,15 @@ git clone https://github.com/wuhongyi/ScientificLinuxYumSet.git
 cp -f ScientificLinuxYumSet/sl7/yum.repos.d/*  /etc/yum.repos.d/
 rm -rf ScientificLinuxYumSet/
 
+#升级所有可升级的软件，但是升级后会覆盖我们安装在/usr/bin中的软件。升级后需要重新安装被覆盖的软件
+#yum -y update  --skip-broken  #建议明白的人开启，升级需要较长的事件
+
 
 #EPEL提供的一个yum插件。使用该插件后用yum安装软件时可以并行下载，大大提高了软件的下载速度，减少了下载的等待时间。安装该插件的同时会安装另一个软件axel。axel是一个并行下载工具，在下载http、ftp等简单协议的文件时非常好用。
 yum -y install yum-axelget
+
+#加快yun速度
+yum -y install yum-plugin-fastestmirror
 
 #安装iptables-services软件包
 yum -y install iptables-services

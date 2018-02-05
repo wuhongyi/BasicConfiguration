@@ -4,27 +4,28 @@
 ;; Author: Hongyi Wu(吴鸿毅)
 ;; Email: wuhongyi@qq.com 
 ;; Created: 五 6月  2 11:10:09 2017 (+0800)
-;; Last-Updated: 日 6月 25 14:18:53 2017 (+0800)
+;; Last-Updated: 一 2月  5 23:38:08 2018 (+0800)
 ;;           By: Hongyi Wu(吴鸿毅)
-;;     Update #: 9
+;;     Update #: 10
 ;; URL: http://wuhongyi.cn -->
 
 # 系统配置以及环境设置
 
-本教程包含Scientific Linux 系统一些常用软件的配置脚本。
+本教程包含Scientific Linux 系统一些常用软件的配置脚本。本教程可通用于**CentOS**系统。
 
-Scientific Linux7 安装方法见 http://wuhongyi.cn/CodeProject/ScientisicLinux72.html  **如要使用本自动化脚本，务必按照安装教程安装系统！！！**
+Scientific Linux 7 （CentOS 7）安装方法见 http://wuhongyi.cn/CodeProject/ScientisicLinux72.html  **如要使用本自动化脚本，务必按照安装教程安装系统！！！**
 
 ----
 
-## Auto Set SL7
+## Auto Set Scientific Linux（CentOS）
 
 安装好系统之后，进入文件夹 *autosetSL7* 
 
-- 首先在ROOT权限下执行脚本安装升级一些依赖软件（这个必须是第一步完成！！！）
+- 首先在ROOT权限下执行脚本安装升级一些依赖软件（这个必须是第一步完成！！！对SL6系统，该脚本在文件夹 autosetSL7）
   ```bash
-  sh autoYUMinstallSL7.sh
+  sh autoYUMinstallSL7.sh  #只能在7下执行
   ```
+
 - 升级cmake 软件
   ```bash
   sh autoinstallcmake.sh
@@ -58,17 +59,19 @@ Scientific Linux7 安装方法见 http://wuhongyi.cn/CodeProject/ScientisicLinux
   #Geant4.10.01.p03
   sh autoinstallgeant41001p03.sh
   ```
-- 安装RadWare05.3
+- 安装RadWare05.3(根据自己需要安装)
   ```bash
   sh autoinstallradware053.sh
   ```
 
-- 其它软件
+- 其它软件(根据自己需要安装)
   ```bash
   # chrome
   chmod u+x install_chrome.sh
   ./install_chrome.sh -f
   ```
+
+----
 
 
 如果执行脚本编译过程时候遇到以下问题
