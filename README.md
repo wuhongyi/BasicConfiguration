@@ -4,12 +4,23 @@
 ;; Author: Hongyi Wu(吴鸿毅)
 ;; Email: wuhongyi@qq.com 
 ;; Created: 五 6月  2 11:10:09 2017 (+0800)
-;; Last-Updated: 一 2月  5 23:38:08 2018 (+0800)
+;; Last-Updated: 二 2月  6 17:00:56 2018 (+0800)
 ;;           By: Hongyi Wu(吴鸿毅)
-;;     Update #: 10
+;;     Update #: 11
 ;; URL: http://wuhongyi.cn -->
 
 # 系统配置以及环境设置
+
+Linux @ CERN 包括了以下版本 [CC7](http://linux.web.cern.ch/linux/centos.shtml) [SL](http://www.scientificlinux.org/)
+
+- CentOS
+	- CERN 7(CC7)
+- Scientific Linux
+	- CERN 6(SLC6)
+	- CERN 5(SLC5)
+
+它们都是基于 Red Hat Enterprise Linux 开发的。
+
 
 本教程包含Scientific Linux 系统一些常用软件的配置脚本。本教程可通用于**CentOS**系统。
 
