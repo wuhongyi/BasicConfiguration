@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:06:13 2017 (+0800)
-# Last-Updated: 一 2月  5 23:54:27 2018 (+0800)
+# Last-Updated: 二 2月 13 23:21:43 2018 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 23
+#     Update #: 24
 # URL: http://wuhongyi.cn 
 
 # TODO 添加关闭自动升级！！！
@@ -129,8 +129,11 @@ yum -y install sshpass.x86_64
 #shell脚本加密
 # yum -y install shc.x86_64
 
-#htop
+#htop 
 yum -y install htop.x86_64
+
+#iftop
+#yum -y install iftop.x86_64
 
 #npm  用于jekyll/hexo、gitbook
 # yum -y install npm.noarch  nodejs.x86_64
