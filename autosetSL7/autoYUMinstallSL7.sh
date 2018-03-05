@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:06:13 2017 (+0800)
-# Last-Updated: 二 2月 13 23:21:43 2018 (+0800)
+# Last-Updated: 日 3月  4 11:23:07 2018 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 24
+#     Update #: 25
 # URL: http://wuhongyi.cn 
 
 # TODO 添加关闭自动升级！！！
@@ -159,6 +159,9 @@ yum -y install htop.x86_64
 
 #HP打印机驱动
 yum -y install hplip.x86_64
+
+#群辉NAS
+#yum -y install libappindicator.x86_64 libappindicator-devel.x86_64
 
 
 ## jupyter-notebook 20180112 
