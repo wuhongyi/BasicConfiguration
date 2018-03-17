@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:06:13 2017 (+0800)
-# Last-Updated: 日 3月  4 11:23:07 2018 (+0800)
+# Last-Updated: 六 3月 17 15:52:23 2018 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 25
+#     Update #: 26
 # URL: http://wuhongyi.cn 
 
 # TODO 添加关闭自动升级！！！
@@ -169,6 +169,9 @@ yum -y install hplip.x86_64
 # pip install --upgrade pip
 # pip install jupyter metakernel zmq
 # pip install Markdown
+
+#gedit和emacs图形界面无法打开
+#yum -y install kmod-nvidia.x86_64 
 
 ## -----------------------------------------------------------------------------
 
