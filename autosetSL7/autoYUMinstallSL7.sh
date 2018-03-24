@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:06:13 2017 (+0800)
-# Last-Updated: 六 3月 17 15:52:23 2018 (+0800)
+# Last-Updated: 六 3月 24 23:48:37 2018 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 26
+#     Update #: 27
 # URL: http://wuhongyi.cn 
 
 # TODO 添加关闭自动升级！！！
@@ -103,6 +103,9 @@ yum -y install extundelete.x86_64
 
 #自动输入密码
 yum -y install sshpass.x86_64
+
+# qwt
+yum -y install qwt.x86_64 qwt-devel.x86_64 qwt5-qt4.x86_64 qwt5-qt4-devel.x86_64 
 
 ## -----------------------------------------------------------------------------
 
