@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 13:01:12 2017 (+0800)
-# Last-Updated: 六 3月 17 16:00:19 2018 (+0800)
+# Last-Updated: 二 4月 17 16:48:54 2018 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 15
+#     Update #: 17
 # URL: http://wuhongyi.cn 
 
 filename="root_v6.12.06"
@@ -42,6 +42,7 @@ tar -zxvf ${filename}.source.tar.gz
 mkdir $buildname
 cd $buildname
 cmake -DCMAKE_INSTALL_PREFIX=${pathinstall}/${name} -Dall=ON  ../$filename2
+#cmake -DCMAKE_INSTALL_PREFIX=${pathinstall}/${name} -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.4m -DPYTHON_LIBRARY=/usr/lib64/libpython3.4m.so  -Dall=ON  ../$filename2
 make -j$num
 make install
 cd ../
