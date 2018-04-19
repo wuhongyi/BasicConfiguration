@@ -5,12 +5,12 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:06:13 2017 (+0800)
-# Last-Updated: 六 3月 24 23:48:37 2018 (+0800)
+# Last-Updated: 四 4月 19 19:21:04 2018 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 27
+#     Update #: 30
 # URL: http://wuhongyi.cn 
 
-# TODO 添加关闭自动升级！！！
+
 
 
 if [ `whoami` = "root" ];then 
@@ -19,6 +19,10 @@ else
     echo "请在ROOT权限下执行此脚本！！！"
     exit 1
 fi
+
+#关闭自动升级
+sed -i "s/update_messages = yes/update_messages = no/g" `grep "update_messages = yes" -rl /etc/yum/yum-cron.conf`
+sed -i "s/download_updates = yes/download_updates = no/g" `grep "download_updates = yes" -rl /etc/yum/yum-cron.conf`
 
 
 rm -rf ScientificLinuxYumSet/
@@ -107,6 +111,12 @@ yum -y install sshpass.x86_64
 # qwt
 yum -y install qwt.x86_64 qwt-devel.x86_64 qwt5-qt4.x86_64 qwt5-qt4-devel.x86_64 
 
+
+#python3  这里有些版本依赖，使用时候需要注意是否一致
+yum -y install python34.x86_64 python34-devel.x86_64 python34-libs.x86_64
+yum -y install python34-cryptography.x86_64 python34-pip.noarch python34-pyasn1.noarch
+yum -y install python36.x86_64 python36-devel.x86_64 python36-libs.x86_64
+
 ## -----------------------------------------------------------------------------
 
 ## 额外功能（根据需要选择安装）
@@ -136,7 +146,7 @@ yum -y install qwt.x86_64 qwt-devel.x86_64 qwt5-qt4.x86_64 qwt5-qt4-devel.x86_64
 yum -y install htop.x86_64
 
 #iftop
-#yum -y install iftop.x86_64
+yum -y install iftop.x86_64
 
 #npm  用于jekyll/hexo、gitbook
 # yum -y install npm.noarch  nodejs.x86_64
@@ -180,6 +190,7 @@ yum -y install hplip.x86_64
 
 #ROOT
 
+yum -y install lz4.x86_64 lz4-devel.x86_64
 yum -y install fftw.x86_64 fftw-devel.x86_64 fftw-libs.x86_64
 yum -y install gsl.x86_64 gsl-devel.x86_64
 yum -y install graphviz.x86_64 graphviz-devel.x86_64

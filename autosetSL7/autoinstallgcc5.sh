@@ -1,16 +1,16 @@
 #!/bin/bash
-# autoinstallgcc.sh --- 
+# autoinstallgcc5.sh --- 
 # 
 # Description: 
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
-# Created: 五 6月  2 10:50:17 2017 (+0800)
-# Last-Updated: 六 6月 24 23:27:49 2017 (+0800)
+# Created: 四 4月 19 19:30:23 2018 (+0800)
+# Last-Updated: 四 4月 19 19:31:42 2018 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 6
+#     Update #: 1
 # URL: http://wuhongyi.cn 
 
-gccfilename="gcc-4.9.2"
+gccfilename="gcc-5.5.0"
 
 if [ `whoami` = "root" ];then 
     echo "当前为root用户，能够执行此脚本！" 
@@ -39,7 +39,7 @@ make install
 cd ..
 rm -rf ${gccfilename}
 
-rm -f /lib64/libstdc++.so.6.0.20-gdb.py
+#rm -f /lib64/libstdc++.so.6.0.20-gdb.py
 
 # 
-# autoinstallgcc.sh ends here
+# autoinstallgcc5.sh ends here

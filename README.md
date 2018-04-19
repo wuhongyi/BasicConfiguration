@@ -4,9 +4,9 @@
 ;; Author: Hongyi Wu(吴鸿毅)
 ;; Email: wuhongyi@qq.com 
 ;; Created: 五 6月  2 11:10:09 2017 (+0800)
-;; Last-Updated: 二 2月  6 17:00:56 2018 (+0800)
+;; Last-Updated: 四 4月 19 19:46:13 2018 (+0800)
 ;;           By: Hongyi Wu(吴鸿毅)
-;;     Update #: 11
+;;     Update #: 13
 ;; URL: http://wuhongyi.cn -->
 
 # 系统配置以及环境设置
@@ -43,7 +43,7 @@ Scientific Linux 7 （CentOS 7）安装方法见 http://wuhongyi.cn/CodeProject/
   ```
 - 升级 gcc 软件
   ```bash
-  sh autoinstallgcc.sh
+  sh autoinstallgcc4.sh
   ```
 - 以下软件的升级非必须(根据自己需要升级)
   ```bash
@@ -56,15 +56,20 @@ Scientific Linux 7 （CentOS 7）安装方法见 http://wuhongyi.cn/CodeProject/
   #默认安装在/opt路径下，可自行修改脚本内的安装位置
   #ROOT5
   sh autoinstallroot5.sh
-  #ROOT6
+  ## ROOT6有以下两个可供选择，一个是python2一个是python3，用户根据需要自行选择一个安装即可
+  #ROOT6 python2 默认选择
   sh autoinstallroot6.sh
+  #ROOT6 python3 需要使用jupyter等功能
+  sh autoinstallroot6_py3.sh
   ```
 - 安装Geant4（升级 cmake gcc 之后）
   ```bash
   #Geant4版本更新也相对较快，新版本新功能不断完善
   #默认安装在/opt/Geant4路径下，可自行修改脚本内的安装位置
-  #Geant4.10.03.p01
-  sh autoinstallgeant41003p01.sh
+  #Geant4.10.04.p01
+  sh autoinstallgeant41004p01.sh
+  #Geant4.10.03.p03
+  sh autoinstallgeant41003p03.sh
   #Geant4.10.02.p03
   sh autoinstallgeant41002p03.sh
   #Geant4.10.01.p03

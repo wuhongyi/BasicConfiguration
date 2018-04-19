@@ -1,13 +1,13 @@
 #!/bin/bash
-# autoinstallroot6.sh --- 
+# autoinstallroot6_py3.sh --- 
 # 
 # Description: 
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
-# Created: 五 6月  2 13:01:12 2017 (+0800)
-# Last-Updated: 四 4月 19 19:43:22 2018 (+0800)
+# Created: 四 4月 19 19:41:34 2018 (+0800)
+# Last-Updated: 四 4月 19 19:42:52 2018 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 18
+#     Update #: 1
 # URL: http://wuhongyi.cn 
 
 filename="root_v6.12.06"
@@ -23,6 +23,8 @@ else
 fi
 
 #yum -y remove qt5*
+yum -y install python34.x86_64 python34-devel.x86_64 python34-libs.x86_64
+yum -y install python34-cryptography.x86_64 python34-pip.noarch python34-pyasn1.noarch
 
 name=`expr $filename | sed 's/_v//g' | sed 's/\.//g'` #去除_v .
 filename2=`expr $filename | sed 's/_v/-/g'`
@@ -41,7 +43,7 @@ num=`cat /proc/cpuinfo | grep processor | wc -l`
 tar -zxvf ${filename}.source.tar.gz
 mkdir $buildname
 cd $buildname
-cmake -DCMAKE_INSTALL_PREFIX=${pathinstall}/${name} -Dall=ON  ../$filename2
+cmake -DCMAKE_INSTALL_PREFIX=${pathinstall}/${name} -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.4m -DPYTHON_LIBRARY=/usr/lib64/libpython3.4m.so  -Dall=ON  ../$filename2
 make -j$num
 make install
 cd ../
@@ -54,5 +56,6 @@ echo "==========吴鸿毅 提示=========="
 echo "如欲启用该版本ROOT请将 source ${pathinstall}/$name/bin/thisroot.sh  添加进 .bashrc "
 
 
+
 # 
-# autoinstallroot6.sh ends here
+# autoinstallroot6_py3.sh ends here
