@@ -5,10 +5,12 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 六 4月 21 19:01:41 2018 (+0800)
-# Last-Updated: 六 4月 21 19:09:07 2018 (+0800)
+# Last-Updated: 六 4月 21 21:42:59 2018 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 1
+#     Update #: 4
 # URL: http://wuhongyi.cn 
+
+## TODO添加判断系统位数
 
 cgiccname="cgicc-3.2.19"
 
@@ -34,7 +36,8 @@ num=`cat /proc/cpuinfo | grep processor | wc -l`
 tar -zxvf ${cgiccname}.tar.gz
 cd ${cgiccname}
 
-./configure --prefix=/usr
+./configure --prefix=/usr  --libdir=/usr/lib64  #64bit
+#./configure --prefix=/usr  #32bit
 make -j$num
 make install
 cd ..
