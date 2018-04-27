@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:06:13 2017 (+0800)
-# Last-Updated: 五 8月 25 14:59:43 2017 (+0800)
+# Last-Updated: 五 4月 27 14:07:08 2018 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 18
+#     Update #: 19
 # URL: http://wuhongyi.cn 
 
 
@@ -58,6 +58,8 @@ yum -y install nfs-utils portmap
 #数据恢复
 yum -y install extundelete.x86_64
 
+##realpath
+yum -y install realpath.x86_64
 ## -----------------------------------------------------------------------------
 
 ## 额外功能（根据需要选择安装）
