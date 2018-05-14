@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:06:13 2017 (+0800)
-# Last-Updated: 四 5月  3 21:50:11 2018 (+0800)
+# Last-Updated: 日 5月 13 19:24:13 2018 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 31
+#     Update #: 32
 # URL: http://wuhongyi.cn 
 
 
@@ -176,7 +176,7 @@ yum -y install iftop.x86_64
 yum -y install hplip.x86_64
 
 #群辉NAS
-#yum -y install libappindicator.x86_64 libappindicator-devel.x86_64
+# yum -y install libappindicator.x86_64 libappindicator-devel.x86_64
 
 
 ## jupyter-notebook 20180112 
@@ -186,7 +186,11 @@ yum -y install hplip.x86_64
 # pip install Markdown
 
 #gedit和emacs图形界面无法打开
-#yum -y install kmod-nvidia.x86_64 
+# yum -y install kmod-nvidia.x86_64 
+
+#gitbook 使用calibre插件生成PDF
+# wget https://download.calibre-ebook.com/linux-installer.sh
+# sh linux-installer.sh
 
 ## -----------------------------------------------------------------------------
 
