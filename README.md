@@ -4,9 +4,9 @@
 ;; Author: Hongyi Wu(吴鸿毅)
 ;; Email: wuhongyi@qq.com 
 ;; Created: 五 6月  2 11:10:09 2017 (+0800)
-;; Last-Updated: 四 4月 19 19:46:13 2018 (+0800)
+;; Last-Updated: 三 5月 16 19:18:30 2018 (+0800)
 ;;           By: Hongyi Wu(吴鸿毅)
-;;     Update #: 13
+;;     Update #: 14
 ;; URL: http://wuhongyi.cn -->
 
 # 系统配置以及环境设置
@@ -32,7 +32,7 @@ Scientific Linux 7 （CentOS 7）安装方法见 http://wuhongyi.cn/CodeProject/
 
 安装好系统之后，进入文件夹 *autosetSL7* 
 
-- 首先在ROOT权限下执行脚本安装升级一些依赖软件（这个必须是第一步完成！！！对SL6系统，该脚本在文件夹 autosetSL7）
+- 首先在ROOT权限下执行脚本安装升级一些依赖软件（这个必须是第一步完成！！！对SL6系统，该脚本在文件夹 autosetSL6）
   ```bash
   sh autoYUMinstallSL7.sh  #只能在7下执行
   ```
@@ -127,7 +127,7 @@ If there is an accented character in the path name to the source files you may g
 
 ## PrivateSettings
 
-文件夹*PrivateSettings*内为吴鸿毅私人配置脚本，请勿随意执行文件夹内脚本以免造成冲突。
+文件夹 *PrivateSettings* 内为吴鸿毅私人配置脚本，请勿随意执行文件夹内脚本以免造成冲突。
 
 
 <!-- README.md ends here -->
