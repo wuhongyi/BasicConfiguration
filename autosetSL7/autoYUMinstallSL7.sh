@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:06:13 2017 (+0800)
-# Last-Updated: 日 5月 13 19:24:13 2018 (+0800)
+# Last-Updated: 五 5月 25 09:51:57 2018 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 32
+#     Update #: 33
 # URL: http://wuhongyi.cn 
 
 
@@ -82,8 +82,9 @@ yum -y install jsoncpp.x86_64 jsoncpp-devel.x86_64
 #压缩解压缩.rar文件
 yum -y install rar.x86_64
 
-#打开ntfs格式硬盘
+#打开ntfs/exfat格式硬盘
 yum -y install findntfs.x86_64 ntfs-3g.x86_64 ntfs-3g-devel.x86_64
+yum -y install fuse-exfat.x86_64 exfat-utils.x86_64
 
 #gnuplot
 #rm -f /usr/bin/gnuplot
