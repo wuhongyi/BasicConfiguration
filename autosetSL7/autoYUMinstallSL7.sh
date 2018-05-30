@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:06:13 2017 (+0800)
-# Last-Updated: 三 5月 30 04:57:49 2018 (+0800)
+# Last-Updated: 三 5月 30 07:58:03 2018 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 34
+#     Update #: 36
 # URL: http://wuhongyi.cn 
 
 
@@ -117,6 +117,8 @@ yum -y install lighttpd.x86_64 lighttpd-fastcgi.x86_64 lighttpd-mod_authn_gssapi
 
 #ZeroMQ
 yum -y install zeromq.x86_64 zeromq-devel.x86_64
+yum -y install cppzmq-devel.x86_64
+yum -y install czmq.x86_64 czmq-devel.x86_64
 
 #python3  这里有些版本依赖，使用时候需要注意是否一致
 yum -y install python34.x86_64 python34-devel.x86_64 python34-libs.x86_64
