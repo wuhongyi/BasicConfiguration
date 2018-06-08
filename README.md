@@ -4,9 +4,9 @@
 ;; Author: Hongyi Wu(吴鸿毅)
 ;; Email: wuhongyi@qq.com 
 ;; Created: 五 6月  2 11:10:09 2017 (+0800)
-;; Last-Updated: 五 6月  1 01:08:23 2018 (+0800)
+;; Last-Updated: 六 6月  9 03:06:44 2018 (+0800)
 ;;           By: Hongyi Wu(吴鸿毅)
-;;     Update #: 15
+;;     Update #: 17
 ;; URL: http://wuhongyi.cn -->
 
 # 系统配置以及环境设置
@@ -85,6 +85,10 @@ Scientific Linux 7 （CentOS 7）安装方法见 http://wuhongyi.cn/CodeProject/
   # chrome
   chmod u+x install_chrome.sh
   ./install_chrome.sh -f
+  # CGICC
+  sh autoinstallcgicc.sh
+  # Typora
+  sh autoinstalltypora.sh
   ```
 
 ----
