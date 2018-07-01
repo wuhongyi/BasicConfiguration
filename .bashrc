@@ -15,7 +15,7 @@ export PATH=$PATH:/usr/lib64/mpich/bin
 #export LD_LIBRARY_PATH=/usr/lib64/mpich/lib:$LD_LIBRARY_PATH
 #export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/usr/include/mpich-x86_64
 
-
+alias wu29='ssh -Y -p 2727 wuhongyi@162.105.151.29'
 
 #source /opt/root53436/bin/thisroot.sh
 #source /opt/root60606debug/bin/thisroot.sh
@@ -23,7 +23,7 @@ source /opt/root60806/bin/thisroot.sh
 
 ########## GEANT4 ##########
 # path to freya data
-export FREYADATAPATH=~/CodeProject/data/data_freya
+#export FREYADATAPATH=~/CodeProject/data/data_freya
 source /opt/Geant4/geant41003p01/bin/geant4.sh
 #source /opt/Geant4/geant41002p02/bin/geant4.sh
 #source /opt/Geant4/geant41003wuhongyi/bin/geant4.sh
@@ -68,7 +68,9 @@ export HEED_DATABASE=$GARFIELD_HOME/Heed/heed++/database/
 export PLX_SDK_DIR=/opt/PlxSdk
 
 
-
+alias wugitbookrootnote='gitbook serve --lrport 35288 --port 4001 /home/wuhongyi/workgithub/Note/ROOTNote'
+alias wugitbookdaqnote='gitbook serve --lrport 35287 --port 4002 /home/wuhongyi/workgithub/Note/DAQNote'
+alias wugitbookmanual='gitbook serve --lrport 35286 --port 4003 /home/wuhongyi/CodeProject/Manual'
 
 alias wuelog='elogd -c ~/CodeProject/elog/elogd.cfg -p 8001'
 alias wuhexo='cd /home/wuhongyi/Hexo/ && hexo s -p 8002'
@@ -140,12 +142,12 @@ alias mrun='matlab -nodesktop -nosplash -nojvm -r'
 export NVM_DIR="/home/wuhongyi/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-#/home/wuhongyi/workpku/DAQ
-#export MIDASSYS=$HOME/workpku/DAQ/midas
-#export MIDAS_EXPTAB=$HOME/workpku/DAQ/online/exptab
-#export MIDAS_DIR=$HOME/workpku/DAQ/online 
-#export PATH=$PATH:$MIDASSYS/linux/bin
-#export PATH=$PATH:$HOME/workpku/DAQ/roody/bin
+
+export QSYS_ROOTDIR="/home/wuhongyi/intelFPGA/17.1/quartus/sopc_builder/bin"
+
+PATH=$PATH:/home/wuhongyi/babirl/bin/
+export TARTSYS=/home/wuhongyi/VMEDAQ/anaroot
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$TARTSYS/lib:$TARTSYS/sources/Core
 
 
 
