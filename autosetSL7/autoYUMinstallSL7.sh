@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:06:13 2017 (+0800)
-# Last-Updated: 三 5月 30 07:58:03 2018 (+0800)
+# Last-Updated: 四 8月 23 12:05:06 2018 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 36
+#     Update #: 38
 # URL: http://wuhongyi.cn 
 
 
@@ -124,6 +124,10 @@ yum -y install czmq.x86_64 czmq-devel.x86_64
 yum -y install python34.x86_64 python34-devel.x86_64 python34-libs.x86_64
 yum -y install python34-cryptography.x86_64 python34-pip.noarch python34-pyasn1.noarch
 yum -y install python36.x86_64 python36-devel.x86_64 python36-libs.x86_64
+yum -y install python34-tkinter.x86_64 python36-tkinter.x86_64
+
+#python
+yum -y install tkinter.x86_64
 
 ## -----------------------------------------------------------------------------
 
