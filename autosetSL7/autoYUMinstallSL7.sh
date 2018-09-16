@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:06:13 2017 (+0800)
-# Last-Updated: 四 8月 23 12:05:06 2018 (+0800)
+# Last-Updated: 日 9月 16 22:52:27 2018 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 38
+#     Update #: 39
 # URL: http://wuhongyi.cn 
 
 
@@ -159,6 +159,9 @@ yum -y install htop.x86_64
 
 #iftop
 yum -y install iftop.x86_64
+
+#linux系统性能监控
+yum -y install glances.noarch
 
 #npm  用于jekyll/hexo、gitbook
 # yum -y install npm.noarch  nodejs.x86_64
