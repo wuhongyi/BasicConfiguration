@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:06:13 2017 (+0800)
-# Last-Updated: 日 9月 16 22:52:27 2018 (+0800)
+# Last-Updated: 六 11月 24 23:10:35 2018 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 39
+#     Update #: 41
 # URL: http://wuhongyi.cn 
 
 
@@ -162,6 +162,9 @@ yum -y install iftop.x86_64
 
 #linux系统性能监控
 yum -y install glances.noarch
+# yum -y install python-jinja2.noarch
+# glances -o HTML -f /var/www/html
+# 浏览器输入网址: http://localhost/glances.html
 
 #npm  用于jekyll/hexo、gitbook
 # yum -y install npm.noarch  nodejs.x86_64
