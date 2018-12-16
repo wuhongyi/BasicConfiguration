@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 日 12月 16 19:36:00 2018 (+0800)
-# Last-Updated: 日 12月 16 19:44:50 2018 (+0800)
+# Last-Updated: 日 12月 16 20:10:52 2018 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 1
+#     Update #: 5
 # URL: http://wuhongyi.cn 
 
 pathinstall="/opt/Geant4"
@@ -45,7 +45,7 @@ fi
 name=`expr $filename | sed 's/\.//g'` #去除.
 buildname="build$name"
 datafilename=`expr $filename | sed 's/geant4./Geant4-/g' | sed 's/\.04/.4.0/g' `
-datadir="${pathinstall}/${name}/share/${datafilename}/data"
+datadir="${pathinstall}/${name}/share/Geant4-10.5.0/data"
 
 
 num=`cat /proc/cpuinfo | grep processor | wc -l`
