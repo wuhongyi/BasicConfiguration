@@ -4,9 +4,9 @@
 ;; Author: Hongyi Wu(吴鸿毅)
 ;; Email: wuhongyi@qq.com 
 ;; Created: 五 6月  2 11:10:09 2017 (+0800)
-;; Last-Updated: 六 6月 16 22:00:19 2018 (+0800)
+;; Last-Updated: 五 12月 21 23:04:39 2018 (+0800)
 ;;           By: Hongyi Wu(吴鸿毅)
-;;     Update #: 19
+;;     Update #: 21
 ;; URL: http://wuhongyi.cn -->
 
 # 系统配置以及环境设置
@@ -25,6 +25,9 @@ Linux @ CERN 包括了以下版本 [CC7](http://linux.web.cern.ch/linux/centos.s
 本教程包含Scientific Linux 系统一些常用软件的配置脚本。本教程可通用于**CentOS**系统。
 
 Scientific Linux 7 （CentOS 7）安装方法见 http://wuhongyi.cn/CodeProject/ScientisicLinux72.html  **如要使用本自动化脚本，务必按照安装教程安装系统！！！**
+
+
+**务必使本文件夹 BasicConfiguration 所在路径没有中文和特殊字符，建议将文件夹 BasicConfiguration 放置在个人用户目录下再运行自动化脚本！！！**
 
 ----
 
@@ -68,6 +71,8 @@ Scientific Linux 7 （CentOS 7）安装方法见 http://wuhongyi.cn/CodeProject/
   #默认安装在/opt/Geant4路径下，可自行修改脚本内的安装位置
   #Geant4.10.04.p02
   sh autoinstallgeant41004p02.sh
+  #Geant4.10.05
+  sh autoinstallgeant41005.sh
   #Geant4.10.03.p03
   sh autoinstallgeant41003p03.sh
   #Geant4.10.02.p03
