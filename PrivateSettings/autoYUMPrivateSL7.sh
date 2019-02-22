@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:06:13 2017 (+0800)
-# Last-Updated: 二 2月 13 23:22:10 2018 (+0800)
+# Last-Updated: 五 2月 22 20:11:13 2019 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 23
+#     Update #: 29
 # URL: http://wuhongyi.cn 
 
 
@@ -127,6 +127,19 @@ npm install -g hexo
 npm install -g gitbook-cli
 
 
+
+## -----------------------------------------------------------------------------
+
+# spectcl
+# https://libgd.github.io/
+# yum -y install gd.x86_64 gd-devel.x86_64
+
+# yum install flex.x86_64 flex-devel.x86_64
+
+# yum -y install gengetopt.x86_64
+
+
+# ./configure   --with-motif-lib --with-tclconfig=/usr/lib64/tcl8.5 --with-tkconfig=/usr/lib64
 
 # 
 # auto.sh ends here
