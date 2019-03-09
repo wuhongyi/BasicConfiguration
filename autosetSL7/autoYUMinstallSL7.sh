@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:06:13 2017 (+0800)
-# Last-Updated: 六 11月 24 23:10:35 2018 (+0800)
+# Last-Updated: 六 3月  9 21:37:47 2019 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 41
+#     Update #: 42
 # URL: http://wuhongyi.cn 
 
 
@@ -132,6 +132,13 @@ yum -y install tkinter.x86_64
 ## -----------------------------------------------------------------------------
 
 ## 额外功能（根据需要选择安装）
+
+#altra Quartus Modelsim
+# yum -y install libX11.x86_64 libX11-common.noarch libX11-devel.x86_64 libX11.i686 libX11-devel.i686
+# yum -y install libXext.x86_64 libXext-devel.x86_64 libXext.i686 libXext-devel.i686
+# yum -y install libXft.x86_64 libXft-devel.x86_64 libXft.i686 libXft-devel.i686
+# yum -y install ncurses.x86_64 ncurses-base.noarch ncurses-devel.x86_64 ncurses-libs.x86_64 ncurses-devel.i686 ncurses-libs.i686
+
 
 #elog
 # yum -y install elog.x86_64
