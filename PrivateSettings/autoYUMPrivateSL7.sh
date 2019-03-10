@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:06:13 2017 (+0800)
-# Last-Updated: 五 2月 22 20:11:13 2019 (+0800)
+# Last-Updated: 日 3月 10 21:54:46 2019 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 29
+#     Update #: 30
 # URL: http://wuhongyi.cn 
 
 
@@ -105,6 +105,7 @@ pip install sphinx            #Read the Docs
 pip install sphinx-autobuild  #Read the Docs
 pip install recommonmark      #Read the Docs
 pip install sphinx_rtd_theme  #Read the Docs
+pip install pyserial
 
 ## -----------------------------------------------------------------------------
 
