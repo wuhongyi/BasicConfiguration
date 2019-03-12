@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 六 2月  9 17:16:27 2019 (+0800)
-# Last-Updated: 六 2月  9 17:20:34 2019 (+0800)
+# Last-Updated: 二 3月 12 23:27:15 2019 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 1
+#     Update #: 2
 # URL: http://wuhongyi.cn 
 
 
@@ -17,6 +17,10 @@ else
     echo "请在ROOT权限下执行此脚本！！！"
     exit 1
 fi
+
+curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
+yum -y install yarn
+
 
 ## https://dash.plot.ly/installation
 
