@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:06:13 2017 (+0800)
-# Last-Updated: 日 3月 10 21:54:46 2019 (+0800)
+# Last-Updated: 一 5月  6 13:48:41 2019 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 30
+#     Update #: 32
 # URL: http://wuhongyi.cn 
 
 
@@ -106,6 +106,12 @@ pip install sphinx-autobuild  #Read the Docs
 pip install recommonmark      #Read the Docs
 pip install sphinx_rtd_theme  #Read the Docs
 pip install pyserial
+
+pip install serial
+pip install modbus_tk
+
+#speed up
+##pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com   xxx
 
 ## -----------------------------------------------------------------------------
 
