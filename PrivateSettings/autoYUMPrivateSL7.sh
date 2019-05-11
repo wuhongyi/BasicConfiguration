@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:06:13 2017 (+0800)
-# Last-Updated: 一 5月  6 13:48:41 2019 (+0800)
+# Last-Updated: 六 5月 11 20:55:44 2019 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 32
+#     Update #: 35
 # URL: http://wuhongyi.cn 
 
 
@@ -133,6 +133,11 @@ npm install -g hexo
 #gitbook
 npm install -g gitbook-cli
 
+
+## -----------------------------------------------------------------------------
+#Qt
+yum -y update qt*
+yum -y install qt-creator.x86_64
 
 
 ## -----------------------------------------------------------------------------
