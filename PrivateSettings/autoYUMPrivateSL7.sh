@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:06:13 2017 (+0800)
-# Last-Updated: 六 5月 11 20:55:44 2019 (+0800)
+# Last-Updated: 六 5月 11 21:50:43 2019 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 35
+#     Update #: 41
 # URL: http://wuhongyi.cn 
 
 
@@ -110,6 +110,31 @@ pip install pyserial
 pip install serial
 pip install modbus_tk
 
+yum remove python34*
+## python34                        
+## python34-cffi                   
+## python34-cryptography           
+## python34-decorator              
+## python34-devel                  
+## python34-idna                   
+## python34-ipython_genutils       
+## python34-libs                   
+## python34-pip                    
+## python34-ply                    
+## python34-pyasn1                 
+## python34-pycparser              
+## python34-setuptools             
+## python34-six                    
+## python34-traitlets              
+
+
+yum -y update python36*
+yum -y install python36-pip.noarch
+yum -y install python36-cffi.x86_64 python36-cryptography.x86_64 python36-cryptography-vectors.noarch python36-decorator.noarch python36-idna.noarch python36-ipython_genutils.noarch python36-ply.noarch python36-pyasn1.noarch python36-pycparser.noarch python36-six.noarch python36-traitlets.noarch
+
+pip3 install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com  --upgrade pip
+pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com  Django
+
 #speed up
 ##pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com   xxx
 
@@ -137,7 +162,7 @@ npm install -g gitbook-cli
 ## -----------------------------------------------------------------------------
 #Qt
 yum -y update qt*
-yum -y install qt-creator.x86_64
+# yum -y install qt-creator.x86_64  打不开
 
 
 ## -----------------------------------------------------------------------------
