@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:06:13 2017 (+0800)
-# Last-Updated: 六 5月 11 21:50:43 2019 (+0800)
+# Last-Updated: 日 5月 12 10:50:08 2019 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 41
+#     Update #: 43
 # URL: http://wuhongyi.cn 
 
 
@@ -131,9 +131,13 @@ yum remove python34*
 yum -y update python36*
 yum -y install python36-pip.noarch
 yum -y install python36-cffi.x86_64 python36-cryptography.x86_64 python36-cryptography-vectors.noarch python36-decorator.noarch python36-idna.noarch python36-ipython_genutils.noarch python36-ply.noarch python36-pyasn1.noarch python36-pycparser.noarch python36-six.noarch python36-traitlets.noarch
+yum -y install python36-mysql.x86_64
+
 
 pip3 install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com  --upgrade pip
-pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com  Django
+pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com  Django  #2.2.1 required SQLite3.8
+
+pip3 install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com Django==2.1.0
 
 #speed up
 ##pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com   xxx
