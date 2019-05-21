@@ -4,12 +4,17 @@
 ;; Author: Hongyi Wu(吴鸿毅)
 ;; Email: wuhongyi@qq.com 
 ;; Created: 日 5月 19 11:20:26 2019 (+0800)
-;; Last-Updated: 日 5月 19 12:44:44 2019 (+0800)
+;; Last-Updated: 二 5月 21 22:43:26 2019 (+0800)
 ;;           By: Hongyi Wu(吴鸿毅)
-;;     Update #: 2
+;;     Update #: 3
 ;; URL: http://wuhongyi.cn -->
 
 # MYSQL 安装
+
+```bash
+# CentOS 7
+yum remove akonadi-mysql.x86_64
+```
 
 
 ## 依赖

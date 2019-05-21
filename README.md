@@ -4,9 +4,9 @@
 ;; Author: Hongyi Wu(吴鸿毅)
 ;; Email: wuhongyi@qq.com 
 ;; Created: 五 6月  2 11:10:09 2017 (+0800)
-;; Last-Updated: 六 3月  2 14:16:15 2019 (+0800)
+;; Last-Updated: 二 5月 21 20:56:18 2019 (+0800)
 ;;           By: Hongyi Wu(吴鸿毅)
-;;     Update #: 22
+;;     Update #: 23
 ;; URL: http://wuhongyi.cn -->
 
 # 系统配置以及环境设置
@@ -14,6 +14,7 @@
 Linux @ CERN 包括了以下版本 [CC7](http://linux.web.cern.ch/linux/centos.shtml) [SL](http://www.scientificlinux.org/)
 
 - CentOS
+	- CentOS 7
 	- CERN 7(CC7)
 - Scientific Linux
 	- CERN 6(SLC6)
