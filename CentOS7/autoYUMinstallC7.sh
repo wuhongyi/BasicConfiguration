@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 二 5月 21 21:00:35 2019 (+0800)
-# Last-Updated: 二 5月 21 22:00:25 2019 (+0800)
+# Last-Updated: 二 5月 21 23:11:35 2019 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 3
+#     Update #: 4
 # URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -42,6 +42,9 @@ yum -y install glibc-static libstdc++-static
 ## -----------------------------------------------------------------------------
 
 ## 常用必需
+
+#modbus
+yum -y install libmodbus.x86_64 libmodbus-devel.x86_64
 
 #usb64/32
 yum -y install libusb-devel.x86_64 libusb-static.x86_64 libusb.i686 libusb-devel.i686 libusb-static.i686 libusbx.i686 libusbx-devel.i686
