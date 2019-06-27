@@ -5,12 +5,12 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:45:15 2017 (+0800)
-# Last-Updated: 日 6月 18 13:47:15 2017 (+0800)
+# Last-Updated: 四 6月 27 19:48:13 2019 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 6
+#     Update #: 7
 # URL: http://wuhongyi.cn 
 
-cmakefilename="cmake-3.7.2"
+cmakefilename="cmake-3.14.5" #"cmake-3.7.2"
 
 if [ `whoami` = "root" ];then 
     echo "当前为root用户，能够执行此脚本！" 

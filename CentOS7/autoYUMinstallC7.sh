@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 二 5月 21 21:00:35 2019 (+0800)
-# Last-Updated: 二 5月 21 23:11:35 2019 (+0800)
+# Last-Updated: 四 6月 27 20:48:16 2019 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 4
+#     Update #: 6
 # URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -211,6 +211,9 @@ pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com Djan
 
 #ROOT
 yum -y install lz4.x86_64 lz4-devel.x86_64 fftw.x86_64 fftw-devel.x86_64 fftw-libs.x86_64 gsl.x86_64 gsl-devel.x86_64 graphviz.x86_64 graphviz-devel.x86_64 ruby.x86_64 ruby-devel.x86_64 ruby-libs.x86_64 expect.x86_64 expect-devel.x86_64 davix.x86_64 davix-devel.x86_64 unuran.x86_64 unuran-devel.x86_64 avahi-compat-libdns_sd.x86_64 avahi-compat-libdns_sd-devel.x86_64 ftgl.x86_64 ftgl-devel.x86_64 glew.x86_64 glew-devel.x86_64 mysql++.x86_64 mysql++-devel.x86_64 cfitsio.x86_64 cfitsio-devel.x86_64 libxml2* binutils-devel.x86_64 pythia8.x86_64 pythia8-devel.x86_64 redhat-lsb.x86_64 R.x86_64 R-RInside.x86_64 R-RInside-devel.x86_64 R-Rcpp.x86_64 R-Rcpp-devel.x86_64
+
+#ROOT >=6.18
+#yum -y install gfal2.x86_64 gfal2-devel.x86_64 gfal2-all.x86_64 xrootd.x86_64 xrootd-devel.x86_64 xrootd-client.x86_64 xrootd-client-devel.x86_64 cuda.x86_64 cuda-devel.x86_64 cuda-libs.x86_64
 
 #Geant4
 yum -y install xerces-c.x86_64  xerces-c-devel.x86_64
