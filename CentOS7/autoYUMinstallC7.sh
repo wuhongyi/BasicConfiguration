@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 二 5月 21 21:00:35 2019 (+0800)
-# Last-Updated: 四 6月 27 21:25:40 2019 (+0800)
+# Last-Updated: 二 7月  2 19:43:16 2019 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 9
+#     Update #: 23
 # URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -108,7 +108,7 @@ yum -y install czmq.x86_64 czmq-devel.x86_64
 yum -y install tkinter.x86_64
 
 #python3  这里有些版本依赖，使用时候需要注意是否一致
-yum -y install python36.x86_64 python36-devel.x86_64 python36-libs.x86_64 python36-tkinter.x86_64 python36-pip.noarch python36-cffi.x86_64 python36-cryptography.x86_64 python36-cryptography-vectors.noarch python36-decorator.noarch python36-idna.noarch python36-ipython_genutils.noarch python36-ply.noarch python36-pyasn1.noarch python36-pycparser.noarch python36-six.noarch python36-traitlets.noarch python36-mysql.x86_64
+yum -y install python36.x86_64 python36-devel.x86_64 python36-libs.x86_64 python36-tkinter.x86_64 python36-pip.noarch python36-cffi.x86_64 python36-cryptography.x86_64 python36-cryptography-vectors.noarch python36-decorator.noarch python36-idna.noarch python36-ipython_genutils.noarch python36-ply.noarch python36-pyasn1.noarch python36-pycparser.noarch python36-six.noarch python36-traitlets.noarch python36-mysql.x86_64 python36-jinja2.noarch
 
 #Qt
 yum -y update qt*
@@ -156,14 +156,17 @@ yum -y install iftop.x86_64
 
 #linux系统性能监控
 # yum -y install glances.noarch
-# yum -y install python-jinja2.noarch
 # glances -o HTML -f /var/www/html
 # 浏览器输入网址: http://localhost/glances.html
 
-#npm  用于jekyll/hexo、gitbook
-# yum -y install npm.noarch  nodejs.x86_64
+#npm  用于jekyll/hexo、gitbook    https://gems.ruby-china.com/
+# yum -y install npm.noarch  nodejs.x86_64  nodejs-devel.x86_64
 # yum -y install rubygems-devel.noarch
+# yum -y install mingw64-libffi.noarch mingw64-libffi-static.noarch
+# gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
 # gem update --system
+# npm install -g gitbook-cli
+# npm install -g hexo
 
 
 #加快显示网页的latex数学公式
@@ -198,6 +201,9 @@ pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com Mark
 
 #python 额外库
 pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com serial modbus_tk pyserial
+#python 额外库
+pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com pandas pandas-datareader BeautifulSoup4 selenium
+pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com sphinx sphinx-intl sphinx-autobuild recommonmark sphinx_rtd_theme mkdocs  #Read the Docs
 # pip3 install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com  Django  #2.2.1 required SQLite3.8
 pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com Django==2.1.0
 
