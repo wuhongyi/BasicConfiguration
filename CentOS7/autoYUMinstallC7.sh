@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 二 5月 21 21:00:35 2019 (+0800)
-# Last-Updated: 二 7月  2 19:43:16 2019 (+0800)
+# Last-Updated: 五 7月  5 13:17:43 2019 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 23
+#     Update #: 25
 # URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -202,6 +202,8 @@ pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com Mark
 #python 额外库
 pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com serial modbus_tk pyserial
 #python 额外库
+pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com shell
+pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com qdarkstyle
 pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com pandas pandas-datareader BeautifulSoup4 selenium
 pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com sphinx sphinx-intl sphinx-autobuild recommonmark sphinx_rtd_theme mkdocs  #Read the Docs
 # pip3 install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com  Django  #2.2.1 required SQLite3.8
