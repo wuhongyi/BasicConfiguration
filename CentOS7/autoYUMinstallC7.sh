@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 二 5月 21 21:00:35 2019 (+0800)
-# Last-Updated: 五 7月  5 13:17:43 2019 (+0800)
+# Last-Updated: 六 7月  6 14:17:46 2019 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 25
+#     Update #: 27
 # URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -25,6 +25,10 @@ yum -y install yum-axelget
       
 #加快yun速度
 yum -y install yum-plugin-fastestmirror
+
+#scl发布源
+###https://blog.csdn.net/chenxin2tj/article/details/83578138
+yum -y install centos-release-scl-rh.noarch
 
 #安装iptables-services软件包
 yum -y install iptables-services
