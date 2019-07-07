@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 二 5月 21 21:00:35 2019 (+0800)
-# Last-Updated: 六 7月  6 14:17:46 2019 (+0800)
+# Last-Updated: 日 7月  7 14:03:40 2019 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 27
+#     Update #: 37
 # URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -121,12 +121,17 @@ yum -y update qt*
 
 ## 额外功能（根据需要选择安装）
 
+#PKUVMEDAQ
+# yum -y install ncurses.x86_64 ncurses-base.noarch ncurses-devel.x86_64 ncurses-libs.x86_64
+
 #altra Quartus Modelsim
+###https://wiki.archlinux.org/index.php/Altera_Design_Software#ModelSim-Altera_Edition
 # yum -y install libX11.x86_64 libX11-common.noarch libX11-devel.x86_64 libX11.i686 libX11-devel.i686
 # yum -y install libXext.x86_64 libXext-devel.x86_64 libXext.i686 libXext-devel.i686
 # yum -y install libXft.x86_64 libXft-devel.x86_64 libXft.i686 libXft-devel.i686
-# yum -y install ncurses.x86_64 ncurses-base.noarch ncurses-devel.x86_64 ncurses-libs.x86_64 ncurses-devel.i686 ncurses-libs.i686
-
+# yum -y install ncurses-devel.i686 ncurses-libs.i686
+# yum -y install freetype.i686   freetype-devel.i686
+# yum -y install freetype-freeworld.i686 
 
 #elog
 # yum -y install elog.x86_64
