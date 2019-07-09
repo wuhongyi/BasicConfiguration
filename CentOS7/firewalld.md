@@ -4,9 +4,9 @@
 ;; Author: Hongyi Wu(吴鸿毅)
 ;; Email: wuhongyi@qq.com 
 ;; Created: 三 7月  3 21:50:28 2019 (+0800)
-;; Last-Updated: 三 7月  3 22:00:21 2019 (+0800)
+;; Last-Updated: 日 7月  7 20:25:52 2019 (+0800)
 ;;           By: Hongyi Wu(吴鸿毅)
-;;     Update #: 2
+;;     Update #: 3
 ;; URL: http://wuhongyi.cn -->
 
 # firewalld
@@ -82,7 +82,6 @@ systemctl status httpd
 
 ##  默认监听80端口 /var/www/html
 ```
-
 
 
 <!-- firewalld.md ends here -->
