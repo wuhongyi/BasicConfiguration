@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月 15 09:21:05 2018 (+0800)
-# Last-Updated: 六 6月 16 21:58:34 2018 (+0800)
+# Last-Updated: 二 8月  6 19:48:27 2019 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 4
+#     Update #: 5
 # URL: http://wuhongyi.cn 
 
 pathinstall="/opt/Geant4"
@@ -46,7 +46,7 @@ tar -zxvf ${filename}.tar.gz
 mkdir buildgeant496p04
 cd buildgeant496p04
 cmake -DCMAKE_INSTALL_PREFIX=${pathinstall}/geant496p04  -DGEANT4_FORCE_QT4=ON -DGEANT4_USE_SYSTEM_EXPAT=OFF -DGEANT4_USE_OPENGL_X11=ON -DGEANT4_USE_RAYTRACER_X11=ON -DGEANT4_USE_QT=ON -DGEANT4_USE_RAYTRACER_X11=ON -DGEANT4_BUILD_MULTITHREADED=ON -DGEANT4_USE_GDML:BOOL=ON  -DGEANT4_BUILD_TLS_MODEL=global-dynamic ../geant4.9.6.p04
-
+make -j$num
 make install
 cd ../
 rm -rf buildgeant496p04
