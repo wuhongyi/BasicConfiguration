@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 5月 10 11:35:28 2019 (+0800)
-# Last-Updated: 五 5月 10 11:39:14 2019 (+0800)
+# Last-Updated: 六 8月 17 15:48:02 2019 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 1
+#     Update #: 2
 # URL: http://wuhongyi.cn 
 
 pathinstall="/opt/Geant4"
@@ -34,7 +34,7 @@ wget http://geant4.cern.ch/support/source/G4ABLA.3.1.tar.gz
 wget http://geant4.cern.ch/support/source/G4INCL.1.0.tar.gz
 wget http://geant4.cern.ch/support/source/G4PII.1.3.tar.gz
 wget http://geant4.cern.ch/support/source/G4ENSDFSTATE.2.2.tar.gz
-wget http://geant4.cern.ch/support/source/G4RealSurface.2.2.1.tar.gz
+wget http://geant4.cern.ch/support/source/G4RealSurface.2.1.1.tar.gz
 wget http://geant4.cern.ch/support/source/G4TENDL.1.3.2.tar.gz
 
 # wget ftp://gdo-nuclear.ucllnl.org/LEND_GND1.3/LEND_GND1.3_ENDF.BVII.1.tar.gz
@@ -75,7 +75,7 @@ tar -zxvf G4ABLA.3.1.tar.gz -C  ${datadir}
 tar -zxvf G4INCL.1.0.tar.gz -C  ${datadir}
 tar -zxvf G4PII.1.3.tar.gz -C  ${datadir}
 tar -zxvf G4ENSDFSTATE.2.2.tar.gz -C  ${datadir}
-tar -zxvf G4RealSurface.2.2.1.tar.gz -C  ${datadir}
+tar -zxvf G4RealSurface.2.1.1.tar.gz -C  ${datadir}
 tar -zxvf G4TENDL.1.3.2.tar.gz -C  ${datadir}
 
 # tar -zxvf LEND_GND1.3_ENDF.BVII.1.tar.gz -C  ${datadir}
