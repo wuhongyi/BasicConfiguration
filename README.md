@@ -4,9 +4,9 @@
 ;; Author: Hongyi Wu(吴鸿毅)
 ;; Email: wuhongyi@qq.com 
 ;; Created: 五 6月  2 11:10:09 2017 (+0800)
-;; Last-Updated: 二 5月 21 20:56:18 2019 (+0800)
+;; Last-Updated: 五 10月  4 22:10:48 2019 (+0800)
 ;;           By: Hongyi Wu(吴鸿毅)
-;;     Update #: 23
+;;     Update #: 24
 ;; URL: http://wuhongyi.cn -->
 
 # 系统配置以及环境设置
@@ -135,7 +135,13 @@ If there is an accented character in the path name to the source files you may g
 
 该文件包含专用于你的 bash shell 的 bash 信息，当登录时以及每次打开新的 shell 时，该文件被读取。
 
+----
 
+## 64bit 系统编译 32bit软件
+
+```bash
+./configure  "CFLAGS=-m32" "CXXFLAGS=-m32" "LDFLAGS=-m32" 
+```
 
 ----
 
