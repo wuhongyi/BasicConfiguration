@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月  2 10:50:17 2017 (+0800)
-# Last-Updated: 四 4月 19 19:27:52 2018 (+0800)
+# Last-Updated: 五 10月  4 21:58:20 2019 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 7
+#     Update #: 8
 # URL: http://wuhongyi.cn 
 
 gccfilename="gcc-4.9.4"
@@ -33,7 +33,7 @@ num=`cat /proc/cpuinfo | grep processor | wc -l`
 tar -zxvf ${gccfilename}.tar.gz
 cd ${gccfilename}
 ./contrib/download_prerequisites #自动编译下载所需文件
-./configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --enable-checking=release  --enable-languages=c,c++,fortran --disable-multilib
+./configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --enable-checking=release  --enable-languages=c,c++,fortran --enable-multilib #--disable-multilib
 make -j$num
 make install
 cd ..

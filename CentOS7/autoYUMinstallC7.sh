@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 二 5月 21 21:00:35 2019 (+0800)
-# Last-Updated: 日 7月  7 14:03:40 2019 (+0800)
+# Last-Updated: 五 10月  4 21:57:53 2019 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 37
+#     Update #: 38
 # URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -41,7 +41,8 @@ yum -y install giflib-devel.x86_64  giflib-utils.x86_64
 
 #gcc
 yum -y install glibc-static libstdc++-static
-
+yum -y install glibc-devel.i686 glibc-static.i686
+yum -y install libstdc++-devel.i686 libstdc++-static.i686
 
 ## -----------------------------------------------------------------------------
 
