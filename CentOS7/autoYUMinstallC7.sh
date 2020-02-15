@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 二 5月 21 21:00:35 2019 (+0800)
-# Last-Updated: 五 10月  4 21:57:53 2019 (+0800)
+# Last-Updated: 六 2月 15 11:26:41 2020 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 38
+#     Update #: 39
 # URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -117,6 +117,13 @@ yum -y install python36.x86_64 python36-devel.x86_64 python36-libs.x86_64 python
 
 #Qt
 yum -y update qt*
+
+#chrome
+yum -y install libappindicator.x86_64 libappindicator-devel.x86_64 libappindicator-gtk3.x86_64 libappindicator-gtk3-devel.x86_64
+yum -y install liberation-fonts.noarch liberation-narrow-fonts.noarch
+# download from https://www.google.cn/intl/zh-CN/chrome/
+#rpm -i google-chrome-stable_current_x86_64.rpm
+
 
 ## -----------------------------------------------------------------------------
 
