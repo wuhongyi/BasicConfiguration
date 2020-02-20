@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 二 5月 21 21:00:35 2019 (+0800)
-# Last-Updated: 六 2月 15 11:26:41 2020 (+0800)
+# Last-Updated: 四 2月 20 16:04:15 2020 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 39
+#     Update #: 40
 # URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -140,6 +140,11 @@ yum -y install liberation-fonts.noarch liberation-narrow-fonts.noarch
 # yum -y install ncurses-devel.i686 ncurses-libs.i686
 # yum -y install freetype.i686   freetype-devel.i686
 # yum -y install freetype-freeworld.i686 
+
+
+#TeamViewer
+yum -y install qt5-qtwebkit.x86_64 qt5-qtwebkit-devel.x86_64
+
 
 #elog
 # yum -y install elog.x86_64
