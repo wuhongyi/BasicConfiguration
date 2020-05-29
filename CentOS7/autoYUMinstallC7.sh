@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 二 5月 21 21:00:35 2019 (+0800)
-# Last-Updated: 二 5月 26 15:45:51 2020 (+0800)
+# Last-Updated: 五 5月 29 12:23:58 2020 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 43
+#     Update #: 44
 # URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -145,6 +145,7 @@ yum -y install liberation-fonts.noarch liberation-narrow-fonts.noarch
 #TeamViewer
 yum -y install qt5-qtwebkit.x86_64 qt5-qtwebkit-devel.x86_64 qt5-qtquickcontrols.x86_64 qt5-qtx11extras.x86_64 qt5-qtx11extras-devel.x86_64
 yum -y install harfbuzz.x86_64 harfbuzz-devel.x86_64 harfbuzz-icu.x86_64
+yum -y install freetype.x86_64 freetype-devel.x86_64
 
 #elog
 # yum -y install elog.x86_64
