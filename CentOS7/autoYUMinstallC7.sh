@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 二 5月 21 21:00:35 2019 (+0800)
-# Last-Updated: 五 5月 29 12:23:58 2020 (+0800)
+# Last-Updated: 四 8月 13 13:35:11 2020 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 44
+#     Update #: 45
 # URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -113,7 +113,7 @@ yum -y install czmq.x86_64 czmq-devel.x86_64
 yum -y install tkinter.x86_64
 
 #python3  这里有些版本依赖，使用时候需要注意是否一致
-yum -y install python36.x86_64 python36-devel.x86_64 python36-libs.x86_64 python36-tkinter.x86_64 python36-pip.noarch python36-cffi.x86_64 python36-cryptography.x86_64 python36-cryptography-vectors.noarch python36-decorator.noarch python36-idna.noarch python36-ipython_genutils.noarch python36-ply.noarch python36-pyasn1.noarch python36-pycparser.noarch python36-six.noarch python36-traitlets.noarch python36-mysql.x86_64 python36-jinja2.noarch
+yum -y install python3.x86_64 python3-devel.x86_64 python3-libs.x86_64 python36.x86_64 python36-devel.x86_64 python36-libs.x86_64 python36-tkinter.x86_64 python36-pip.noarch python36-cffi.x86_64 python36-cryptography.x86_64 python36-cryptography-vectors.noarch python36-decorator.noarch python36-idna.noarch python36-ipython_genutils.noarch python36-ply.noarch python36-pyasn1.noarch python36-pycparser.noarch python36-six.noarch python36-traitlets.noarch python36-mysql.x86_64 python36-jinja2.noarch
 
 #Qt
 yum -y update qt*
