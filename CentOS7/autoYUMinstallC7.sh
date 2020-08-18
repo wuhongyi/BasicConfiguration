@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 二 5月 21 21:00:35 2019 (+0800)
-# Last-Updated: 四 8月 13 13:35:11 2020 (+0800)
+# Last-Updated: 二 8月 18 18:41:26 2020 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 45
+#     Update #: 47
 # URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -21,10 +21,10 @@ fi
 #yum -y update  --skip-broken  #建议明白的人开启，升级需要较长的事件
 
 #EPEL提供的一个yum插件。使用该插件后用yum安装软件时可以并行下载，大大提高了软件的下载速度，减少了下载的等待时间。安装该插件的同时会安装另一个软件axel。axel是一个并行下载工具，在下载http、ftp等简单协议的文件时非常好用。
-yum -y install yum-axelget
+#yum -y install yum-axelget
       
 #加快yun速度
-yum -y install yum-plugin-fastestmirror
+#yum -y install yum-plugin-fastestmirror
 
 #scl发布源
 ###https://blog.csdn.net/chenxin2tj/article/details/83578138
@@ -90,16 +90,17 @@ yum -y install minicom.x86_64
 yum -y install -y nfs-utils rpcbind
 
 #hdf5
-yum -y install hdf5.x86_64  hdf5-devel.x86_64 hdf5-mpich.x86_64 hdf5-mpich-devel.x86_64  hdf5-openmpi.x86_64 hdf5-openmpi-devel.x86_64
+#yum -y install hdf5.x86_64  hdf5-devel.x86_64 hdf5-mpich.x86_64 hdf5-mpich-devel.x86_64  hdf5-openmpi.x86_64 hdf5-openmpi-devel.x86_64
 
 #数据恢复
-yum -y install extundelete.x86_64
+#yum -y install extundelete.x86_64
 
 #自动输入密码
 yum -y install sshpass.x86_64
 
 # qwt
 yum -y install qwt.x86_64 qwt-devel.x86_64 qwt5-qt4.x86_64 qwt5-qt4-devel.x86_64 
+yum -y install quazip.x86_64 quazip-devel.x86_64 quazip-qt5.x86_64 quazip-qt5-devel.x86_64
 
 #lighttpd
 yum -y install lighttpd.x86_64 lighttpd-fastcgi.x86_64 lighttpd-mod_authn_gssapi.x86_64 lighttpd-mod_authn_mysql.x86_64 lighttpd-mod_geoip.x86_64 lighttpd-mod_mysql_vhost.x86_64
@@ -117,6 +118,7 @@ yum -y install python3.x86_64 python3-devel.x86_64 python3-libs.x86_64 python36.
 
 #Qt
 yum -y update qt*
+yum install qtwebkit.x86_64 qtwebkit-devel.x86_64
 
 #chrome
 yum -y install libappindicator.x86_64 libappindicator-devel.x86_64 libappindicator-gtk3.x86_64 libappindicator-gtk3-devel.x86_64
@@ -183,11 +185,11 @@ yum -y install iftop.x86_64
 # 浏览器输入网址: http://localhost/glances.html
 
 #npm  用于jekyll/hexo、gitbook    https://gems.ruby-china.com/
-# yum -y install npm.noarch  nodejs.x86_64  nodejs-devel.x86_64
-# yum -y install rubygems-devel.noarch
-# yum -y install mingw64-libffi.noarch mingw64-libffi-static.noarch
-# gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
-# gem update --system
+yum -y install npm.noarch  nodejs.x86_64  nodejs-devel.x86_64
+yum -y install rubygems-devel.noarch
+yum -y install mingw64-libffi.noarch mingw64-libffi-static.noarch
+gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
+gem update --system
 # npm install -g gitbook-cli
 # npm install -g hexo
 
