@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 二 5月 21 21:00:35 2019 (+0800)
-# Last-Updated: 二 8月 18 18:41:26 2020 (+0800)
+# Last-Updated: 三 8月 19 09:07:32 2020 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 47
+#     Update #: 48
 # URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -109,6 +109,9 @@ yum -y install lighttpd.x86_64 lighttpd-fastcgi.x86_64 lighttpd-mod_authn_gssapi
 yum -y install zeromq.x86_64 zeromq-devel.x86_64
 yum -y install cppzmq-devel.x86_64
 yum -y install czmq.x86_64 czmq-devel.x86_64
+
+#UnitTest++
+yum -y install unittest-cpp.x86_64 unittest-cpp-devel.x86_64
 
 #python
 yum -y install tkinter.x86_64
