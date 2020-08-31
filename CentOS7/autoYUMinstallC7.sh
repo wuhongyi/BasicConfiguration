@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 二 5月 21 21:00:35 2019 (+0800)
-# Last-Updated: 三 8月 19 09:07:32 2020 (+0800)
+# Last-Updated: 一 8月 31 18:42:33 2020 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 48
+#     Update #: 49
 # URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -121,7 +121,8 @@ yum -y install python3.x86_64 python3-devel.x86_64 python3-libs.x86_64 python36.
 
 #Qt
 yum -y update qt*
-yum install qtwebkit.x86_64 qtwebkit-devel.x86_64
+yum -y install qtwebkit.x86_64 qtwebkit-devel.x86_64
+yum -y install libqxt.x86_64 libqxt-devel.x86_64
 
 #chrome
 yum -y install libappindicator.x86_64 libappindicator-devel.x86_64 libappindicator-gtk3.x86_64 libappindicator-gtk3-devel.x86_64
