@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 二 5月 21 21:00:35 2019 (+0800)
-# Last-Updated: 一 8月 31 18:42:33 2020 (+0800)
+# Last-Updated: 四 9月 24 12:31:42 2020 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 49
+#     Update #: 52
 # URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -112,6 +112,10 @@ yum -y install czmq.x86_64 czmq-devel.x86_64
 
 #UnitTest++
 yum -y install unittest-cpp.x86_64 unittest-cpp-devel.x86_64
+
+#Armadillo 矩阵库
+yum -y install armadillo.x86_64 armadillo-devel.x86_64
+
 
 #python
 yum -y install tkinter.x86_64
@@ -227,6 +231,8 @@ yum -y install texlive-* latex2html.noarch latex2rtf.x86_64  latexmk.noarch
 pip3 install  -i http://pypi.douban.com/simple --trusted-host pypi.douban.com --upgrade pip
 pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com jupyter metakernel zmq
 pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com Markdown
+pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com voila
+pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com jupyterlab
 
 #python 额外库
 pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com serial modbus_tk pyserial
