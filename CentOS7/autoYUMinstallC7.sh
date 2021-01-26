@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 二 5月 21 21:00:35 2019 (+0800)
-# Last-Updated: 四 9月 24 12:31:42 2020 (+0800)
+# Last-Updated: 二 1月 26 21:45:16 2021 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 52
+#     Update #: 54
 # URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -191,6 +191,9 @@ yum -y install iftop.x86_64
 # yum -y install glances.noarch
 # glances -o HTML -f /var/www/html
 # 浏览器输入网址: http://localhost/glances.html
+# 或者采用以下 pip 安装
+# pip3 install glances
+# pip3 install bottle
 
 #npm  用于jekyll/hexo、gitbook    https://gems.ruby-china.com/
 yum -y install npm.noarch  nodejs.x86_64  nodejs-devel.x86_64
