@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 二 5月 21 21:00:35 2019 (+0800)
-# Last-Updated: 二 1月 26 21:45:16 2021 (+0800)
+# Last-Updated: 三 3月 31 09:49:36 2021 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 54
+#     Update #: 56
 # URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -43,6 +43,9 @@ yum -y install giflib-devel.x86_64  giflib-utils.x86_64
 yum -y install glibc-static libstdc++-static
 yum -y install glibc-devel.i686 glibc-static.i686
 yum -y install libstdc++-devel.i686 libstdc++-static.i686
+
+#dnscrypt-proxy2               dnscrypt-proxy -service start
+yum -y install dnscrypt-proxy2.x86_64
 
 ## -----------------------------------------------------------------------------
 
