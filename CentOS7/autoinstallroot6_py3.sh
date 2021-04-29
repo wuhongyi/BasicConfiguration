@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 四 4月 19 19:41:34 2018 (+0800)
-# Last-Updated: 四 6月 27 21:27:01 2019 (+0800)
+# Last-Updated: 四 4月 29 16:36:10 2021 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 4
+#     Update #: 6
 # URL: http://wuhongyi.cn 
 
 filename="root_v6.16.00"
@@ -39,10 +39,15 @@ num=`cat /proc/cpuinfo | grep processor | wc -l`
 tar -zxvf ${filename}.source.tar.gz
 mkdir $buildname
 cd $buildname
+
 ## ROOT版本小于6.18
 cmake -DCMAKE_INSTALL_PREFIX=${pathinstall}/${name} -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.6m -DPYTHON_LIBRARY=/usr/lib64/libpython3.6m.so  -Dall=ON  ../$filename2
+
 ## ROOT版本大于等于6.18
-# cmake -DCMAKE_INSTALL_PREFIX=${pathinstall}/${name} -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.6m -DPYTHON_LIBRARY=/usr/lib64/libpython3.6m.so  -Dall=ON  ../$filename2
+# cmake -DCMAKE_INSTALL_PREFIX=${pathinstall}/${name} -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.6m -DPYTHON_LIBRARY=/usr/lib64/libpython3.6m.so  -Dfcgi=ON -Dminuit2=ON  ../$filename2
+
+# clad    requires network(github)
+
 make -j$num
 make install
 cd ../
