@@ -4,15 +4,17 @@
 ;; Author: Hongyi Wu(吴鸿毅)
 ;; Email: wuhongyi@qq.com 
 ;; Created: 五 6月  2 11:10:09 2017 (+0800)
-;; Last-Updated: 五 10月  4 22:10:48 2019 (+0800)
+;; Last-Updated: 三 7月 14 18:39:55 2021 (+0800)
 ;;           By: Hongyi Wu(吴鸿毅)
-;;     Update #: 24
+;;     Update #: 26
 ;; URL: http://wuhongyi.cn -->
 
 # 系统配置以及环境设置
 
-Linux @ CERN 包括了以下版本 [CC7](http://linux.web.cern.ch/linux/centos.shtml) [SL](http://www.scientificlinux.org/)
+核物理实验中常用 Linux 包括了以下版本 [Ubuntu](https://ubuntu.com/) [CC7](http://linux.web.cern.ch/linux/centos.shtml) [SL](http://www.scientificlinux.org/)
 
+- Ubuntu
+	- 即将更新
 - CentOS
 	- CentOS 7
 	- CERN 7(CC7)
@@ -20,7 +22,7 @@ Linux @ CERN 包括了以下版本 [CC7](http://linux.web.cern.ch/linux/centos.s
 	- CERN 6(SLC6)
 	- CERN 5(SLC5)
 
-它们都是基于 Red Hat Enterprise Linux 开发的。
+它们都是基于 Red Hat Enterprise Linux 开发的。**计划之后使用Ubuntu**
 
 
 本教程包含Scientific Linux 系统一些常用软件的配置脚本。本教程可通用于**CentOS**系统。
@@ -32,7 +34,13 @@ Scientific Linux 7 （CentOS 7）安装方法见 http://wuhongyi.cn/CodeProject/
 
 ----
 
-## Auto Set Scientific Linux（CentOS）
+## Autu Install Ubuntu
+
+**即将更新**
+
+
+
+## Auto Install Scientific Linux（CentOS）
 
 安装好系统之后，进入文件夹 *autosetSL7* 
 

@@ -5,13 +5,16 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 5月 10 11:35:28 2019 (+0800)
-# Last-Updated: 六 8月 17 15:48:02 2019 (+0800)
+# Last-Updated: 三 7月 14 15:08:04 2021 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 2
+#     Update #: 3
 # URL: http://wuhongyi.cn 
 
 pathinstall="/opt/Geant4"
 filename="geant4.10.05.p01"
+
+urllink="http://cern.ch/geant4-data/releases/"
+urllinkdata="http://cern.ch/geant4-data/datasets/"
 
 # ------------------------------------------------------------------------------
 
@@ -22,20 +25,20 @@ else
     exit 1
 fi
 
-wget http://cern.ch/geant4/support/source/${filename}.tar.gz
+wget ${urllink}${filename}.tar.gz
 
-wget http://geant4.cern.ch/support/source/G4NDL.4.5.tar.gz
-wget http://geant4.cern.ch/support/source/G4EMLOW.7.7.tar.gz
-wget http://geant4.cern.ch/support/source/G4PhotonEvaporation.5.3.tar.gz
-wget http://geant4.cern.ch/support/source/G4RadioactiveDecay.5.3.tar.gz
-wget http://geant4.cern.ch/support/source/G4SAIDDATA.2.0.tar.gz
-wget http://geant4.cern.ch/support/source/G4PARTICLEXS.1.1.tar.gz
-wget http://geant4.cern.ch/support/source/G4ABLA.3.1.tar.gz
-wget http://geant4.cern.ch/support/source/G4INCL.1.0.tar.gz
-wget http://geant4.cern.ch/support/source/G4PII.1.3.tar.gz
-wget http://geant4.cern.ch/support/source/G4ENSDFSTATE.2.2.tar.gz
-wget http://geant4.cern.ch/support/source/G4RealSurface.2.1.1.tar.gz
-wget http://geant4.cern.ch/support/source/G4TENDL.1.3.2.tar.gz
+wget ${urllinkdata}G4NDL.4.5.tar.gz
+wget ${urllinkdata}G4EMLOW.7.7.tar.gz
+wget ${urllinkdata}G4PhotonEvaporation.5.3.tar.gz
+wget ${urllinkdata}G4RadioactiveDecay.5.3.tar.gz
+wget ${urllinkdata}G4SAIDDATA.2.0.tar.gz
+wget ${urllinkdata}G4PARTICLEXS.1.1.tar.gz
+wget ${urllinkdata}G4ABLA.3.1.tar.gz
+wget ${urllinkdata}G4INCL.1.0.tar.gz
+wget ${urllinkdata}G4PII.1.3.tar.gz
+wget ${urllinkdata}G4ENSDFSTATE.2.2.tar.gz
+wget ${urllinkdata}G4RealSurface.2.1.1.tar.gz
+wget ${urllinkdata}G4TENDL.1.3.2.tar.gz
 
 # wget ftp://gdo-nuclear.ucllnl.org/LEND_GND1.3/LEND_GND1.3_ENDF.BVII.1.tar.gz
 

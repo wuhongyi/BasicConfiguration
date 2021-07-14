@@ -5,13 +5,16 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 五 6月 15 09:21:05 2018 (+0800)
-# Last-Updated: 二 8月  6 19:48:27 2019 (+0800)
+# Last-Updated: 三 7月 14 18:34:19 2021 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 5
+#     Update #: 6
 # URL: http://wuhongyi.cn 
 
 pathinstall="/opt/Geant4"
 filename="geant4.9.6.p04"
+
+urllink="http://cern.ch/geant4-data/releases/"
+urllinkdata="http://cern.ch/geant4-data/datasets/"
 
 # ------------------------------------------------------------------------------
 
@@ -22,18 +25,18 @@ else
     exit 1
 fi
 
-wget http://cern.ch/geant4/support/source/${filename}.tar.gz
+wget ${urllink}${filename}.tar.gz
 
 
-wget http://cern.ch/geant4-data/datasets/G4NDL.4.2.tar.gz
-#wget http://cern.ch/geant4-data/datasets/G4NDL4.2.TS.tar.gz
-wget http://cern.ch/geant4-data/datasets/G4EMLOW.6.32_permissions.tar.gz
-wget http://cern.ch/geant4-data/datasets/G4PhotonEvaporation.2.3.tar.gz
-wget http://cern.ch/geant4-data/datasets/G4RadioactiveDecay.3.6.tar.gz
-wget http://cern.ch/geant4-data/datasets/G4SAIDDATA.1.1.tar.gz
-wget http://cern.ch/geant4-data/datasets/G4NEUTRONXS.1.2.tar.gz
-wget http://cern.ch/geant4-data/datasets/G4PII.1.3.tar.gz
-wget http://cern.ch/geant4-data/datasets/RealSurface.1.0.tar.gz
+wget ${urllinkdata}G4NDL.4.2.tar.gz
+#wget ${urllinkdata}G4NDL4.2.TS.tar.gz
+wget ${urllinkdata}G4EMLOW.6.32_permissions.tar.gz
+wget ${urllinkdata}G4PhotonEvaporation.2.3.tar.gz
+wget ${urllinkdata}G4RadioactiveDecay.3.6.tar.gz
+wget ${urllinkdata}G4SAIDDATA.1.1.tar.gz
+wget ${urllinkdata}G4NEUTRONXS.1.2.tar.gz
+wget ${urllinkdata}G4PII.1.3.tar.gz
+wget ${urllinkdata}RealSurface.1.0.tar.gz
 
 if [ ! -f "${filename}.tar.gz" ]; then
     echo "文件 ${filename}.tar.gz 未下载成功"
