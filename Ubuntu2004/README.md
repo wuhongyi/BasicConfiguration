@@ -4,15 +4,15 @@
 ;; Author: Hongyi Wu(吴鸿毅)
 ;; Email: wuhongyi@qq.com 
 ;; Created: 六 7月 17 21:37:37 2021 (+0800)
-;; Last-Updated: 日 7月 18 18:51:26 2021 (+0800)
+;; Last-Updated: 一 7月 19 16:07:09 2021 (+0800)
 ;;           By: Hongyi Wu(吴鸿毅)
-;;     Update #: 44
+;;     Update #: 49
 ;; URL: http://wuhongyi.cn -->
 
 # README
 
 
-sudo apt -y install net-tools openssh-server iotop iftop htop rar minicom git shc screen environment-modules
+sudo apt -y install net-tools openssh-server iotop iftop htop rar minicom git shc screen environment-modules apache2
 sudo apt -y install emacs gcc gfortran g++ cmake qt5-default qtcreator gnuplot texlive texlive-xetex python3-pip jupyter libminizip1
 
 
@@ -54,6 +54,16 @@ https://blog.csdn.net/u012787602/article/details/79611095
 
 https://www.cnblogs.com/rainy0426/articles/12790686.html
 source /usr/share/modules/init/sh
+
+
+echo $MODULEPATH
+
+建议 /etc/environment-modules/modules
+
+
+apache cgi
+https://www.freesion.com/article/7805709799/
+
 
 
 <!-- README.md ends here -->
