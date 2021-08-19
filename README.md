@@ -4,9 +4,9 @@
 ;; Author: Hongyi Wu(吴鸿毅)
 ;; Email: wuhongyi@qq.com 
 ;; Created: 五 6月  2 11:10:09 2017 (+0800)
-;; Last-Updated: 一 7月 19 14:39:45 2021 (+0800)
+;; Last-Updated: 四 8月 19 19:36:14 2021 (+0800)
 ;;           By: Hongyi Wu(吴鸿毅)
-;;     Update #: 27
+;;     Update #: 31
 ;; URL: http://wuhongyi.cn -->
 
 # 系统配置以及环境设置
@@ -36,9 +36,29 @@ Scientific Linux 7 （CentOS 7）安装方法见 http://wuhongyi.cn/CodeProject/
 
 ## Autu Install Ubuntu
 
-**即将更新**
+**为了使得 / 目录下有足够大的空间，安装系统时，建议将 / 目录分配足够的空间，或者不为 /home 目录单独分配空间。**
+
+安装好系统之后，进入文件夹 *Ubuntu2004* 
+
+- 首先在ROOT权限下执行脚本安装升级一些依赖软件（这个必须是第一步完成！！！）
+  ```bash
+  sudo sh autoinstallapt.sh
+  ```
+- 安装ROOT软件
+  ```bash
+  sh run.sh
+  ```
+- 安装Geant4
+- 安装RadWare05.3(根据自己需要安装)
+  ```bash
+  sudo sh autoinstallradware053.sh
+  ```
 
 
+在 *.bashrc* 文件中添加以下命令才能使用 module
+```bash
+source /usr/share/modules/init/sh
+```
 
 ## Auto Install Scientific Linux（CentOS）
 
@@ -112,7 +132,7 @@ Scientific Linux 7 （CentOS 7）安装方法见 http://wuhongyi.cn/CodeProject/
 ----
 
 
-如果执行脚本编译过程时候遇到以下问题
+如果执行Centos脚本编译过程时候遇到以下问题
 
 ```bash
 moc: Cannot open options file specified with @
