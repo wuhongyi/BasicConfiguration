@@ -4,9 +4,9 @@
 ;; Author: Hongyi Wu(吴鸿毅)
 ;; Email: wuhongyi@qq.com 
 ;; Created: 六 7月 17 21:37:37 2021 (+0800)
-;; Last-Updated: 四 8月 19 19:38:44 2021 (+0800)
+;; Last-Updated: 五 8月 20 12:10:02 2021 (+0800)
 ;;           By: Hongyi Wu(吴鸿毅)
-;;     Update #: 58
+;;     Update #: 59
 ;; URL: http://wuhongyi.cn -->
 
 # README
@@ -16,7 +16,7 @@
 - gcc 9.3.0
 - cmake 3.16.3
 - python 2.7.18/3.8.10
-
+- qt 5.12.8 
 
 
 
