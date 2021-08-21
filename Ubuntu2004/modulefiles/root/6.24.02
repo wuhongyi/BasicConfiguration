@@ -1,0 +1,27 @@
+#%Module 1.0
+
+conflict root
+
+set _module_name  [module-info name]
+set is_module_rm  [module-info mode remove]
+set sys        [uname sysname]
+set os         [uname release]
+
+set version     6.24.02
+
+set ROOT_LEVEL $version
+set ROOT_CURRPATH /opt/ROOT/root62402
+
+prepend-path PATH            $ROOT_CURRPATH/bin
+prepend-path LD_LIBRARY_PATH $ROOT_CURRPATH/lib
+prepend-path DYLD_LIBRARY_PATH $ROOT_CURRPATH/lib
+prepend-path SHLIB_PATH      $ROOT_CURRPATH/lib
+prepend-path LIBPATH         $ROOT_CURRPATH/lib
+prepend-path PYTHONPATH      $ROOT_CURRPATH/lib
+prepend-path MANPATH         $ROOT_CURRPATH/share/man/man1
+prepend-path INFOPATH        $ROOT_CURRPATH/share/info
+
+setenv ROOT_PATH    $ROOT_CURRPATH
+setenv ROOT_VERSION $ROOT_LEVEL
+
+setenv ROOTSYS $ROOT_CURRPATH

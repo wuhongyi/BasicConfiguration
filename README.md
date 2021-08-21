@@ -4,9 +4,9 @@
 ;; Author: Hongyi Wu(吴鸿毅)
 ;; Email: wuhongyi@qq.com 
 ;; Created: 五 6月  2 11:10:09 2017 (+0800)
-;; Last-Updated: 四 8月 19 19:36:14 2021 (+0800)
+;; Last-Updated: 六 8月 21 19:14:16 2021 (+0800)
 ;;           By: Hongyi Wu(吴鸿毅)
-;;     Update #: 31
+;;     Update #: 33
 ;; URL: http://wuhongyi.cn -->
 
 # 系统配置以及环境设置
@@ -22,7 +22,7 @@
 	- CERN 6(SLC6)
 	- CERN 5(SLC5)
 
-它们都是基于 Red Hat Enterprise Linux 开发的。**计划之后使用Ubuntu**
+**Ubuntu 是未来的大势所趋。。。建议优先选择 Ubuntu。当前完成了除DAQ之外的其它所有软件的安装和运行测试。**
 
 
 本教程包含Scientific Linux 系统一些常用软件的配置脚本。本教程可通用于**CentOS**系统。
@@ -46,16 +46,31 @@ Scientific Linux 7 （CentOS 7）安装方法见 http://wuhongyi.cn/CodeProject/
   ```
 - 安装ROOT软件
   ```bash
-  sh run.sh
+  # 6.24.02
+  sh autoinstallroot624.sh
+  # 6.16.00
+  sh autoinstallroot616.sh
+  # 6.12.06
+  sh autoinstallroot612.sh
   ```
 - 安装Geant4
+  ```bash
+  # 4.10.07p02
+  sh autoinstallgeant41007p02.sh
+  # 4.10.06p03
+  sh autoinstallgeant41006p03.sh
+  # 4.10.05p01
+  sh autoinstallgeant41005p01.sh
+  # 4.10.04p03
+  sh autoinstallgeant41004p03.sh
+  ```
 - 安装RadWare05.3(根据自己需要安装)
   ```bash
   sudo sh autoinstallradware053.sh
   ```
 
 
-在 *.bashrc* 文件中添加以下命令才能使用 module
+如果你选择使用 *module* 进行多版本控制，清参考文件夹 *modulefiles* 内的配置文件。在 *.bashrc* 文件中添加以下命令才能使用 module
 ```bash
 source /usr/share/modules/init/sh
 ```

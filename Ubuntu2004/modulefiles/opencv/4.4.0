@@ -1,0 +1,21 @@
+#%Module 1.0
+# 这一行一般 module file 都有
+# 冲突标识符opencv
+conflict        opencv
+
+set _module_name  [module-info name]
+set is_module_rm  [module-info mode remove]
+set sys        [uname sysname]
+set os         [uname release]
+
+set OPENCV_LEVEL 4.4.0
+set OPENCV_MAJLEVEL 4.4
+set OPENCV_CURPATH /opt/OpenCV/440
+
+# 所需路径
+prepend-path PATH            $OPENCV_CURPATH/bin
+prepend-path C_INCLUDE_PATH  $OPENCV_CURPATH/include/opencv4
+prepend-path CPLUS_INCLUDE_PATH $OPENCV_CURPATH/include/opencv4
+prepend-path LD_LIBRARY_PATH $OPENCV_CURPATH/lib:$OPENCV_CURPATH/lib64
+prepend-path LIBRARY_PATH    $OPENCV_CURPATH/lib:$OPENCV_CURPATH/lib64
+prepend-path PYTHONPATH      $OPENCV_CURPATH/lib/python2.7/site-packages

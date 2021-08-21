@@ -1,0 +1,32 @@
+#%Module 1.0
+# 这一行一般 module file 都有
+
+set _module_name  [module-info name]
+set is_module_rm  [module-info mode remove]
+set sys        [uname sysname]
+set os         [uname release]
+
+# 冲突标识符gcc
+conflict        gcc
+
+set GCC_CURPATH /opt/gcc/5.5.0
+set GCC_LEVEL 5.5.0
+set GCC_MAJLEVEL 5.5
+
+# 所需路径
+prepend-path    PATH            $GCC_CURPATH/bin
+prepend-path    LD_LIBRARY_PATH $GCC_CURPATH/lib:$GCC_CURPATH/lib64
+prepend-path    LIBRARY_PATH    $GCC_CURPATH/lib:$GCC_CURPATH/lib64
+prepend-path    MANPATH         $GCC_CURPATH/share/man
+prepend-path    INFOPATH        $GCC_CURPATH/share/info
+
+setenv GCC_PATH    $GCC_CURPATH
+setenv GCC_VERSION $GCC_LEVEL
+setenv GNU_VERSION $GCC_LEVEL
+
+
+setenv CC  $GCC_CURPATH/bin/gcc 
+setenv CXX $GCC_CURPATH/bin/g++ 
+setenv F77 $GCC_CURPATH/bin/gfortran
+setenv FC $GCC_CURPATH/bin/gfortran
+setenv F90 $GCC_CURPATH/bin/gfortran

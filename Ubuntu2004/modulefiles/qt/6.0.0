@@ -1,0 +1,19 @@
+#%Module 1.0
+# 这一行一般 module file 都有
+
+set _module_name  [module-info name]
+set is_module_rm  [module-info mode remove]
+set sys        [uname sysname]
+set os         [uname release]
+
+# 冲突标识符gcc
+conflict        qt
+
+set GCC_CURPATH /opt/Qt6.0.0/6.0.0/gcc_64
+set GCC_LEVEL 6.0.0
+set GCC_MAJLEVEL 6.0
+
+# 所需路径
+prepend-path    PATH            $GCC_CURPATH/bin
+prepend-path    LD_LIBRARY_PATH $GCC_CURPATH/lib
+prepend-path    LIBRARY_PATH    $GCC_CURPATH/lib

@@ -1,16 +1,16 @@
 #!/bin/bash
-# autoinstallroot616.sh --- 
+# autoinstallroot612.sh --- 
 # 
 # Description: 
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 四 4月 19 19:41:34 2018 (+0800)
-# Last-Updated: 五 8月 20 17:49:38 2021 (+0800)
+# Last-Updated: 五 8月 20 21:08:17 2021 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 11
+#     Update #: 13
 # URL: http://wuhongyi.cn 
 
-filename="root_v6.16.00"
+filename="root_v6.12.06"
 pathinstall="/opt/ROOT"
 
 # ------------------------------------------------------------------------------
@@ -43,7 +43,7 @@ cd $buildname
 # clad    requires network(github)
 
 ## ROOT版本小于6.18
-cmake -DCMAKE_INSTALL_PREFIX=${pathinstall}/${name} -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.8 -Dqt5web=ON -Dwebgui=ON -Droot7=ON -Dfcgi=ON -Dgviz=ON -Dminuit2=ON  ../$filename2
+cmake -DCMAKE_INSTALL_PREFIX=${pathinstall}/${name} -Dmysql=OFF -Dminuit2=ON  ../$filename2
 
 make -j$num
 make install
@@ -59,4 +59,4 @@ echo "如欲启用该版本ROOT请将 source ${pathinstall}/$name/bin/thisroot.s
 
 
 # 
-# autoinstallroot616.sh ends here
+# autoinstallroot612.sh ends here

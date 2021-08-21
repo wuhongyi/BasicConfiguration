@@ -1,0 +1,30 @@
+#%Module 1.0
+
+set _module_name  [module-info name]
+set is_module_rm  [module-info mode remove]
+set sys        [uname sysname]
+set os         [uname release]
+
+set arch         [uname machine]
+
+# texlive calls x86_64 x86_64
+# and 32-bit i386
+if {$arch == "x86_64"} { set arch "x86_64" }
+if {$arch == "i686"} { set arch "i386" }
+
+set TEXLIVE_LEVEL "2019"
+
+setenv TEXLIVE_VERSION $TEXLIVE_LEVEL
+
+set TEXLIVE_BASE /opt/texlive/$TEXLIVE_LEVEL
+
+prepend-path PATH $TEXLIVE_BASE/bin/$arch-linux
+
+proc ModulesHelp { } {
+  puts stderr " This module provides TeXLive (TeX/LaTeX/XeLaTeX/etc)"
+  puts stderr ""
+  puts stderr "-----------"
+  puts stderr ""
+}
+
+module-whatis   "TeXLive TeX distribution"
