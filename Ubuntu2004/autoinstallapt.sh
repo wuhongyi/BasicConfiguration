@@ -5,9 +5,9 @@
 ## Author: Hongyi Wu(吴鸿毅)
 ## Email: wuhongyi@qq.com 
 ## Created: 四 8月 19 15:17:20 2021 (+0800)
-## Last-Updated: 六 8月 21 10:07:29 2021 (+0800)
+## Last-Updated: 四 9月  2 16:49:04 2021 (+0800)
 ##           By: Hongyi Wu(吴鸿毅)
-##     Update #: 30
+##     Update #: 33
 ## URL: http://wuhongyi.cn 
 
 apt-get update
@@ -15,7 +15,7 @@ apt --fix-broken install
 sudo apt -y autoremove
 
 apt -y install net-tools openssh-server iotop iftop htop rar minicom git shc screen environment-modules apache2
-apt -y install emacs kate gcc gfortran g++ cmake qt5-default qtcreator gnuplot texlive texlive-xetex python3-pip jupyter libminizip1 ipython3
+apt -y install emacs kate gcc gfortran g++ cmake qt5-default qtcreator gnuplot texlive texlive-xetex python3-pip jupyter libminizip1 ipython3 openjdk-8-jdk
 
 
 apt -y install dpkg-dev binutils libx11-dev libxpm-dev libxft-dev libxext-dev python libssl-dev openssl
