@@ -5,9 +5,9 @@
 ## Author: Hongyi Wu(吴鸿毅)
 ## Email: wuhongyi@qq.com 
 ## Created: 四 8月 19 15:17:20 2021 (+0800)
-## Last-Updated: 四 9月  2 16:49:04 2021 (+0800)
+## Last-Updated: 一 9月  6 14:14:28 2021 (+0800)
 ##           By: Hongyi Wu(吴鸿毅)
-##     Update #: 33
+##     Update #: 34
 ## URL: http://wuhongyi.cn 
 
 apt-get update
@@ -31,6 +31,8 @@ apt -y install libreadline-dev libgtk-3-dev libgtk2.0-dev xfonts-75dpi xfonts-10
 apt -y install freeglut3-dev freeglut3 libsdl2-dev libsdl2-image-dev libglm-dev
 
 apt -y install libncurses5 libcanberra-gtk-module
+
+apt -y install ffmpeg
 
 apt --fix-broken install
 
