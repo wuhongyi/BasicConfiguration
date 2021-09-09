@@ -4,9 +4,9 @@
 ;; Author: Hongyi Wu(吴鸿毅)
 ;; Email: wuhongyi@qq.com 
 ;; Created: 五 6月  2 11:10:09 2017 (+0800)
-;; Last-Updated: 二 9月  7 09:37:46 2021 (+0800)
+;; Last-Updated: 四 9月  9 13:21:56 2021 (+0800)
 ;;           By: Hongyi Wu(吴鸿毅)
-;;     Update #: 34
+;;     Update #: 35
 ;; URL: http://wuhongyi.cn -->
 
 # 系统配置以及环境设置
@@ -39,7 +39,7 @@ Scientific Linux 7 （CentOS 7）安装方法见 http://wuhongyi.cn/CodeProject/
 
 **为了使得 / 目录下有足够大的空间，安装系统时，建议将 / 目录分配足够的空间，或者不为 /home 目录单独分配空间。**
 
-安装好系统之后，进入文件夹 *Ubuntu2004* 
+安装好系统之后，进入文件夹 *Ubuntu*。以下脚本经过Ubuntu20.04和Ubuntu18.04测试。
 
 - 首先在ROOT权限下执行脚本安装升级一些依赖软件（这个必须是第一步完成！！！）
   ```bash

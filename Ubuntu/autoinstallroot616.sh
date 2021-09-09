@@ -1,16 +1,16 @@
 #!/bin/bash
-# autoinstallroot624.sh --- 
+# autoinstallroot616.sh --- 
 # 
 # Description: 
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 四 4月 19 19:41:34 2018 (+0800)
-# Last-Updated: 六 8月 21 19:45:05 2021 (+0800)
+# Last-Updated: 四 9月  9 13:18:37 2021 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 12
+#     Update #: 14
 # URL: http://wuhongyi.cn 
 
-filename="root_v6.24.02"
+filename="root_v6.16.00"
 pathinstall="/opt/ROOT"
 
 # ------------------------------------------------------------------------------
@@ -41,11 +41,24 @@ mkdir $buildname
 cd $buildname
 
 # clad    requires network(github)
-# sed -i "s/https:\/\/github.com\//git@github.com:/g" `grep "https://github.com/" -rl ../$filename2/interpreter/cling/tools/plugins/clad/`
 
-#https://root.cern/install/build_from_source/
+VERSION=`lsb_release -r`
+echo "$VERSION"
+if [ "$VERSION" = "Release:	20.04" ] ; then 
+    echo "当前为Ubuntu 20.04"
+    ## Ubuntu2004
+    cmake -DCMAKE_INSTALL_PREFIX=${pathinstall}/${name} -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.8 -Dqt5web=ON -Dwebgui=ON -Droot7=ON -Dfcgi=ON -Dgviz=ON -Dminuit2=ON  ../$filename2
+elif [ "$VERSION" = "Release:	18.04" ] ; then
+    echo "当前为Ubuntu 18.04"
+    ## Ubuntu1804
+    cmake -DCMAKE_INSTALL_PREFIX=${pathinstall}/${name} -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.6m -Dqt5web=ON -Dwebgui=ON -Droot7=ON -Dfcgi=ON -Dgviz=ON -Dminuit2=ON  ../$filename2
+else 
+    echo "暂时不支持当前版本Ubuntu，请联系吴鸿毅。"
+    exit 1
+fi
 
-cmake -DCMAKE_INSTALL_PREFIX=${pathinstall}/${name} -Dqt5web=ON -Dwebgui=ON -Droot7=ON -Dfcgi=ON -Dgviz=ON -Dminuit2=ON ../$filename2
+
+
 
 
 
@@ -63,4 +76,4 @@ echo "如欲启用该版本ROOT请将 source ${pathinstall}/$name/bin/thisroot.s
 
 
 # 
-# autoinstallroot624.sh ends here
+# autoinstallroot616.sh ends here
