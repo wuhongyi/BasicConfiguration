@@ -5,9 +5,9 @@
 ## Author: Hongyi Wu(吴鸿毅)
 ## Email: wuhongyi@qq.com 
 ## Created: 四 8月 19 15:17:20 2021 (+0800)
-## Last-Updated: 二 9月  7 13:50:02 2021 (+0800)
+## Last-Updated: 三 9月 15 21:57:40 2021 (+0800)
 ##           By: Hongyi Wu(吴鸿毅)
-##     Update #: 36
+##     Update #: 37
 ## URL: http://wuhongyi.cn 
 
 apt-get update
@@ -32,7 +32,7 @@ apt -y install freeglut3-dev freeglut3 libsdl2-dev libsdl2-image-dev libglm-dev
 
 apt -y install libncurses5 libncurses5-dev libcanberra-gtk-module
 
-apt -y install ffmpeg
+apt -y install ffmpeg libsdl1.2-dev
 
 apt --fix-broken install
 
