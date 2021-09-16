@@ -5,10 +5,17 @@
 ## Author: Hongyi Wu(吴鸿毅)
 ## Email: wuhongyi@qq.com 
 ## Created: 四 8月 19 15:17:20 2021 (+0800)
-## Last-Updated: 三 9月 15 21:57:40 2021 (+0800)
+## Last-Updated: 四 9月 16 15:15:50 2021 (+0800)
 ##           By: Hongyi Wu(吴鸿毅)
-##     Update #: 37
+##     Update #: 38
 ## URL: http://wuhongyi.cn 
+
+if [ `whoami` = "root" ];then 
+    echo "当前为root用户，能够执行此脚本！" 
+else 
+    echo "请在ROOT权限下执行此脚本！！！"
+    exit 1
+fi
 
 apt-get update
 apt --fix-broken install

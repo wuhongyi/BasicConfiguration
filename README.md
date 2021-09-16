@@ -4,9 +4,9 @@
 ;; Author: Hongyi Wu(吴鸿毅)
 ;; Email: wuhongyi@qq.com 
 ;; Created: 五 6月  2 11:10:09 2017 (+0800)
-;; Last-Updated: 四 9月  9 13:21:56 2021 (+0800)
+;; Last-Updated: 四 9月 16 15:17:13 2021 (+0800)
 ;;           By: Hongyi Wu(吴鸿毅)
-;;     Update #: 35
+;;     Update #: 36
 ;; URL: http://wuhongyi.cn -->
 
 # 系统配置以及环境设置
@@ -41,10 +41,12 @@ Scientific Linux 7 （CentOS 7）安装方法见 http://wuhongyi.cn/CodeProject/
 
 安装好系统之后，进入文件夹 *Ubuntu*。以下脚本经过Ubuntu20.04和Ubuntu18.04测试。
 
-- 首先在ROOT权限下执行脚本安装升级一些依赖软件（这个必须是第一步完成！！！）
+- 首先在ROOT权限下执行脚本安装升级一些依赖软件（这个必须是第一步完成！！！），pip脚本指定jupyter依赖库版本。
   ```bash
   sudo sh autoinstallapt.sh
+  sudo sh autoinstallpip.sh
   ```
+  
 - 安装ROOT软件
   ```bash
   # 6.24.02
