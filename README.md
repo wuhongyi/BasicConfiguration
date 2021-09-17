@@ -4,9 +4,9 @@
 ;; Author: Hongyi Wu(吴鸿毅)
 ;; Email: wuhongyi@qq.com 
 ;; Created: 五 6月  2 11:10:09 2017 (+0800)
-;; Last-Updated: 四 9月 16 15:17:13 2021 (+0800)
+;; Last-Updated: 五 9月 17 17:07:19 2021 (+0800)
 ;;           By: Hongyi Wu(吴鸿毅)
-;;     Update #: 36
+;;     Update #: 37
 ;; URL: http://wuhongyi.cn -->
 
 # 系统配置以及环境设置
@@ -50,22 +50,22 @@ Scientific Linux 7 （CentOS 7）安装方法见 http://wuhongyi.cn/CodeProject/
 - 安装ROOT软件
   ```bash
   # 6.24.02
-  sh autoinstallroot624.sh
+  sudo sh autoinstallroot624.sh
   # 6.16.00
-  sh autoinstallroot616.sh
+  sudo sh autoinstallroot616.sh
   # 6.12.06
-  sh autoinstallroot612.sh
+  sudo sh autoinstallroot612.sh
   ```
 - 安装Geant4
   ```bash
   # 4.10.07p02
-  sh autoinstallgeant41007p02.sh
+  sudo sh autoinstallgeant41007p02.sh
   # 4.10.06p03
-  sh autoinstallgeant41006p03.sh
+  sudo sh autoinstallgeant41006p03.sh
   # 4.10.05p01
-  sh autoinstallgeant41005p01.sh
+  sudo sh autoinstallgeant41005p01.sh
   # 4.10.04p03
-  sh autoinstallgeant41004p03.sh
+  sudo sh autoinstallgeant41004p03.sh
   ```
 - 安装RadWare05.3(根据自己需要安装)
   ```bash
