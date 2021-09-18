@@ -5,9 +5,9 @@
 ## Author: Hongyi Wu(吴鸿毅)
 ## Email: wuhongyi@qq.com 
 ## Created: 四 8月 19 15:17:20 2021 (+0800)
-## Last-Updated: 四 9月 16 15:15:50 2021 (+0800)
+## Last-Updated: 六 9月 18 14:52:46 2021 (+0800)
 ##           By: Hongyi Wu(吴鸿毅)
-##     Update #: 38
+##     Update #: 39
 ## URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -54,9 +54,22 @@ apt --fix-broken install
 wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
 dpkg -i teamviewer_amd64.deb
 
-pip install metakernel zmq Markdown voila jupyterlab jupyter
-pip install sphinx sphinx-intl sphinx-autobuild recommonmark sphinx_rtd_theme mkdocs
-
+VERSION=`lsb_release -r`
+echo "$VERSION"
+if [ "$VERSION" = "Release:	20.04" ] ; then 
+    echo "当前为Ubuntu 20.04"
+    ## Ubuntu2004
+    pip install metakernel zmq Markdown voila jupyterlab jupyter
+    pip install sphinx sphinx-intl sphinx-autobuild recommonmark sphinx_rtd_theme mkdocs
+elif [ "$VERSION" = "Release:	18.04" ] ; then
+    echo "当前为Ubuntu 18.04"
+    ## Ubuntu1804
+    pip3 install metakernel zmq Markdown voila jupyterlab jupyter
+    pip3 install sphinx sphinx-intl sphinx-autobuild recommonmark sphinx_rtd_theme mkdocs
+else 
+    echo "暂时不支持当前版本Ubuntu，请联系吴鸿毅。"
+    exit 1
+fi
 
 ## 
 ## autoinstallapt.sh ends here
