@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 四 4月 19 19:41:34 2018 (+0800)
-# Last-Updated: 四 9月  9 13:20:18 2021 (+0800)
+# Last-Updated: 六 9月 18 18:27:11 2021 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 13
+#     Update #: 14
 # URL: http://wuhongyi.cn 
 
 filename="root_v6.24.02"
@@ -55,7 +55,7 @@ if [ "$VERSION" = "Release:	20.04" ] ; then
 elif [ "$VERSION" = "Release:	18.04" ] ; then
     echo "当前为Ubuntu 18.04"
     ## Ubuntu1804
-    cmake -DCMAKE_INSTALL_PREFIX=${pathinstall}/${name} -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.6m -Dqt5web=ON -Dwebgui=ON -Droot7=ON -Dfcgi=ON -Dgviz=ON -Dminuit2=ON ../$filename2
+    cmake -DCMAKE_INSTALL_PREFIX=${pathinstall}/${name} -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.6m -Dqt5web=ON -Dwebgui=ON -Droot7=ON -Dfcgi=ON -Dgviz=ON -Dminuit2=ON -Dxrootd=OFF ../$filename2
 else 
     echo "暂时不支持当前版本Ubuntu，请联系吴鸿毅。"
     exit 1

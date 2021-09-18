@@ -4,9 +4,9 @@
 ;; Author: Hongyi Wu(吴鸿毅)
 ;; Email: wuhongyi@qq.com 
 ;; Created: 五 6月  2 11:10:09 2017 (+0800)
-;; Last-Updated: 五 9月 17 17:07:19 2021 (+0800)
+;; Last-Updated: 六 9月 18 19:54:39 2021 (+0800)
 ;;           By: Hongyi Wu(吴鸿毅)
-;;     Update #: 37
+;;     Update #: 39
 ;; URL: http://wuhongyi.cn -->
 
 # 系统配置以及环境设置
@@ -14,8 +14,9 @@
 核物理实验中常用 Linux 包括了以下版本 [Ubuntu](https://ubuntu.com/) [CC7](http://linux.web.cern.ch/linux/centos.shtml) [SL](http://www.scientificlinux.org/)
 
 - Ubuntu
-    - 18.04 LTS https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/18.04/ubuntu-18.04.5-desktop-amd64.iso
-	- 20.04 LTS https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/20.04/ubuntu-20.04.3-desktop-amd64.iso
+	- 20.04 LTS https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/20.04/   ubuntu-20.04.x-desktop-amd64.iso
+    - 18.04 LTS https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/18.04/   ubuntu-18.04.x-desktop-amd64.iso
+	- 下载带有 desktop 的 iso 文件，其中 x 为子版本号
 - CentOS
 	- CentOS 7
 	- CERN 7(CC7)
