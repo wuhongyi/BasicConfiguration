@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 四 4月 19 19:41:34 2018 (+0800)
-# Last-Updated: 五 8月 20 21:08:17 2021 (+0800)
+# Last-Updated: 日 10月  3 23:47:56 2021 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 13
+#     Update #: 14
 # URL: http://wuhongyi.cn 
 
 filename="root_v6.12.06"
@@ -43,7 +43,7 @@ cd $buildname
 # clad    requires network(github)
 
 ## ROOT版本小于6.18
-cmake -DCMAKE_INSTALL_PREFIX=${pathinstall}/${name} -Dmysql=OFF -Dminuit2=ON  ../$filename2
+cmake -DCMAKE_INSTALL_PREFIX=${pathinstall}/${name} -Dmysql=OFF -Dminuit2=ON -Dxrootd=OFF  ../$filename2
 
 make -j$num
 make install
