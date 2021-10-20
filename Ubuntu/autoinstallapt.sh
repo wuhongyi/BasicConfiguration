@@ -5,9 +5,9 @@
 ## Author: Hongyi Wu(吴鸿毅)
 ## Email: wuhongyi@qq.com 
 ## Created: 四 8月 19 15:17:20 2021 (+0800)
-## Last-Updated: 六 9月 18 14:52:46 2021 (+0800)
+## Last-Updated: 三 10月 20 21:15:48 2021 (+0800)
 ##           By: Hongyi Wu(吴鸿毅)
-##     Update #: 39
+##     Update #: 40
 ## URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -25,7 +25,7 @@ apt -y install net-tools openssh-server iotop iftop htop rar minicom git shc scr
 apt -y install emacs kate gcc gfortran g++ cmake qt5-default qtcreator gnuplot texlive texlive-xetex python3-pip jupyter libminizip1 ipython3 openjdk-8-jdk
 
 
-apt -y install dpkg-dev binutils libx11-dev libxpm-dev libxft-dev libxext-dev python libssl-dev openssl
+apt -y install dpkg-dev binutils libx11-dev libxpm-dev libxft-dev libxext-dev python libssl-dev openssl doxygen doxygen-latex doxygen-gui graphviz
 
 apt -y install libpcre3-dev xlibmesa-glu-dev libglew-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev libgraphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl-dev mysql-server libmysqlclient-dev libfcgi-bin libfcgi-dev libsqlite3-dev libqt5webkit5-dev libqt5webengine5 qtwebengine5-dev libqt5webenginecore5 libqt5webenginewidgets5 libqt5webengine-data libqt5webchannel5-dev libqt5websockets5-dev libqt5websockets5 libqt5webview5-dev libqt5webview5 davix-dev davix
 
