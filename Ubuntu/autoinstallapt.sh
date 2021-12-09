@@ -5,9 +5,9 @@
 ## Author: Hongyi Wu(吴鸿毅)
 ## Email: wuhongyi@qq.com 
 ## Created: 四 8月 19 15:17:20 2021 (+0800)
-## Last-Updated: 三 10月 20 21:15:48 2021 (+0800)
+## Last-Updated: 四 12月  9 21:10:34 2021 (+0800)
 ##           By: Hongyi Wu(吴鸿毅)
-##     Update #: 40
+##     Update #: 41
 ## URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -40,6 +40,8 @@ apt -y install freeglut3-dev freeglut3 libsdl2-dev libsdl2-image-dev libglm-dev
 apt -y install libncurses5 libncurses5-dev libcanberra-gtk-module
 
 apt -y install ffmpeg libsdl1.2-dev
+
+apt -y install libboost-dev
 
 apt --fix-broken install
 
