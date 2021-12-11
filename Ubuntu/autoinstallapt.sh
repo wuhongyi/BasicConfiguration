@@ -5,9 +5,9 @@
 ## Author: Hongyi Wu(吴鸿毅)
 ## Email: wuhongyi@qq.com 
 ## Created: 四 8月 19 15:17:20 2021 (+0800)
-## Last-Updated: 四 12月  9 21:10:34 2021 (+0800)
+## Last-Updated: 六 12月 11 13:21:45 2021 (+0800)
 ##           By: Hongyi Wu(吴鸿毅)
-##     Update #: 41
+##     Update #: 42
 ## URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -41,7 +41,8 @@ apt -y install libncurses5 libncurses5-dev libcanberra-gtk-module
 
 apt -y install ffmpeg libsdl1.2-dev
 
-apt -y install libboost-dev
+##DAQ
+apt -y install libboost-dev libzmq3-dev
 
 apt --fix-broken install
 
