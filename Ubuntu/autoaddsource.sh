@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 一 1月 17 11:49:53 2022 (+0800)
-# Last-Updated: 六 1月 29 10:10:46 2022 (+0800)
+# Last-Updated: 六 1月 29 10:34:31 2022 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 4
+#     Update #: 5
 # URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -31,7 +31,6 @@ if [ "$VERSION" = "Release:	20.04" ] ; then
     echo 'deb http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse' >> /etc/apt/sources.list
     echo 'deb-src http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse' >> /etc/apt/sources.list
     echo 'deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse' >> /etc/apt/sources.list
-    echo 'deb-src http://mirrors.aliyun.com/ubuntu/ focal-backport' >> /etc/apt/sources.list
 elif [ "$VERSION" = "Release:	18.04" ] ; then
     echo "当前为Ubuntu 18.04"
     ## Ubuntu1804
