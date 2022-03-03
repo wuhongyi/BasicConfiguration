@@ -4,9 +4,9 @@
 ;; Author: Hongyi Wu(吴鸿毅)
 ;; Email: wuhongyi@qq.com 
 ;; Created: 五 6月  2 11:10:09 2017 (+0800)
-;; Last-Updated: 一 1月 17 11:54:45 2022 (+0800)
+;; Last-Updated: 四 3月  3 14:42:45 2022 (+0800)
 ;;           By: Hongyi Wu(吴鸿毅)
-;;     Update #: 42
+;;     Update #: 43
 ;; URL: http://wuhongyi.cn -->
 
 # 系统配置以及环境设置
@@ -62,8 +62,8 @@ Scientific Linux 7 （CentOS 7）安装方法见 http://wuhongyi.cn/CodeProject/
   ```
 - 安装Geant4
   ```bash
-  # 4.10.07p02
-  sudo sh autoinstallgeant41007p02.sh
+  # 4.10.07p03
+  sudo sh autoinstallgeant41007p03.sh
   # 4.10.06p03
   sudo sh autoinstallgeant41006p03.sh
   # 4.10.05p01
