@@ -5,9 +5,9 @@
 ## Author: Hongyi Wu(吴鸿毅)
 ## Email: wuhongyi@qq.com 
 ## Created: 四 8月 19 15:17:20 2021 (+0800)
-## Last-Updated: 一 1月 17 11:34:35 2022 (+0800)
+## Last-Updated: 二 3月  8 20:56:37 2022 (+0800)
 ##           By: Hongyi Wu(吴鸿毅)
-##     Update #: 44
+##     Update #: 45
 ## URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -72,8 +72,8 @@ echo "$VERSION"
 if [ "$VERSION" = "Release:	20.04" ] ; then 
     echo "当前为Ubuntu 20.04"
     ## Ubuntu2004
-    pip install metakernel zmq Markdown voila jupyterlab jupyter
-    pip install sphinx sphinx-intl sphinx-autobuild recommonmark sphinx_rtd_theme mkdocs
+    pip3 install metakernel zmq Markdown voila jupyterlab jupyter
+    pip3 install sphinx sphinx-intl sphinx-autobuild recommonmark sphinx_rtd_theme mkdocs
 elif [ "$VERSION" = "Release:	18.04" ] ; then
     echo "当前为Ubuntu 18.04"
     ## Ubuntu1804

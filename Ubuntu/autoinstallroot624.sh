@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 四 4月 19 19:41:34 2018 (+0800)
-# Last-Updated: 日 10月  3 23:47:15 2021 (+0800)
+# Last-Updated: 二 3月  8 20:57:25 2022 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 15
+#     Update #: 16
 # URL: http://wuhongyi.cn 
 
 filename="root_v6.24.02"
@@ -51,7 +51,7 @@ echo "$VERSION"
 if [ "$VERSION" = "Release:	20.04" ] ; then 
     echo "当前为Ubuntu 20.04"
     ## Ubuntu2004
-    cmake -DCMAKE_INSTALL_PREFIX=${pathinstall}/${name} -Dqt5web=ON -Dwebgui=ON -Droot7=ON -Dfcgi=ON -Dgviz=ON -Dminuit2=ON -Dxrootd=OFF ../$filename2
+    cmake -DCMAKE_INSTALL_PREFIX=${pathinstall}/${name} -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.8 -Dqt5web=ON -Dwebgui=ON -Droot7=ON -Dfcgi=ON -Dgviz=ON -Dminuit2=ON -Dxrootd=OFF ../$filename2
 elif [ "$VERSION" = "Release:	18.04" ] ; then
     echo "当前为Ubuntu 18.04"
     ## Ubuntu1804
