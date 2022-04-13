@@ -5,9 +5,9 @@
 ## Author: Hongyi Wu(吴鸿毅)
 ## Email: wuhongyi@qq.com 
 ## Created: 四 8月 19 15:17:20 2021 (+0800)
-## Last-Updated: 二 3月  8 20:56:37 2022 (+0800)
+## Last-Updated: 三 4月 13 09:30:56 2022 (+0800)
 ##           By: Hongyi Wu(吴鸿毅)
-##     Update #: 45
+##     Update #: 46
 ## URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -83,6 +83,10 @@ else
     echo "暂时不支持当前版本Ubuntu，请联系吴鸿毅。"
     exit 1
 fi
+
+# apt -y install freecad
+
+
 
 ## 
 ## autoinstallapt.sh ends here
