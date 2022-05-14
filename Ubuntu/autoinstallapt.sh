@@ -5,9 +5,9 @@
 ## Author: Hongyi Wu(吴鸿毅)
 ## Email: wuhongyi@qq.com 
 ## Created: 四 8月 19 15:17:20 2021 (+0800)
-## Last-Updated: 三 4月 13 09:30:56 2022 (+0800)
+## Last-Updated: 日 5月 15 00:27:44 2022 (+0800)
 ##           By: Hongyi Wu(吴鸿毅)
-##     Update #: 46
+##     Update #: 47
 ## URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -24,12 +24,12 @@ apt -y autoremove
 apt -y install net-tools openssh-server iotop iftop htop rar minicom git shc screen environment-modules apache2
 apt -y install emacs gcc gfortran g++ cmake qt5-default qtcreator gnuplot texlive texlive-xetex python3-pip jupyter libminizip1 ipython3 openjdk-8-jdk
 
-#source error
+
 apt -y install kate
 
 apt -y install dpkg-dev binutils libx11-dev libxpm-dev libxft-dev libxext-dev python libssl-dev openssl doxygen doxygen-latex doxygen-gui graphviz
 
-#source error
+
 apt -y install libftgl-dev
 
 apt -y install libpcre3-dev xlibmesa-glu-dev libglew-dev  libmysqlclient-dev libfftw3-dev libcfitsio-dev libgraphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl-dev mysql-server libmysqlclient-dev libfcgi-bin libfcgi-dev libsqlite3-dev libqt5webkit5-dev libqt5webengine5 qtwebengine5-dev libqt5webenginecore5 libqt5webenginewidgets5 libqt5webengine-data libqt5webchannel5-dev libqt5websockets5-dev libqt5websockets5 libqt5webview5-dev libqt5webview5 davix-dev davix
@@ -40,17 +40,19 @@ apt -y install libxerces-c3.2 libxerces-c-dev libxmu-headers libxmu-dev libmotif
 
 apt -y install libreadline-dev libgtk-3-dev libgtk2.0-dev xfonts-75dpi xfonts-100dpi
 
-#source error
+
 apt -y install freeglut3-dev freeglut3
 apt -y install  libsdl2-dev libsdl2-image-dev libglm-dev
 
 apt -y install libncurses5 libncurses5-dev libcanberra-gtk-module
 
-#source error
 apt -y install ffmpeg libsdl1.2-dev
 
 ##DAQ
 apt -y install libboost-dev libzmq3-dev
+
+#qwt
+apt -y install libqwt-headers libqwt-qt5-dev
 
 apt -y install libminizip1
 
