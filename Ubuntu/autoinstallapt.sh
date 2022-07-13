@@ -5,9 +5,9 @@
 ## Author: Hongyi Wu(吴鸿毅)
 ## Email: wuhongyi@qq.com 
 ## Created: 四 8月 19 15:17:20 2021 (+0800)
-## Last-Updated: 日 5月 15 00:27:44 2022 (+0800)
+## Last-Updated: 三 7月 13 19:07:23 2022 (+0800)
 ##           By: Hongyi Wu(吴鸿毅)
-##     Update #: 47
+##     Update #: 48
 ## URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -55,6 +55,10 @@ apt -y install libboost-dev libzmq3-dev
 apt -y install libqwt-headers libqwt-qt5-dev
 
 apt -y install libminizip1
+
+
+# opencv
+apt -y install libopencv-dev
 
 apt --fix-broken install
 
