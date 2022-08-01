@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 一 1月 17 11:49:53 2022 (+0800)
-# Last-Updated: 六 1月 29 10:34:31 2022 (+0800)
+# Last-Updated: 一 8月  1 16:08:05 2022 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 5
+#     Update #: 6
 # URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -50,7 +50,7 @@ else
     exit 1
 fi
 
-
+apt update
 
 
 
