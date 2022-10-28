@@ -5,9 +5,9 @@
 ## Author: Hongyi Wu(吴鸿毅)
 ## Email: wuhongyi@qq.com 
 ## Created: 四 8月 19 15:17:20 2021 (+0800)
-## Last-Updated: 三 7月 13 19:07:23 2022 (+0800)
+## Last-Updated: 五 10月 28 15:32:13 2022 (+0800)
 ##           By: Hongyi Wu(吴鸿毅)
-##     Update #: 48
+##     Update #: 49
 ## URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -21,7 +21,7 @@ apt-get update
 apt --fix-broken install
 apt -y autoremove
 
-apt -y install net-tools openssh-server iotop iftop htop rar minicom git shc screen environment-modules apache2
+apt -y install net-tools openssh-server curl iotop iftop htop rar minicom git shc screen environment-modules apache2
 apt -y install emacs gcc gfortran g++ cmake qt5-default qtcreator gnuplot texlive texlive-xetex python3-pip jupyter libminizip1 ipython3 openjdk-8-jdk
 
 
