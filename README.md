@@ -4,9 +4,9 @@
 ;; Author: Hongyi Wu(吴鸿毅)
 ;; Email: wuhongyi@qq.com 
 ;; Created: 五 6月  2 11:10:09 2017 (+0800)
-;; Last-Updated: 四 3月  3 14:42:45 2022 (+0800)
+;; Last-Updated: 三 11月 16 23:42:00 2022 (+0800)
 ;;           By: Hongyi Wu(吴鸿毅)
-;;     Update #: 43
+;;     Update #: 44
 ;; URL: http://wuhongyi.cn -->
 
 # 系统配置以及环境设置
@@ -75,6 +75,13 @@ Scientific Linux 7 （CentOS 7）安装方法见 http://wuhongyi.cn/CodeProject/
   ```bash
   sudo sh autoinstallradware053.sh
   ```
+
+
+如果安装的是 WSL 还需要执行以下一行指令来修复 Qt 相关的问题，否则无法启动 GEANT4/Qt 图形界面
+
+```bash
+sudo strip --remove-section=.note.ABI-tag /usr/lib/x86_64-linux-gnu/libQt5Core.so.5
+```
 
 
 如果你选择使用 *module* 进行多版本控制，清参考文件夹 *modulefiles* 内的配置文件。在 *.bashrc* 文件中添加以下命令才能使用 module

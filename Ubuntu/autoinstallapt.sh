@@ -5,9 +5,9 @@
 ## Author: Hongyi Wu(吴鸿毅)
 ## Email: wuhongyi@qq.com 
 ## Created: 四 8月 19 15:17:20 2021 (+0800)
-## Last-Updated: 五 10月 28 15:32:13 2022 (+0800)
+## Last-Updated: 五 10月 28 15:42:41 2022 (+0800)
 ##           By: Hongyi Wu(吴鸿毅)
-##     Update #: 49
+##     Update #: 50
 ## URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -92,7 +92,7 @@ fi
 
 # apt -y install freecad
 
-
+# shadowsocks-libev
 
 ## 
 ## autoinstallapt.sh ends here
