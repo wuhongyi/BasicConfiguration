@@ -1,17 +1,17 @@
 #!/bin/bash
-# autoinstallgeant41007p03.sh --- 
+# autoinstallgeant41007p04.sh --- 
 # 
 # Description: 
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 三 7月 14 14:48:47 2021 (+0800)
-# Last-Updated: 四 3月  3 10:52:03 2022 (+0800)
+# Last-Updated: 六 3月 25 20:45:38 2023 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 4
+#     Update #: 7
 # URL: http://wuhongyi.cn 
 
 pathinstall="/opt/Geant4"
-filename="geant4.10.07.p03"
+filename="geant4.10.07.p04"
 
 urllink="http://cern.ch/geant4-data/releases/"
 urllinkdata="http://cern.ch/geant4-data/datasets/"
@@ -89,8 +89,8 @@ echo "==========吴鸿毅 提示=========="
 echo "如欲启用该版本Geant4请将 source ${pathinstall}/$name/bin/geant4.sh  添加进 .bashrc "
 
 # 在 geant4.sh 中添加以下环境变量设置
-# export G4LENDDATA="`cd $geant4_envbindir/../share/Geant4-10.7.2/data/LEND_GND1.3_ENDF.BVII.1 > /dev/null ; pwd`"
+# export G4LENDDATA="`cd $geant4_envbindir/../share/Geant4-10.7.4/data/LEND_GND1.3_ENDF.BVII.1 > /dev/null ; pwd`"
 
 
 # 
-# autoinstallgeant41007p03.sh ends here
+# autoinstallgeant41007p04.sh ends here

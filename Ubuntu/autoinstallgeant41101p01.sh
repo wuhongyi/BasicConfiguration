@@ -1,20 +1,20 @@
 #!/bin/bash
-# autoinstallgeant41007p02.sh --- 
+# autoinstallgeant41101p01.sh --- 
 # 
 # Description: 
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
-# Created: 三 7月 14 14:48:47 2021 (+0800)
-# Last-Updated: 三 7月 14 15:38:15 2021 (+0800)
+# Created: 六 3月 25 20:44:34 2023 (+0800)
+# Last-Updated: 六 3月 25 21:59:29 2023 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 3
+#     Update #: 6
 # URL: http://wuhongyi.cn 
 
 pathinstall="/opt/Geant4"
-filename="geant4.10.07.p02"
+filename="geant4-v11.1.1"
 
-urllink="http://cern.ch/geant4-data/releases/"
-urllinkdata="http://cern.ch/geant4-data/datasets/"
+urllink="https://gitlab.cern.ch/geant4/geant4/-/archive/v11.1.1/"
+urllinkdata="https://geant4-data.web.cern.ch/datasets/"
 
 # ------------------------------------------------------------------------------
 
@@ -27,18 +27,18 @@ fi
 
 wget ${urllink}${filename}.tar.gz
 
-wget ${urllinkdata}G4NDL.4.6.tar.gz
-wget ${urllinkdata}G4EMLOW.7.13.tar.gz
+wget ${urllinkdata}G4NDL.4.7.tar.gz
+wget ${urllinkdata}G4EMLOW.8.2.tar.gz
 wget ${urllinkdata}G4PhotonEvaporation.5.7.tar.gz
 wget ${urllinkdata}G4RadioactiveDecay.5.6.tar.gz
 wget ${urllinkdata}G4SAIDDATA.2.0.tar.gz
-wget ${urllinkdata}G4PARTICLEXS.3.1.1.tar.gz
+wget ${urllinkdata}G4PARTICLEXS.4.0.tar.gz
 wget ${urllinkdata}G4ABLA.3.1.tar.gz
 wget ${urllinkdata}G4INCL.1.0.tar.gz
 wget ${urllinkdata}G4PII.1.3.tar.gz
 wget ${urllinkdata}G4ENSDFSTATE.2.3.tar.gz
 wget ${urllinkdata}G4RealSurface.2.2.tar.gz
-wget ${urllinkdata}G4TENDL.1.3.2.tar.gz
+wget ${urllinkdata}G4TENDL.1.4.tar.gz
 
 # wget ftp://gdo-nuclear.ucllnl.org/LEND_GND1.3/LEND_GND1.3_ENDF.BVII.1.tar.gz
 
@@ -50,7 +50,7 @@ fi
 name=`expr $filename | sed 's/\.//g'` #去除.
 buildname="build$name"
 datafilename=`expr $filename | sed 's/geant4./Geant4-/g' | sed 's/\.0/./g' | sed 's/p0//g'`
-datadir="${pathinstall}/${name}/share/${datafilename}/data"
+datadir="${pathinstall}/${name}/share/data"
 
 
 num=`cat /proc/cpuinfo | grep processor | wc -l`
@@ -69,18 +69,18 @@ rm -rf $filename
 rm -rf $buildname
 
 mkdir ${datadir}
-tar -zxvf G4NDL.4.6.tar.gz  -C ${datadir}
-tar -zxvf G4EMLOW.7.13.tar.gz -C  ${datadir}
+tar -zxvf G4NDL.4.7.tar.gz  -C ${datadir}
+tar -zxvf G4EMLOW.8.2.tar.gz -C  ${datadir}
 tar -zxvf G4PhotonEvaporation.5.7.tar.gz -C  ${datadir}
 tar -zxvf G4RadioactiveDecay.5.6.tar.gz -C  ${datadir}
 tar -zxvf G4SAIDDATA.2.0.tar.gz -C  ${datadir}
-tar -zxvf G4PARTICLEXS.3.1.1.tar.gz -C  ${datadir}
+tar -zxvf G4PARTICLEXS.4.0.tar.gz -C  ${datadir}
 tar -zxvf G4ABLA.3.1.tar.gz -C  ${datadir}
 tar -zxvf G4INCL.1.0.tar.gz -C  ${datadir}
 tar -zxvf G4PII.1.3.tar.gz -C  ${datadir}
 tar -zxvf G4ENSDFSTATE.2.3.tar.gz -C  ${datadir}
 tar -zxvf G4RealSurface.2.2.tar.gz -C  ${datadir}
-tar -zxvf G4TENDL.1.3.2.tar.gz -C  ${datadir}
+tar -zxvf G4TENDL.1.4.tar.gz -C  ${datadir}
 
 # tar -zxvf LEND_GND1.3_ENDF.BVII.1.tar.gz -C  ${datadir}
 
@@ -88,9 +88,6 @@ echo ""
 echo "==========吴鸿毅 提示=========="
 echo "如欲启用该版本Geant4请将 source ${pathinstall}/$name/bin/geant4.sh  添加进 .bashrc "
 
-# 在 geant4.sh 中添加以下环境变量设置
-# export G4LENDDATA="`cd $geant4_envbindir/../share/Geant4-10.7.2/data/LEND_GND1.3_ENDF.BVII.1 > /dev/null ; pwd`"
-
 
 # 
-# autoinstallgeant41007p02.sh ends here
+# autoinstallgeant41101p01.sh ends here

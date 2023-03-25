@@ -4,9 +4,9 @@
 ;; Author: Hongyi Wu(吴鸿毅)
 ;; Email: wuhongyi@qq.com 
 ;; Created: 五 6月  2 11:10:09 2017 (+0800)
-;; Last-Updated: 三 11月 16 23:42:00 2022 (+0800)
+;; Last-Updated: 六 3月 25 21:44:42 2023 (+0800)
 ;;           By: Hongyi Wu(吴鸿毅)
-;;     Update #: 44
+;;     Update #: 45
 ;; URL: http://wuhongyi.cn -->
 
 # 系统配置以及环境设置
@@ -26,12 +26,9 @@
 	- CERN 6(SLC6)
 	- CERN 5(SLC5)
 
-**Ubuntu 是未来的大势所趋。。。建议优先选择 Ubuntu。当前完成了除DAQ之外的其它所有软件的安装和运行测试。**
+**Ubuntu 是未来的大势所趋。。。建议优先选择 Ubuntu。**
 
 
-本教程包含Scientific Linux 系统一些常用软件的配置脚本。本教程可通用于**CentOS**系统。
-
-Scientific Linux 7 （CentOS 7）安装方法见 http://wuhongyi.cn/CodeProject/ScientisicLinux72.html  **如要使用本自动化脚本，务必按照安装教程安装系统！！！**
 
 
 **务必使本文件夹 BasicConfiguration 所在路径没有中文和特殊字符，建议将文件夹 BasicConfiguration 放置在个人用户目录下再运行自动化脚本！！！**
@@ -63,7 +60,7 @@ Scientific Linux 7 （CentOS 7）安装方法见 http://wuhongyi.cn/CodeProject/
 - 安装Geant4
   ```bash
   # 4.10.07p03
-  sudo sh autoinstallgeant41007p03.sh
+  sudo sh autoinstallgeant41007p04.sh
   # 4.10.06p03
   sudo sh autoinstallgeant41006p03.sh
   # 4.10.05p01
