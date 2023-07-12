@@ -5,9 +5,9 @@
 ## Author: Hongyi Wu(吴鸿毅)
 ## Email: wuhongyi@qq.com 
 ## Created: 四 8月 19 15:17:20 2021 (+0800)
-## Last-Updated: 一 3月  6 18:29:50 2023 (+0800)
+## Last-Updated: 三 7月 12 19:40:54 2023 (+0800)
 ##           By: Hongyi Wu(吴鸿毅)
-##     Update #: 53
+##     Update #: 54
 ## URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -64,11 +64,15 @@ apt -y install libopencv-dev
 
 apt --fix-broken install
 
-wget http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/multiarch-support_2.27-3ubuntu1.2_amd64.deb
-dpkg -i multiarch-support_2.27-3ubuntu1.2_amd64.deb
-wget http://archive.ubuntu.com/ubuntu/pool/main/libx/libxp/libxp6_1.0.2-1ubuntu1_amd64.deb
-dpkg -i libxp6_1.0.2-1ubuntu1_amd64.deb
-ln -s /usr/lib/x86_64-linux-gnu/libXp.so.6 /usr/lib/x86_64-linux-gnu/libXp.so
+#wget http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/multiarch-support_2.27-3ubuntu1.6_amd64.deb
+#dpkg -i multiarch-support_2.27-3ubuntu1.6_amd64.deb
+
+apt -y install multiarch-support
+
+#wget http://archive.ubuntu.com/ubuntu/pool/main/libx/libxp/libxp6_1.0.2-1ubuntu1_amd64.deb
+#dpkg -i libxp6_1.0.2-1ubuntu1_amd64.deb
+#ln -s /usr/lib/x86_64-linux-gnu/libXp.so.6 /usr/lib/x86_64-linux-gnu/libXp.so
+apt -y install libxp6
 
 
 apt --fix-broken install
