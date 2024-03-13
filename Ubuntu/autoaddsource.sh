@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 一 1月 17 11:49:53 2022 (+0800)
-# Last-Updated: 一 8月  1 16:08:05 2022 (+0800)
+# Last-Updated: 四 3月 14 01:07:03 2024 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 6
+#     Update #: 7
 # URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -22,15 +22,26 @@ echo "$VERSION"
 if [ "$VERSION" = "Release:	20.04" ] ; then 
     echo "当前为Ubuntu 20.04"
     ## Ubuntu2004
-    echo 'deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse' >> /etc/apt/sources.list
-    echo 'deb-src http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse' >> /etc/apt/sources.list
-    echo 'deb http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse' >> /etc/apt/sources.list
-    echo 'deb-src http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse' >> /etc/apt/sources.list
-    echo 'deb http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse' >> /etc/apt/sources.list
-    echo 'deb-src http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse' >> /etc/apt/sources.list
-    echo 'deb http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse' >> /etc/apt/sources.list
-    echo 'deb-src http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse' >> /etc/apt/sources.list
-    echo 'deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse' >> /etc/apt/sources.list
+
+    echo 'deb https://mirrors.ustc.edu.cn/ubuntu/ focal main restricted universe multiverse' >> /etc/apt/sources.list
+    echo 'deb-src https://mirrors.ustc.edu.cn/ubuntu/ focal main restricted universe multiverse' >> /etc/apt/sources.list
+    echo 'deb https://mirrors.ustc.edu.cn/ubuntu/ focal-security main restricted universe multiverse' >> /etc/apt/sources.list
+    echo 'deb-src https://mirrors.ustc.edu.cn/ubuntu/ focal-security main restricted universe multiverse' >> /etc/apt/sources.list
+    echo 'deb https://mirrors.ustc.edu.cn/ubuntu/ focal-updates main restricted universe multiverse' >> /etc/apt/sources.list
+    echo 'deb-src https://mirrors.ustc.edu.cn/ubuntu/ focal-updates main restricted universe multiverse' >> /etc/apt/sources.list
+    echo 'deb https://mirrors.ustc.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse' >> /etc/apt/sources.list
+    echo 'deb-src https://mirrors.ustc.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse' >> /etc/apt/sources.list
+    echo 'deb https://mirrors.ustc.edu.cn/ubuntu/ focal-backports main restricted universe multiverse' >> /etc/apt/sources.list
+
+    ## echo 'deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse' >> /etc/apt/sources.list
+    ## echo 'deb-src http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse' >> /etc/apt/sources.list
+    ## echo 'deb http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse' >> /etc/apt/sources.list
+    ## echo 'deb-src http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse' >> /etc/apt/sources.list
+    ## echo 'deb http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse' >> /etc/apt/sources.list
+    ## echo 'deb-src http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse' >> /etc/apt/sources.list
+    ## echo 'deb http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse' >> /etc/apt/sources.list
+    ## echo 'deb-src http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse' >> /etc/apt/sources.list
+    ## echo 'deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse' >> /etc/apt/sources.list
 elif [ "$VERSION" = "Release:	18.04" ] ; then
     echo "当前为Ubuntu 18.04"
     ## Ubuntu1804
