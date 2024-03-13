@@ -5,9 +5,9 @@
 ## Author: Hongyi Wu(吴鸿毅)
 ## Email: wuhongyi@qq.com 
 ## Created: 四 9月 16 15:09:11 2021 (+0800)
-## Last-Updated: 二 9月 13 17:05:17 2022 (+0800)
+## Last-Updated: 三 3月 13 23:59:26 2024 (+0800)
 ##           By: Hongyi Wu(吴鸿毅)
-##     Update #: 5
+##     Update #: 7
 ## URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -25,15 +25,17 @@ echo "$VERSION"
 if [ "$VERSION" = "Release:	20.04" ] ; then 
     echo "当前为Ubuntu 20.04"
     ## Ubuntu2004
-    pip3 install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com jinja2==3.1.2
-    pip3 install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com nbformat==5.4.0
-    pip3 install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com ipykernel==6.4.1
-    pip3 install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com ipython==7.27.0
-    pip3 install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com jupyter-console==6.4.0
-    pip3 install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com jupyter-core==4.7.1
-    pip3 install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com notebook==6.4.12
-    pip3 install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com voila==0.2.13
-    pip3 install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com jupyter-client==7.0.2
+    pip3 install  jinja2==3.1.2
+    pip3 install  nbformat==5.4.0
+    pip3 install  ipykernel==6.4.1
+    pip3 install  ipython==7.27.0
+    pip3 install  jupyter-console==6.4.0
+    pip3 install  jupyter-core==4.7.1
+    pip3 install  notebook==6.4.12
+    pip3 install  voila==0.2.13
+    pip3 install  jupyter-client==7.0.2
+    pip3 install  jupyter-server==1.10.2
+    pip3 install  traitlets==5.0.5
 elif [ "$VERSION" = "Release:	18.04" ] ; then
     echo "当前为Ubuntu 18.04"
     ## Ubuntu1804
