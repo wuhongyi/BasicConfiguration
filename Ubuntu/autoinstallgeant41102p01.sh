@@ -1,19 +1,19 @@
 #!/bin/bash
-# autoinstallgeant41101p01.sh --- 
+# autoinstallgeant41102p01.sh --- 
 # 
 # Description: 
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
-# Created: 六 3月 25 20:44:34 2023 (+0800)
-# Last-Updated: 六 3月 25 21:59:29 2023 (+0800)
+# Created: 六 4月 20 21:30:45 2024 (+0800)
+# Last-Updated: 六 4月 20 21:36:46 2024 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 6
+#     Update #: 3
 # URL: http://wuhongyi.cn 
 
 pathinstall="/opt/Geant4"
-filename="geant4-v11.1.1"
+filename="geant4-v11.2.1"
 
-urllink="https://gitlab.cern.ch/geant4/geant4/-/archive/v11.1.1/"
+urllink="https://gitlab.cern.ch/geant4/geant4/-/archive/v11.2.1/"
 urllinkdata="https://geant4-data.web.cern.ch/datasets/"
 
 # ------------------------------------------------------------------------------
@@ -28,13 +28,13 @@ fi
 wget ${urllink}${filename}.tar.gz
 
 wget ${urllinkdata}G4NDL.4.7.tar.gz
-wget ${urllinkdata}G4EMLOW.8.2.tar.gz
+wget ${urllinkdata}G4EMLOW.8.5.tar.gz
 wget ${urllinkdata}G4PhotonEvaporation.5.7.tar.gz
 wget ${urllinkdata}G4RadioactiveDecay.5.6.tar.gz
 wget ${urllinkdata}G4SAIDDATA.2.0.tar.gz
 wget ${urllinkdata}G4PARTICLEXS.4.0.tar.gz
-wget ${urllinkdata}G4ABLA.3.1.tar.gz
-wget ${urllinkdata}G4INCL.1.0.tar.gz
+wget ${urllinkdata}G4ABLA.3.3.tar.gz
+wget ${urllinkdata}G4INCL.1.2.tar.gz
 wget ${urllinkdata}G4PII.1.3.tar.gz
 wget ${urllinkdata}G4ENSDFSTATE.2.3.tar.gz
 wget ${urllinkdata}G4RealSurface.2.2.tar.gz
@@ -70,13 +70,13 @@ rm -rf $buildname
 
 mkdir ${datadir}
 tar -zxvf G4NDL.4.7.tar.gz  -C ${datadir}
-tar -zxvf G4EMLOW.8.2.tar.gz -C  ${datadir}
+tar -zxvf G4EMLOW.8.5.tar.gz -C  ${datadir}
 tar -zxvf G4PhotonEvaporation.5.7.tar.gz -C  ${datadir}
 tar -zxvf G4RadioactiveDecay.5.6.tar.gz -C  ${datadir}
 tar -zxvf G4SAIDDATA.2.0.tar.gz -C  ${datadir}
 tar -zxvf G4PARTICLEXS.4.0.tar.gz -C  ${datadir}
-tar -zxvf G4ABLA.3.1.tar.gz -C  ${datadir}
-tar -zxvf G4INCL.1.0.tar.gz -C  ${datadir}
+tar -zxvf G4ABLA.3.3.tar.gz -C  ${datadir}
+tar -zxvf G4INCL.1.2.tar.gz -C  ${datadir}
 tar -zxvf G4PII.1.3.tar.gz -C  ${datadir}
 tar -zxvf G4ENSDFSTATE.2.3.tar.gz -C  ${datadir}
 tar -zxvf G4RealSurface.2.2.tar.gz -C  ${datadir}
@@ -90,4 +90,4 @@ echo "如欲启用该版本Geant4请将 source ${pathinstall}/$name/bin/geant4.s
 
 
 # 
-# autoinstallgeant41101p01.sh ends here
+# autoinstallgeant41102p01.sh ends here
