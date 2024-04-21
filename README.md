@@ -4,9 +4,9 @@
 ;; Author: Hongyi Wu(吴鸿毅)
 ;; Email: wuhongyi@qq.com 
 ;; Created: 五 6月  2 11:10:09 2017 (+0800)
-;; Last-Updated: 五 11月  3 16:09:28 2023 (+0800)
+;; Last-Updated: 日 4月 21 14:46:15 2024 (+0800)
 ;;           By: Hongyi Wu(吴鸿毅)
-;;     Update #: 47
+;;     Update #: 49
 ;; URL: http://wuhongyi.cn -->
 
 # 系统配置以及环境设置
@@ -40,7 +40,7 @@
 
 **为了使得 / 目录下有足够大的空间，安装系统时，建议将 / 目录分配足够的空间，或者不为 /home 目录单独分配空间。**
 
-安装好系统之后，进入文件夹 *Ubuntu*。以下脚本经过Ubuntu20.04和Ubuntu18.04测试。
+安装好系统之后，进入文件夹 *Ubuntu*。以下脚本经过 Ubuntu20.04 和 Ubuntu18.04 测试。
 
 - 首先在ROOT权限下执行脚本安装升级一些依赖软件（这个必须是第一步完成！！！），pip脚本指定jupyter依赖库版本。
   ```bash
@@ -60,7 +60,11 @@
   ```
 - 安装Geant4
   ```bash
-  # 4.10.07p03
+  # 4.11.02p01
+  sudo sh autoinstallgeant41102p01.sh
+  # 4.11.01p03
+  sudo sh autoinstallgeant41101p03.sh
+  # 4.10.07p04
   sudo sh autoinstallgeant41007p04.sh
   # 4.10.06p03
   sudo sh autoinstallgeant41006p03.sh
