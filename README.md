@@ -4,9 +4,9 @@
 ;; Author: Hongyi Wu(吴鸿毅)
 ;; Email: wuhongyi@qq.com 
 ;; Created: 五 6月  2 11:10:09 2017 (+0800)
-;; Last-Updated: 日 4月 21 14:46:15 2024 (+0800)
+;; Last-Updated: 四 4月 25 18:32:30 2024 (+0800)
 ;;           By: Hongyi Wu(吴鸿毅)
-;;     Update #: 49
+;;     Update #: 50
 ;; URL: http://wuhongyi.cn -->
 
 # 系统配置以及环境设置
@@ -51,6 +51,8 @@
   
 - 安装ROOT软件
   ```bash
+  # 6.26.16
+  sudo sh autoinstallroot626.sh
   # 6.24.02
   sudo sh autoinstallroot624.sh
   # 6.16.00
