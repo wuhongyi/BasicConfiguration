@@ -4,9 +4,9 @@
 ;; Author: Hongyi Wu(吴鸿毅)
 ;; Email: wuhongyi@qq.com 
 ;; Created: 六 7月 17 21:37:37 2021 (+0800)
-;; Last-Updated: 五 8月 20 12:10:02 2021 (+0800)
+;; Last-Updated: 五 4月 26 21:53:44 2024 (+0800)
 ;;           By: Hongyi Wu(吴鸿毅)
-;;     Update #: 59
+;;     Update #: 60
 ;; URL: http://wuhongyi.cn -->
 
 # README
@@ -60,6 +60,30 @@ Ubuntu 14以上就已经不再支持libpng12，然而有些软件又依赖于lib
 根据Ubuntu官网的提示，我们在其中加上 deb http://cz.archive.ubuntu.com/ubuntu xenial main
 /etc/apt/source.list
 然后保存，并更新package list后即可安装
+
+
+
+
+
+
+
+这里我们可以采用安装libc6来升级GLIBC
+
+首先添加源。
+
+sudo vi /etc/apt/sources.list
+
+在文件末尾 添加 
+
+deb http://th.archive.ubuntu.com/ubuntu jammy main  
+
+
+
+更新包
+    sudo apt-get update
+安装
+    sudo apt install libc6
+再次查看版本
 
 
 

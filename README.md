@@ -4,9 +4,9 @@
 ;; Author: Hongyi Wu(吴鸿毅)
 ;; Email: wuhongyi@qq.com 
 ;; Created: 五 6月  2 11:10:09 2017 (+0800)
-;; Last-Updated: 四 4月 25 18:32:30 2024 (+0800)
+;; Last-Updated: 四 5月  2 17:28:46 2024 (+0800)
 ;;           By: Hongyi Wu(吴鸿毅)
-;;     Update #: 50
+;;     Update #: 56
 ;; URL: http://wuhongyi.cn -->
 
 # 系统配置以及环境设置
@@ -92,6 +92,36 @@ sudo strip --remove-section=.note.ABI-tag /usr/lib/x86_64-linux-gnu/libQt5Core.s
 ```bash
 source /usr/share/modules/init/sh
 ```
+
+## Rocky9
+
+
+下载虚拟机镜像 [Geant4 Virtual Machine](https://geant4.lp2ib.in2p3.fr/)
+
+目前最新版本为 G4.11.2.1_RockyLinux9.7z
+
+- 用户 local1 密码为 local1
+- root 密码为 rocky9
+
+
+在ROOT权限下执行脚本
+
+```bash
+sh autoinstalldnf.sh
+sh autoinstallroot630.sh
+```
+
+
+安装之后，需要修改 */home/local1/.cshrc* 中的环境变量，
+
+```bash
+#注释掉以下行，不启用默认的 root 版本
+#module load root/6.30.02
+
+#添加新安装的版本的环境变量
+source /opt/ROOT/root63002/bin/thisroot.csh 
+```
+
 
 ## Auto Install Scientific Linux（CentOS）
 
