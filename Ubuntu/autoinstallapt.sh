@@ -5,9 +5,9 @@
 ## Author: Hongyi Wu(吴鸿毅)
 ## Email: wuhongyi@qq.com 
 ## Created: 四 8月 19 15:17:20 2021 (+0800)
-## Last-Updated: 三 7月 12 19:40:54 2023 (+0800)
+## Last-Updated: 六 8月 17 15:58:05 2024 (+0800)
 ##           By: Hongyi Wu(吴鸿毅)
-##     Update #: 54
+##     Update #: 58
 ## URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -73,6 +73,12 @@ apt -y install multiarch-support
 #dpkg -i libxp6_1.0.2-1ubuntu1_amd64.deb
 #ln -s /usr/lib/x86_64-linux-gnu/libXp.so.6 /usr/lib/x86_64-linux-gnu/libXp.so
 apt -y install libxp6
+
+
+#ausa
+#apt -y install libfmt-dev rapidjson-dev
+
+
 
 
 apt --fix-broken install
