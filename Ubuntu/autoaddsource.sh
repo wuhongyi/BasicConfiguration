@@ -42,6 +42,19 @@ if [ "$VERSION" = "Release:	20.04" ] ; then
     ## echo 'deb http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse' >> /etc/apt/sources.list
     ## echo 'deb-src http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse' >> /etc/apt/sources.list
     ## echo 'deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse' >> /etc/apt/sources.list
+elif [ "$VERSION" = "Release:	22.04" ] ; then
+    echo "当前为Ubuntu 22.04"
+    ## add aliyun source
+    echo 'deb http://mirrors.aliyun.com/ubuntu/ jammy main restricted universe multiverse' >> /etc/apt/sources.list
+    echo 'deb http://mirrors.aliyun.com/ubuntu/ jammy-security main restricted universe multiverse' >> /etc/apt/sources.list
+    echo 'deb http://mirrors.aliyun.com/ubuntu/ jammy-updates main restricted universe multiverse' >> /etc/apt/sources.list
+    echo 'deb http://mirrors.aliyun.com/ubuntu/ jammy-proposed main restricted universe multiverse' >> /etc/apt/sources.list
+    echo 'deb http://mirrors.aliyun.com/ubuntu/ jammy-backports main restricted universe multiverse' >> /etc/apt/sources.list
+    echo 'deb-src http://mirrors.aliyun.com/ubuntu/ jammy main restricted universe multiverse' >> /etc/apt/sources.list
+    echo 'deb-src http://mirrors.aliyun.com/ubuntu/ jammy-security main restricted universe multiverse' >> /etc/apt/sources.list
+    echo 'deb-src http://mirrors.aliyun.com/ubuntu/ jammy-updates main restricted universe multiverse' >> /etc/apt/sources.list
+    echo 'deb-src http://mirrors.aliyun.com/ubuntu/ jammy-proposed main restricted universe multiverse' >> /etc/apt/sources.list
+    echo 'deb-src http://mirrors.aliyun.com/ubuntu/ jammy-backports main restricted universe multiverse' >> /etc/apt/sources.list
 elif [ "$VERSION" = "Release:	18.04" ] ; then
     echo "当前为Ubuntu 18.04"
     ## Ubuntu1804

@@ -17,24 +17,49 @@ else
     exit 1
 fi
 
+
+VERSION=`lsb_release -r`
+echo "$VERSION"
+
 apt-get update
 apt --fix-broken install
 apt -y autoremove
 
 apt -y install net-tools openssh-server curl iotop iftop htop rar minicom git shc screen environment-modules apache2
-apt -y install emacs gcc gfortran g++ cmake qt5-default qtcreator gnuplot texlive texlive-xetex python3-pip jupyter libminizip1 ipython3 openjdk-8-jdk
+
+apt -y install emacs gcc gfortran g++ cmake qtcreator gnuplot texlive texlive-xetex python3-pip jupyter libminizip1 ipython3 openjdk-8-jdk
+
+if [ "$VERSION" = "Release:	20.04" ] ; then 
+    echo "当前为Ubuntu 20.04"
+    apt -y install qt5-default libqt5webkit5-dev libqt5webengine5 qtwebengine5-dev libqt5webenginecore5 libqt5webenginewidgets5 libqt5webengine-data libqt5webchannel5-dev libqt5websockets5-dev libqt5websockets5 libqt5webview5-dev libqt5webview5 libqt5charts5-dev
+    apt -y install python python-dev
+elif [ "$VERSION" = "Release:	22.04" ] ; then
+    echo "当前为Ubuntu 22.04"
+    ## Ubuntu1804
+   apt -y install libqt5webkit5-dev libqt5webengine5 qtwebengine5-dev libqt5webenginecore5 libqt5webenginewidgets5 libqt5webengine-data libqt5webchannel5-dev libqt5websockets5-dev libqt5websockets5 libqt5webview5-dev libqt5webview5 libqt5charts5-dev
+   apt -y install python3 python3-dev
+elif [ "$VERSION" = "Release:	18.04" ] ; then
+    echo "当前为Ubuntu 18.04"
+    apt -y install qt5-default libqt5webkit5-dev libqt5webengine5 qtwebengine5-dev libqt5webenginecore5 libqt5webenginewidgets5 libqt5webengine-data libqt5webchannel5-dev libqt5websockets5-dev libqt5websockets5 libqt5webview5-dev libqt5webview5 libqt5charts5-dev
+    apt -y install python python-dev
+else 
+    echo "暂时不支持当前版本Ubuntu，请联系吴鸿毅。"
+    exit 1
+fi
+
+
 
 #摄像头
 apt -y install qtmultimedia5-dev
 
 apt -y install kate
 
-apt -y install dpkg-dev binutils libx11-dev libxpm-dev libxft-dev libxext-dev python libssl-dev openssl doxygen doxygen-latex doxygen-gui graphviz
+apt -y install dpkg-dev binutils libx11-dev libxpm-dev libxft-dev libxext-dev libssl-dev openssl doxygen doxygen-latex doxygen-gui graphviz
 
 
 apt -y install libftgl-dev
 
-apt -y install libpcre3-dev xlibmesa-glu-dev libglew-dev  libmysqlclient-dev libfftw3-dev libcfitsio-dev libgraphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl-dev mysql-server libmysqlclient-dev libfcgi-bin libfcgi-dev libsqlite3-dev libqt5webkit5-dev libqt5webengine5 qtwebengine5-dev libqt5webenginecore5 libqt5webenginewidgets5 libqt5webengine-data libqt5webchannel5-dev libqt5websockets5-dev libqt5websockets5 libqt5webview5-dev libqt5webview5 libqt5charts5-dev davix-dev davix
+apt -y install libpcre3-dev xlibmesa-glu-dev libglew-dev  libmysqlclient-dev libfftw3-dev libcfitsio-dev libgraphviz-dev libavahi-compat-libdnssd-dev libldap2-dev libxml2-dev libkrb5-dev libgsl-dev mysql-server libmysqlclient-dev libfcgi-bin libfcgi-dev libsqlite3-dev  davix-dev davix
 
 apt -y install python3-numpy
 
@@ -85,13 +110,17 @@ apt --fix-broken install
 wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
 dpkg -i teamviewer_amd64.deb
 
-VERSION=`lsb_release -r`
-echo "$VERSION"
+
 if [ "$VERSION" = "Release:	20.04" ] ; then 
     echo "当前为Ubuntu 20.04"
     ## Ubuntu2004
     pip3 install metakernel zmq Markdown voila jupyterlab jupyter
     pip3 install sphinx sphinx-intl sphinx-autobuild recommonmark sphinx_rtd_theme mkdocs
+elif [ "$VERSION" = "Release:	22.04" ] ; then
+    echo "当前为Ubuntu 22.04"
+    ## Ubuntu1804
+    pip3 install metakernel zmq Markdown voila jupyterlab jupyter
+    pip3 install sphinx sphinx-intl sphinx-autobuild recommonmark sphinx_rtd_theme mkdocs    
 elif [ "$VERSION" = "Release:	18.04" ] ; then
     echo "当前为Ubuntu 18.04"
     ## Ubuntu1804

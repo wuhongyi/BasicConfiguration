@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 四 4月 19 19:41:34 2018 (+0800)
-# Last-Updated: 二 3月  8 20:59:01 2022 (+0800)
+# Last-Updated: 六 9月  7 13:09:15 2024 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 15
+#     Update #: 16
 # URL: http://wuhongyi.cn 
 
 filename="root_v6.12.06"
@@ -43,7 +43,29 @@ cd $buildname
 # clad    requires network(github)
 
 ## ROOT版本小于6.18
-cmake -DCMAKE_INSTALL_PREFIX=${pathinstall}/${name} -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.8 -Dmysql=OFF -Dminuit2=ON -Dxrootd=OFF  ../$filename2
+
+
+
+VERSION=`lsb_release -r`
+echo "$VERSION"
+if [ "$VERSION" = "Release:	20.04" ] ; then 
+    echo "当前为Ubuntu 20.04"
+    ## Ubuntu2004
+    cmake -DCMAKE_INSTALL_PREFIX=${pathinstall}/${name} -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.8 -Dmysql=OFF -Dminuit2=ON -Dxrootd=OFF  ../$filename2
+elif [ "$VERSION" = "Release:	22.04" ] ; then
+    echo "当前为Ubuntu 22.04"
+    ## Ubuntu2204
+    cmake -DCMAKE_INSTALL_PREFIX=${pathinstall}/${name} -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.10 -Dmysql=OFF -Dminuit2=ON -Dxrootd=OFF  ../$filename2
+elif [ "$VERSION" = "Release:	18.04" ] ; then
+    echo "当前为Ubuntu 18.04"
+    ## Ubuntu1804
+    cmake -DCMAKE_INSTALL_PREFIX=${pathinstall}/${name} -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.6m -Dmysql=OFF -Dminuit2=ON -Dxrootd=OFF  ../$filename2
+else 
+    echo "暂时不支持当前版本Ubuntu，请联系吴鸿毅。"
+    exit 1
+fi
+
+
 
 make -j$num
 make install

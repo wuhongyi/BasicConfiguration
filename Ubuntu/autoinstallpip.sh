@@ -36,6 +36,20 @@ if [ "$VERSION" = "Release:	20.04" ] ; then
     pip3 install  jupyter-client==8.6.1
     pip3 install  jupyter-server==2.14.0
     pip3 install  traitlets==5.14.3
+elif [ "$VERSION" = "Release:	22.04" ] ; then
+    echo "当前为Ubuntu 22.04"
+    ## Ubuntu2204
+    pip3 install  jinja2==3.1.4
+    pip3 install  nbformat==5.10.4
+    pip3 install  ipykernel==6.29.4
+    pip3 install  ipython==7.31.1
+    pip3 install  jupyter-console==6.6.3
+    pip3 install  jupyter-core==5.7.2
+    pip3 install  notebook==7.1.3
+    pip3 install  voila==0.5.7
+    pip3 install  jupyter-client==8.6.2
+    pip3 install  jupyter-server==2.14.2
+    pip3 install  traitlets==5.14.3
 elif [ "$VERSION" = "Release:	18.04" ] ; then
     echo "当前为Ubuntu 18.04"
     ## Ubuntu1804

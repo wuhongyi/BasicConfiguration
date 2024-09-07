@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 四 4月 19 19:41:34 2018 (+0800)
-# Last-Updated: 二 8月 20 13:41:49 2024 (+0800)
+# Last-Updated: 六 9月  7 13:04:11 2024 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 23
+#     Update #: 24
 # URL: http://wuhongyi.cn 
 
 filename="root_v6.32.04"
@@ -52,6 +52,10 @@ if [ "$VERSION" = "Release:	20.04" ] ; then
     echo "当前为Ubuntu 20.04"
     ## Ubuntu2004
     cmake -DCMAKE_INSTALL_PREFIX=${pathinstall}/${name} -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.8 -Dmathmore=ON -Dqt5web=ON -Dwebgui=ON -DCMAKE_CXX_STANDARD=17 -Dbuiltin_pcre=ON -Droot7=ON -Dfftw3=ON -Dmathmore=ON -Dfcgi=ON -Dgviz=ON  -Dxrootd=OFF ../$filename2
+elif [ "$VERSION" = "Release:	22.04" ] ; then
+    echo "当前为Ubuntu 22.04"
+    ## Ubuntu2204
+    cmake -DCMAKE_INSTALL_PREFIX=${pathinstall}/${name} -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.10 -Dmathmore=ON -Dqt5web=ON -Dwebgui=ON -DCMAKE_CXX_STANDARD=17 -Dbuiltin_pcre=ON -Droot7=ON -Dfftw3=ON -Dmathmore=ON -Dfcgi=ON -Dgviz=ON  -Dxrootd=OFF ../$filename2
 elif [ "$VERSION" = "Release:	18.04" ] ; then
     echo "当前为Ubuntu 18.04"
     ## Ubuntu1804
