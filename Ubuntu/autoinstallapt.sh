@@ -35,9 +35,15 @@ if [ "$VERSION" = "Release:	20.04" ] ; then
     apt -y install python python-dev
 elif [ "$VERSION" = "Release:	22.04" ] ; then
     echo "当前为Ubuntu 22.04"
-    ## Ubuntu1804
+    ## Ubuntu2204
    apt -y install libqt5webkit5-dev libqt5webengine5 qtwebengine5-dev libqt5webenginecore5 libqt5webenginewidgets5 libqt5webengine-data libqt5webchannel5-dev libqt5websockets5-dev libqt5websockets5 libqt5webview5-dev libqt5webview5 libqt5charts5-dev
    apt -y install python3 python3-dev
+elif [ "$VERSION" = "Release:	24.04" ] ; then
+    echo "当前为Ubuntu 24.04"
+    ## Ubuntu2404
+   apt -y install libqt5webkit5-dev libqt5webengine5 qtwebengine5-dev libqt5webenginecore5 libqt5webenginewidgets5 libqt5webengine-data libqt5webchannel5-dev libqt5websockets5-dev libqt5websockets5 libqt5webview5-dev libqt5webview5 libqt5charts5-dev
+   apt -y install python3 python3-dev
+   apt -y install python-dev-is-python3
 elif [ "$VERSION" = "Release:	18.04" ] ; then
     echo "当前为Ubuntu 18.04"
     apt -y install qt5-default libqt5webkit5-dev libqt5webengine5 qtwebengine5-dev libqt5webenginecore5 libqt5webenginewidgets5 libqt5webengine-data libqt5webchannel5-dev libqt5websockets5-dev libqt5websockets5 libqt5webview5-dev libqt5webview5 libqt5charts5-dev
@@ -68,10 +74,24 @@ apt -y install libxerces-c3.2 libxerces-c-dev libxmu-headers libxmu-dev libmotif
 apt -y install libreadline-dev libgtk-3-dev libgtk2.0-dev xfonts-75dpi xfonts-100dpi
 
 
-apt -y install freeglut3-dev freeglut3
-apt -y install  libsdl2-dev libsdl2-image-dev libglm-dev
+if [ "$VERSION" = "Release:	20.04" ] ; then 
+    apt -y install freeglut3-dev freeglut3
+    apt -y install libncurses5 libncurses5-dev libcanberra-gtk-module
+elif [ "$VERSION" = "Release:	22.04" ] ; then
+    apt -y install freeglut3-dev freeglut3
+    apt -y install libncurses5 libncurses5-dev libcanberra-gtk-module
+elif [ "$VERSION" = "Release:	24.04" ] ; then
+    apt -y install freeglut3-dev
+    apt -y install libncurses-dev libcanberra-gtk-module
+elif [ "$VERSION" = "Release:	18.04" ] ; then
+    apt -y install freeglut3-dev freeglut3
+    apt -y install libncurses5 libncurses5-dev libcanberra-gtk-module
+else 
+    echo "暂时不支持当前版本Ubuntu，请联系吴鸿毅。"
+    exit 1
+fi
 
-apt -y install libncurses5 libncurses5-dev libcanberra-gtk-module
+apt -y install  libsdl2-dev libsdl2-image-dev libglm-dev
 
 apt -y install ffmpeg libsdl1.2-dev
 
@@ -118,9 +138,13 @@ if [ "$VERSION" = "Release:	20.04" ] ; then
     pip3 install sphinx sphinx-intl sphinx-autobuild recommonmark sphinx_rtd_theme mkdocs
 elif [ "$VERSION" = "Release:	22.04" ] ; then
     echo "当前为Ubuntu 22.04"
-    ## Ubuntu1804
+    ## Ubuntu2204
     pip3 install metakernel zmq Markdown voila jupyterlab jupyter
-    pip3 install sphinx sphinx-intl sphinx-autobuild recommonmark sphinx_rtd_theme mkdocs    
+    pip3 install sphinx sphinx-intl sphinx-autobuild recommonmark sphinx_rtd_theme mkdocs
+elif [ "$VERSION" = "Release:	24.04" ] ; then
+    echo "当前为Ubuntu 24.04"
+    ## Ubuntu2404
+    
 elif [ "$VERSION" = "Release:	18.04" ] ; then
     echo "当前为Ubuntu 18.04"
     ## Ubuntu1804
@@ -128,7 +152,7 @@ elif [ "$VERSION" = "Release:	18.04" ] ; then
     pip3 install sphinx sphinx-intl sphinx-autobuild recommonmark sphinx_rtd_theme mkdocs
 else 
     echo "暂时不支持当前版本Ubuntu，请联系吴鸿毅。"
-    exit 1
+    #exit 1
 fi
 
 # apt -y install freecad
