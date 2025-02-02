@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 二 10月 12 16:54:11 2021 (+0800)
-# Last-Updated: 五 11月  5 20:33:47 2021 (+0800)
+# Last-Updated: 日 9月  8 18:37:31 2024 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 14
+#     Update #: 15
 # URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -31,7 +31,7 @@ dnf -y install xerces-c.x86_64 xerces-c-devel.x86_64 libXmu.x86_64  libXmu-devel
 dnf -y install qt5-qtwebkit.x86_64 qt5-qtwebkit-devel.x86_64 qt5-qtquickcontrols.x86_64 qt5-qtx11extras.x86_64 qt5-qtx11extras-devel.x86_64 qt5-qtwebengine.x86_64 qt5-qtwebengine-devel.x86_64  qt5-qtwebengine-devtools.x86_64 qt5-qtwebsockets.x86_64 qt5-qtwebsockets-devel.x86_64 qt5-qtwebview.x86_64 qt5-qtwebview-devel.x86_64 harfbuzz-devel.x86_64 freetype-devel.x86_64 gtk2-devel.x86_64 gtk3-devel.x86_64
 
 
-
+dnf -y install boost boost-devel
 
 # 
 # autoinstalldnf.sh ends here

@@ -5,9 +5,9 @@
 # Author: Hongyi Wu(吴鸿毅)
 # Email: wuhongyi@qq.com 
 # Created: 二 10月 12 16:54:11 2021 (+0800)
-# Last-Updated: 六 8月 17 22:57:18 2024 (+0800)
+# Last-Updated: 日 9月  8 18:38:29 2024 (+0800)
 #           By: Hongyi Wu(吴鸿毅)
-#     Update #: 15
+#     Update #: 17
 # URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -17,7 +17,7 @@ else
     exit 1
 fi
 
-dnf -y install redhat-lsb-core
+dnf -y install redhat-lsb-core boost boost-devel
 
 dnf -y install emacs cmake.x86_64 screen.x86_64 minicom.x86_64 ntfs-3g.x86_64 ntfs-3g-devel.x86_64 gnuplot.x86_64 gnuplot-common.x86_64  python3-pip environment-modules.x86_64 openssl.x86_64 openssl-devel.x86_64 
 

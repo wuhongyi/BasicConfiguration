@@ -5,9 +5,9 @@
 ## Author: Hongyi Wu(吴鸿毅)
 ## Email: wuhongyi@qq.com 
 ## Created: 四 9月 16 15:09:11 2021 (+0800)
-## Last-Updated: 一 5月 27 10:25:52 2024 (+0800)
+## Last-Updated: 日 2月  2 11:11:48 2025 (+0800)
 ##           By: Hongyi Wu(吴鸿毅)
-##     Update #: 9
+##     Update #: 10
 ## URL: http://wuhongyi.cn 
 
 if [ `whoami` = "root" ];then 
@@ -36,6 +36,7 @@ if [ "$VERSION" = "Release:	20.04" ] ; then
     pip3 install  jupyter-client==8.6.1
     pip3 install  jupyter-server==2.14.0
     pip3 install  traitlets==5.14.3
+    pip3 install  vunit_hdl
 elif [ "$VERSION" = "Release:	22.04" ] ; then
     echo "当前为Ubuntu 22.04"
     ## Ubuntu2204
@@ -50,6 +51,7 @@ elif [ "$VERSION" = "Release:	22.04" ] ; then
     pip3 install  jupyter-client==8.6.2
     pip3 install  jupyter-server==2.14.2
     pip3 install  traitlets==5.14.3
+    pip3 install  vunit_hdl
 elif [ "$VERSION" = "Release:	18.04" ] ; then
     echo "当前为Ubuntu 18.04"
     ## Ubuntu1804
@@ -60,6 +62,7 @@ elif [ "$VERSION" = "Release:	18.04" ] ; then
     pip3 install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com jupyter-core==4.7.1
     pip3 install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com notebook==6.4.4
     pip3 install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com voila==0.2.13
+    pip3 install vunit_hdl
 else 
     echo "暂时不支持当前版本Ubuntu，请联系吴鸿毅。"
     exit 1
